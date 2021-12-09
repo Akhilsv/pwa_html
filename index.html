@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/_headers/headers.css" />
+		<link rel="stylesheet" href="/style/_pages/edit_profile.css" />
+		<link rel="stylesheet" href="/style/_pages/my_progress.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- --------------------------header------------------------------------ -->
+		<header>
+			<div class="sub_header">
+				<div class="Header_icon">
+					<img src="/assets/icon.svg" alt="Logo" />
+				</div>
+
+				<div class="Header_Profile">
+					<div class="Icons">
+						<div class="points">
+							<p><span>🔥 </span>0</p>
+							<p><span>🎯 </span> 0</p>
+						</div>
+						<div class="score">
+							<p><span>⚡ </span> 200</p>
+							<p><span><img src="/assets/coin (3).png" alt="notifiction" /></span> 50</p>
+						</div>
+					</div>
+					<img src="/assets/bell.svg" alt="notifiction" />
+					<img class="profile_pic" src="/assets/profile.jpg" alt="avatar" />
+				</div>
+			</div>
+		</header>
+		<div class="wholeBody">
+			<!-- //------------------------sidenav--------------------------- -->
+			<aside>
+				<div class="myMenu">
+					<a
+						href="##"
+						class="mainTabLinks"
+						onclick="openMainTab(event, 'my_progress')"
+						id="defaultMainTabOpen"
+					>
+						<img src="/assets/self-growth3.png" alt="progress" />
+						<p>My Progress</p>
+					</a>
+					<a href="##">
+						<img src="/assets/stage.png" alt="bookmark" />
+						<p>Competitions</p>
+					</a>
+					<a href="##">
+						<img src="/assets/leaderboard.png" alt="leader" />
+						<p>Leaderboard</p>
+					</a>
+				</div>
+				<div class="myMenu">
+					<div class="title">
+						<h4>catalog</h4>
+					</div>
+					<a href="##">
+						<img src="/assets/career-choice.png" alt="progress" />
+						<p>Career Paths</p>
+					</a>
+					<a href="##">
+						<img src="/assets/online-course2.png" alt="leader" />
+						<p>Courses</p>
+					</a>
+					<a href="##">
+						<img src="/assets/project-management (2).png" alt="leader" />
+						<p>Projects</p>
+					</a>
+					<a href="##">
+						<img src="/assets/project.png" alt="leader" />
+						<p>Practice</p>
+					</a>
+					<a href="##">
+						<img src="/assets/clipboard.png" alt="leader" />
+						<p>Assessments</p>
+					</a>
+					<a href="##">
+						<img src="/assets/deadline.png" alt="leader" />
+						<p>Live Events</p>
+					</a>
+				</div>
+				<div class="myMenu">
+					<div class="title">
+						<h4>PROFILE</h4>
+					</div>
+					<a
+						href="##"
+						class="mainTabLinks"
+						onclick="openMainTab(event, 'my_profile')"
+					>
+						<img src="/assets/account (1).png" alt="progress" />
+						<p>My profile</p>
+					</a>
+					<a
+						href="##"
+						class="mainTabLinks"
+						onclick="openMainTab(event, 'edit_profile')"
+					>
+						<img src="/assets/edit (1).png" alt="bookmark" />
+						<p>Edit profile</p>
+					</a>
+					<a href="##">
+						<img src="/assets/user (1).png" alt="leader" />
+						<p>Account Settings</p>
+					</a>
+					<a href="##">
+						<img src="/assets/logout (1).png" alt="leader" />
+						<p>Logout</p>
+					</a>
+				</div>
+				<button>Contact us</button>
+			</aside>
+
+			<!---------------My progress section--------------------->
+
+			<section class="editProfile mainTabContent" id="my_progress">
+				<div class="my_progess_header">
+					<h1 onclick="doActive(event)">In progess</h1>
+					<h1 onclick="doActive(event)">Completed</h1>
+				</div>
+				<div class="my_progess_first_cards_holder">
+					<div class="my_progess_first_card">
+						<div class="my_progess_first_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<h1>Introduction to Python</h1>
+						</div>
+						<div class="my_progess_first_card_body">
+							<p>
+								Master the basics of data analysis in Python. Expand your
+								skillset by learning scientific computing with numpy.
+							</p>
+						</div>
+						<div class="my_progess_first_card_footer">
+							<button>Continue Course</button>
+						</div>
+					</div>
+					<div class="my_progess_first_card">
+						<div class="my_progess_first_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<h1>Introduction to Python</h1>
+						</div>
+						<div class="my_progess_first_card_body">
+							<p>
+								Master the basics of data analysis in Python. Expand your
+								skillset by learning scientific computing with numpy.
+							</p>
+						</div>
+						<div class="my_progess_first_card_footer">
+							<button>Continue Course</button>
+						</div>
+					</div>
+				</div>
+				<div class="my_progress_second_cards_header">
+					<h1>Your buddy</h1>
+					<h1>Top 3 of your cmapus</h1>
+				</div>
+				<div class="my_progress_second_card_holder">
+					<div class="my_progess_second_card">
+						<h1>Courses Enrolled</h1>
+						<h1>Projects completed</h1>
+						<h1>CareerPaths Enrolled</h1>
+					</div>
+					<div class="my_progess_second_card">
+						<h1>Courses Enrolled</h1>
+						<h1>Projects completed</h1>
+						<h1>CareerPaths Enrolled</h1>
+					</div>
+					<div class="my_progess_second_card">
+						<h1>Courses Enrolled</h1>
+						<h1>Projects completed</h1>
+						<h1>CareerPaths Enrolled</h1>
+					</div>
+				</div>
+				<div class="my_progress_third_card">
+					<h1>Please take your skill test so that we can improve your recommendations and can suggest you better content or projects</h1>
+					<button>Take Test</button>
+					<p>X</p>
+				</div>
+
+
+
+
+				<div class="my_progress_second_cards_header">
+					<h1>Trending Courses</h1>
+				</div>
+
+
+
+				<div class="my_progess_trending_holder">
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<p>1080p</p>
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_option">
+
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<p>1080p</p>
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_option">
+
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<p>1080p</p>
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_option">
+
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+			</section>
+
+			<section class="editProfile mainTabContent" id="my_profile">
+				<h1>my Profile</h1>
+			</section>
+
+			<!---------------Edit profile section--------------------->
+			<section class="editProfile mainTabContent" id="edit_profile">
+				<!-- Edit profile Header------- -->
+				<div class="editProfileHeader">
+					<div class="editProfileHeaderTabs">
+						<button
+							class="tablinks"
+							onclick="openTab(event, 'tab1')"
+							id="defaultEditTabOpen"
+						>
+							1
+						</button>
+						<p>Personal Info</p>
+					</div>
+					<div class="editProfileHeaderTabs">
+						<button class="tablinks" onclick="openTab(event, 'tab2')">2</button>
+						<p>Educational Info</p>
+					</div>
+					<div class="editProfileHeaderTabs">
+						<button class="tablinks" onclick="openTab(event, 'tab3')">3</button>
+						<p>Professional Info</p>
+					</div>
+				</div>
+
+				<!-- Edit profile tab1 body------- -->
+				<div id="tab1" class="editProfiletabcontent">
+					<form class="editProfileForm">
+						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Name"
+								name="name"
+								id="name"
+								required
+							/>
+							<label for="name" class="form__label">Display Name</label>
+						</div>
+
+						<div class="form__group field">
+							<select name="gender" id="gender" class="form__field">
+								<option value="" disabled selected hidden>Gender</option>
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+						</div>
+
+						<div class="form__group field">
+							<select name="state" id="state" class="form__field">
+								<option value="" disabled selected hidden>Select State</option>
+
+								<option value="karnataka">Karnataka</option>
+								<option value="tamilnadu">Tamil Nadu</option>
+							</select>
+						</div>
+
+						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Contact Us"
+								name="contact"
+								id="contact"
+								required
+							/>
+							<label for="contact" class="form__label">Contact Us</label>
+						</div>
+
+						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="social"
+								name="social"
+								id="social"
+								required
+							/>
+							<label for="social" class="form__label"
+								>Your Social Profile Url</label
+							>
+						</div>
+						<div class="file-input">
+							<input type="file" id="file" class="file" />
+							<label for="file">
+								Upload Resume
+								<p class="file-name"></p>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div id="tab2" class="editProfiletabcontent">
+					<h1>tab2</h1>
+				</div>
+				<div id="tab3" class="editProfiletabcontent">
+					<h1>tab3</h1>
+				</div>
+			</section>
+		</div>
+		<script src="./app.js"></script>
+		<script></script>
+	</body>
+</html>

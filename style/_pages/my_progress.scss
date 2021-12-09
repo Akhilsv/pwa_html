@@ -1,0 +1,234 @@
+.my_progess_header {
+	height: 60px;
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 20px auto;
+	border-bottom: solid 1.5px rgb(173, 173, 173);
+
+	h1 {
+		font-size: 1.2rem;
+		margin: 0 20px 0 0;
+		text-transform: capitalize;
+		font-weight: 600;
+		cursor: pointer;
+		position: relative;
+		
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 3px;
+			top: 157%;
+			left: 0;
+			background: rgb(82, 82, 82);
+		}
+	}
+}
+.my_progess_first_cards_holder {
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px auto;
+}
+.my_progess_first_card {
+	width: 320px;
+	height: 220px;
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	margin: 20px 40px 20px 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		font-size: 1.2rem;
+	}
+}
+.my_progess_first_card_header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	img {
+		width: 30px;
+		object-fit: contain;
+		border-radius: 60%;
+		margin-left: 10px;
+	}
+	h1 {
+		font-size: 1rem;
+		margin-left: 10px;
+	}
+}
+.my_progess_first_card_body {
+	width: 90%;
+	display: grid;
+	place-items: center;
+	p {
+		font-size: 0.8rem;
+		color: rgb(65, 65, 65);
+	}
+}
+.my_progess_first_card_footer {
+	width: 100%;
+	height: 50px;
+	display: grid;
+	place-items: center;
+	button {
+		width: 90%;
+		height: 40px;
+		border: none;
+		outline: none;
+		background: #cc00ff;
+		border-radius: 20px;
+		color: #000;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+}
+.my_progress_second_cards_header {
+	width: 90%;
+	height: 30px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h1 {
+		font-size: 1.2rem;
+		margin: 0 20px 0 0;
+		text-transform: capitalize;
+		font-weight: 500;
+	}
+}
+.my_progress_second_card_holder {
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px auto;
+}
+.my_progess_second_card {
+	width: 250px;
+	height: 130px;
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	margin: 0px 40px 20px 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	h1 {
+		font-size: 1rem;
+		margin-left: 20px;
+	}
+}
+.my_progress_third_card {
+	width: 87%;
+	min-height: 120px;
+	margin: 30px auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	flex-direction: column;
+	background: #7933ff;
+	position: relative;
+	h1 {
+		font-size: 1.2rem;
+		color: #fff;
+		width: 90%;
+		font-weight: 500;
+	}
+	button {
+		width: 180px;
+		height: 40px;
+		outline: none;
+		border: none;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	p {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		color: #fff;
+		font-weight: 600;
+	}
+}
+.my_progess_trending_holder {
+	width: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px auto;
+}
+.my_progess_trending_card {
+	width: 320px;
+	height: 180px;
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+	margin: 20px 20px 20px 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	h1 {
+		font-size: 1.2rem;
+	}
+}
+.my_progess_trending_card_header {
+	width: 95%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	img {
+		width: 30px;
+		object-fit: contain;
+		border-radius: 60%;
+		margin-left: 10px;
+	}
+}
+.my_progess_trending_card_body {
+	width: 90%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+
+	h1 {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+}
+.my_progress_trending_card_footer {
+	width: 100%;
+	height: 70px;
+	display: grid;
+	place-items: center;
+	border-top: solid 1px rgb(207, 207, 207);
+	button {
+		width: 90%;
+		height: 35px;
+		border: 1px solid rgb(0, 0, 0);
+		outline: none;
+		background: none;
+		border-radius: 5px;
+		color: #000;
+		font-weight: 600;
+		font-size: 1rem;
+		cursor: pointer;
+	}
+}
