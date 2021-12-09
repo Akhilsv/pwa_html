@@ -31,7 +31,12 @@
 						</div>
 						<div class="score">
 							<p><span>⚡ </span> 200</p>
-							<p><span><img src="/assets/coin (3).png" alt="notifiction" /></span> 50</p>
+							<p>
+								<span
+									><img src="/assets/coin (3).png" alt="notifiction"
+								/></span>
+								50
+							</p>
 						</div>
 					</div>
 					<img src="/assets/bell.svg" alt="notifiction" />
@@ -183,19 +188,17 @@
 					</div>
 				</div>
 				<div class="my_progress_third_card">
-					<h1>Please take your skill test so that we can improve your recommendations and can suggest you better content or projects</h1>
+					<h1>
+						Please take your skill test so that we can improve your
+						recommendations and can suggest you better content or projects
+					</h1>
 					<button>Take Test</button>
 					<p>X</p>
 				</div>
 
-
-
-
 				<div class="my_progress_second_cards_header">
 					<h1>Trending Courses</h1>
 				</div>
-
-
 
 				<div class="my_progess_trending_holder">
 					<div class="my_progess_trending_card">
@@ -205,9 +208,7 @@
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option">
-
-							</div>
+							<div class="my_progess_trending_card_option"></div>
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
@@ -220,9 +221,7 @@
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option">
-
-							</div>
+							<div class="my_progess_trending_card_option"></div>
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
@@ -235,21 +234,13 @@
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option">
-
-							</div>
+							<div class="my_progess_trending_card_option"></div>
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
 						</div>
 					</div>
-
-
-
 				</div>
-
-
-
 			</section>
 
 			<section class="editProfile mainTabContent" id="my_profile">
@@ -283,7 +274,189 @@
 				<!-- Edit profile tab1 body------- -->
 				<div id="tab1" class="editProfiletabcontent">
 					<form class="editProfileForm">
+						<div class="upper__section">
+							<div class="Profile_edit">
+							<label for="profile">
+								<img src="/assets/profile.jpg" alt="" srcset="" />
+							</label>
+							<input type="file" name="profile" id="profile" />
+							<div class="button_zone">
+								<button id="upload">Upload Image</button>
+								<button id="remove">Remove Image</button>
+							</div>
+						</div>
+						<div class="details_edit">
+							<div class="details_edit_zone">
+								<div class="input_zone">
+									<label for="name">Display Name:</label>
+									<span>www.techsnap.in/profile/<input type="text" /></span>
+								</div>
+								<div class="form__group field">
+									<select name="gender" id="gender" class="form__field">
+										<option value="" disabled selected hidden>Gender</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+									</select>
+								</div>
+							</div>
+							<div class="details_edit_zone">
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Email "
+										name="Email "
+										id="Email "
+										required
+									/>
+									<label for="Email " class="form__label">Email </label>
+								</div>
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Phone Number"
+										name="Phone Number"
+										id="Phone Number"
+										required
+									/>
+									<label for="Phone Number" class="form__label"
+										>Phone Number</label
+									>
+								</div>
+							</div>
+							<div class="details_edit_zone">
+								<div class="form__group field">
+									<select
+										name="Select Country "
+										id="gender"
+										class="form__field"
+									>
+										<option value="" disabled selected hidden>
+											Select Country
+										</option>
+										<option value="India">India</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+										<option value="India">shimoga</option>
+									</select>
+								</div>
+								<div class="form__group field">
+									<select
+										name="Select State "
+										id="Select State "
+										class="form__field"
+									>
+										<option value="" disabled selected hidden>
+											Select State
+										</option>
+										<option value="Select State ">Male</option>
+										<option value="Select State ">Female</option>
+									</select>
+								</div>
+								<div class="form__group field">
+									<input
+										type="city"
+										class="form__field"
+										placeholder="city"
+										name="city"
+										id="city"
+										required
+									/>
+									<label for="city" class="form__label">City</label>
+								</div>
+							</div>
+							<div class="form__bio">
+								<label for="bio">Bio</label>
+								<input type="text" name="bio" id="bio" />
+							</div>
+						</div>
+						</div>
+						<div class="lower__section">
+							<div class="details_edit">
+								<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Your linkedin URl"
+								name="Your linkedin URl"
+								id="Your linkedin URl"
+								required
+							/>
+							<label for="Your linkedin URl" class="form__label">Your linkedin URl</label>
+						</div>
 						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Your github URl"
+								name="Your github URl"
+								id="Your github URl"
+								required
+							/>
+							<label for="Your github URl" class="form__label">Your github URl</label>
+						</div>
+								
+							</div>
+									<div class="details_edit">
+								<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Skills"
+								name="Skills"
+								id="Skills"
+								required
+							/>
+							<label for="Skills" class="form__label">Skills</label>
+						</div>
+						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Languages"
+								name="Languages"
+								id="Languages"
+								required
+							/>
+							<label for="Languages" class="form__label">Languages</label>
+						</div>
+								
+							</div>
+							<div class="details_edit">
+								<div class="form__group field">
+							<input
+								type="file"
+								class="form__field"
+								placeholder="Skills"
+								name="Skills"
+								id="Skills"
+								required
+							/>
+							<label for="Skills" class="form__label">Upload Resume</label>
+						</div>
+						
+						<div class="form__group field">
+							<input
+								type="input"
+								class="form__field"
+								placeholder="Default coding language"
+								name="Default coding language"
+								id="Default coding language"
+								required
+							/>
+							<label for="Default coding language" class="form__label">Default coding language</label>
+						</div>
+								
+							</div>
+							
+							</div>
+						</div>
+						<!-- <div class="form__group field">
 							<input
 								type="input"
 								class="form__field"
@@ -343,7 +516,8 @@
 								Upload Resume
 								<p class="file-name"></p>
 							</label>
-						</div>
+						</div> -->
+					
 					</form>
 				</div>
 				<div id="tab2" class="editProfiletabcontent">
