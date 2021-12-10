@@ -1,11 +1,13 @@
 .editProfile {
 	width: 100%;
+	max-width: 1400px;
 	max-height: calc(100vh - 60px);
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
 	overflow: scroll;
+	margin: 0 auto;
 	@media (max-width: 700px) {
 		max-height: 100%;
 	}
@@ -187,9 +189,22 @@
 	input {
 		border: none;
 		outline: none;
-		border-bottom: 1px solid #333;
+		border-bottom: 2px solid #333;
 		width: 100%;
+		font-weight: 600;
+		font-size: 18px;
 	}
+}
+.resume {
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	outline: 0;
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
 }
 .form__group {
 	position: relative;
@@ -294,4 +309,83 @@ input:focus + label {
 .file input:focus + label {
 	outline: 1px solid #000;
 	outline: -webkit-focus-ring-color auto 2px;
+}
+
+//-----------------------
+.Educational_edit {
+	padding: 20px;
+}
+.Educational_input_section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.title {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.Educational_input_radio_buttons {
+	display: flex;
+	align-items: center;
+	input {
+		width: 50px;
+	}
+}
+.custom_radio {
+	margin: 20px;
+}
+.custom_radio input[type='radio'] {
+	display: none;
+}
+.custom_radio input[type='radio'] + label {
+	position: relative;
+	display: inline-block;
+	padding-left: 1.5em;
+	margin-right: 2em;
+	cursor: pointer;
+	line-height: 1em;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.custom_radio input[type='radio'] + label:before,
+.custom_radio input[type='radio'] + label:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	color: white;
+	font-family: Times;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.custom_radio input[type='radio'] + label:before {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+}
+.custom_radio input[type='radio'] + label:hover:before {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+}
+.custom_radio input[type='radio']:checked + label:before {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #000000;
+}
+.file_upload_zone {
+	width: 100%;
+	height: 200px;
+	display: grid;
+	place-items: center;
+	label {
+		cursor: pointer;
+	}
+	input {
+		display: none;
+	}
 }

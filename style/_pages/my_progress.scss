@@ -31,11 +31,11 @@
 	margin: 20px auto;
 }
 .my_progess_first_card {
-	width: 320px;
+	width: 280px;
 	height: 220px;
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
-	margin: 20px 40px 20px 0;
+	margin: 20px 10px 20px 0;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	display: flex;
 	justify-content: space-around;
@@ -127,8 +127,7 @@
 		text-transform: capitalize;
 		font-weight: 600;
 	}
-	&.second {
-	}
+	
 }
 .my_progress_campus_holder {
 	width: 30%;
@@ -146,7 +145,7 @@
 	flex-wrap: wrap;
 }
 .my_progess_second_card {
-	width: 180px;
+	width: 160px;
 	height: 150px;
 	background: rgb(255, 255, 255);
 	border: 1px solid #000;
@@ -237,14 +236,15 @@
 	align-items: center;
 	margin-right: 10px;
 	p {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 		color: rgb(68, 68, 68);
 		margin-left: 6px;
 		font-weight: 600;
+		white-space: nowrap;
 	}
 }
 .my_progess_trending_card {
-	width: 320px;
+	width: 280px;
 	height: 180px;
 	background: rgb(255, 255, 255);
 	border-radius: 10px;

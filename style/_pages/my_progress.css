@@ -46,11 +46,11 @@
 }
 
 .my_progess_first_card {
-  width: 320px;
+  width: 280px;
   height: 220px;
   background: white;
   border-radius: 10px;
-  margin: 20px 40px 20px 0;
+  margin: 20px 10px 20px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: -webkit-box;
@@ -226,7 +226,7 @@
 }
 
 .my_progess_second_card {
-  width: 180px;
+  width: 160px;
   height: 150px;
   background: white;
   border: 1px solid #000;
@@ -374,14 +374,15 @@
 }
 
 .my_progess_trending_card_option p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #444444;
   margin-left: 6px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .my_progess_trending_card {
-  width: 320px;
+  width: 280px;
   height: 180px;
   background: white;
   border-radius: 10px;
