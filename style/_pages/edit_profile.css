@@ -25,6 +25,10 @@
   }
 }
 
+.sub_editProfile {
+  max-width: 1400px;
+}
+
 .editProfileHeader {
   margin-top: 20px;
   width: 100%;

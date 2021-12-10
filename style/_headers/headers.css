@@ -103,6 +103,12 @@ header .sub_header .Icons .score {
 header .sub_header .Icons .score p {
   font-weight: 500;
   font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .sub_header .Icons .score p span {
@@ -143,6 +149,7 @@ header .sub_header .Header_Profile img {
 header .sub_header .Header_Profile .profile_pic {
   width: 45px;
   border-radius: 50%;
+  height: 45px;
 }
 
 aside {

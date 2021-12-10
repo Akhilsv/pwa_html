@@ -64,6 +64,8 @@ header {
 				p {
 					font-weight: 500;
 					font-size: 0.9rem;
+					display: flex;
+					align-items: center;
 					span {
 						margin-right: 2px;
 					}
@@ -91,6 +93,7 @@ header {
 			.profile_pic {
 				width: 45px;
 				border-radius: 50%;
+				height: 45px;
 			}
 		}
 	}
@@ -115,7 +118,7 @@ aside {
 		border-radius: 7px;
 	}
 	&::-webkit-scrollbar-thumb {
-		 background-color: #cfcfcf;
+		background-color: #cfcfcf;
 		height: 50px;
 	}
 	button {

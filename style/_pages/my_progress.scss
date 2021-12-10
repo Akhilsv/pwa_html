@@ -25,7 +25,7 @@
 .my_progess_first_cards_holder {
 	width: 90%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 20px auto;
@@ -54,6 +54,7 @@
 
 	img {
 		width: 30px;
+		height: 30px;
 		object-fit: contain;
 		border-radius: 60%;
 		margin-left: 10px;
@@ -127,13 +128,15 @@
 		text-transform: capitalize;
 		font-weight: 600;
 	}
-	
+}
+.second {
+	justify-content: flex-end;
 }
 .my_progress_campus_holder {
 	width: 30%;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: flex-end;
 	flex-direction: column;
 }
 .my_progress_second_card_holder {
@@ -204,7 +207,7 @@
 .my_progess_trending_holder {
 	width: 90%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 20px auto;
@@ -266,6 +269,7 @@
 	align-items: center;
 	img {
 		width: 30px;
+		height: 30px;
 		object-fit: contain;
 		border-radius: 60%;
 		margin-left: 10px;

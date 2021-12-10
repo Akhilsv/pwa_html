@@ -34,9 +34,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -87,6 +87,7 @@
 
 .my_progess_first_card_header img {
   width: 30px;
+  height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 60%;
@@ -193,6 +194,12 @@
   font-weight: 600;
 }
 
+.second {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .my_progress_campus_holder {
   width: 30%;
   display: -webkit-box;
@@ -201,9 +208,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -313,9 +320,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -423,6 +430,7 @@
 
 .my_progess_trending_card_header img {
   width: 30px;
+  height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 60%;
