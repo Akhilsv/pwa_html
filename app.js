@@ -1,5 +1,6 @@
 document.getElementById('defaultMainTabOpen').click();
 document.getElementById('defaultEditTabOpen').click();
+document.getElementById('defaultslideTabOpen').click();
 function openMainTab(evt, cityName) {
 	console.log(evt);
 	let i, tabcontent, tablinks;
@@ -31,6 +32,24 @@ function openTab(evt, cityName) {
 	document.getElementById(cityName).style.display = 'block';
 	evt.currentTarget.className += ' active';
 }
+
+function slideTab(evt, cityName) {
+	console.log(cityName);
+	let i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName('slideTabContent');
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = 'none';
+	}
+	tablinks = document.getElementsByClassName('slideTabLinks');
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace('activeSlide', '');
+	}
+	document.getElementById(cityName).style.display = 'flex';
+	evt.currentTarget.className += ' activeSlide';
+}
+
+
+
 // styling upload resume in edit profile-------------
 const file = document.querySelector('#file');
 file.addEventListener('change', (e) => {

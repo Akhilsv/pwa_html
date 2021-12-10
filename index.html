@@ -131,10 +131,10 @@
 
 			<section class="editProfile mainTabContent" id="my_progress">
 				<div class="my_progess_header">
-					<h1 onclick="doActive(event)">In progess</h1>
-					<h1 onclick="doActive(event)">Completed</h1>
+					<h1 class="slideTabLinks" id="defaultslideTabOpen"onclick="slideTab(event,'in_progress')">In progess</h1>
+					<h1 class="slideTabLinks" onclick="slideTab(event,'completed')">Completed</h1>
 				</div>
-				<div class="my_progess_first_cards_holder">
+				<div class="my_progess_first_cards_holder slideTabContent" id="in_progress">
 					<div class="my_progess_first_card">
 						<div class="my_progess_first_card_header">
 							<img src="assets/python_logo.png" alt="course-logo" />
@@ -166,27 +166,55 @@
 						</div>
 					</div>
 				</div>
+<div class="my_progess_first_cards_holder slideTabContent" id="completed">
+<h6>No Completed Projects</h6>
+</div>
+
+
+				<div class="my_progress_second_section_holder">
+			<div class="my_progress_your_buddy_holder">
 				<div class="my_progress_second_cards_header">
 					<h1>Your buddy</h1>
-					<h1>Top 3 of your cmapus</h1>
+					<p>Need help?</p>
 				</div>
 				<div class="my_progress_second_card_holder">
 					<div class="my_progess_second_card">
-						<h1>Courses Enrolled</h1>
-						<h1>Projects completed</h1>
-						<h1>CareerPaths Enrolled</h1>
+						<h2><span><img src="./assets/enrolled.svg" alt="enroll" /> </span>Enrolled</h1>
+						<h1>Courses : 4</h1>
+						<h1>CareerPaths : 2</h1>
+						<h1>Projects : 5</h1>
 					</div>
 					<div class="my_progess_second_card">
-						<h1>Courses Enrolled</h1>
-						<h1>Projects completed</h1>
-						<h1>CareerPaths Enrolled</h1>
+						<h2><span><img src="./assets/enrolled.svg" alt="enroll" /> </span>Enrolled</h1>
+						<h1>Courses : 4</h1>
+						<h1>CareerPaths : 2</h1>
+						<h1>Projects : 5</h1>
 					</div>
 					<div class="my_progess_second_card">
-						<h1>Courses Enrolled</h1>
-						<h1>Projects completed</h1>
-						<h1>CareerPaths Enrolled</h1>
+						<h2><span><img src="./assets/enrolled.svg" alt="enroll" /> </span>Enrolled</h1>
+						<h1>Courses : 4</h1>
+						<h1>CareerPaths : 2</h1>
+						<h1>Projects : 5</h1>
 					</div>
 				</div>
+
+</div>
+			<div class="my_progress_campus_holder">
+<div class="my_progress_second_cards_header second">
+					
+					<h1>Top 3 of your campus</h1>
+					
+				</div>
+				<div class="my_progess_second_card">
+						<h2><span><img src="./assets/enrolled.svg" alt="enroll" /> </span>Enrolled</h1>
+						<h1>Courses : 4</h1>
+						<h1>CareerPaths : 2</h1>
+						<h1>Projects : 5</h1>
+					</div>
+			</div>
+			
+				</div>
+	
 				<div class="my_progress_third_card">
 					<h1>
 						Please take your skill test so that we can improve your
@@ -196,19 +224,34 @@
 					<p>X</p>
 				</div>
 
-				<div class="my_progress_second_cards_header">
-					<h1>Trending Courses</h1>
+				<div class="my_progress_trending_header">
+					<h1>Trending Courses </h1>
 				</div>
-
 				<div class="my_progess_trending_holder">
 					<div class="my_progess_trending_card">
 						<div class="my_progess_trending_card_header">
 							<img src="assets/python_logo.png" alt="course-logo" />
-							<p>1080p</p>
+							<img src="assets/1250p.svg" alt="course-logo" />
+							
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option"></div>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+							
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
@@ -217,11 +260,25 @@
 					<div class="my_progess_trending_card">
 						<div class="my_progess_trending_card_header">
 							<img src="assets/python_logo.png" alt="course-logo" />
-							<p>1080p</p>
+							<img src="assets/1250p.svg" alt="course-logo" />
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option"></div>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
@@ -230,17 +287,212 @@
 					<div class="my_progess_trending_card">
 						<div class="my_progess_trending_card_header">
 							<img src="assets/python_logo.png" alt="course-logo" />
-							<p>1080p</p>
+							<img src="assets/1250p.svg" alt="course-logo" />
 						</div>
 						<div class="my_progess_trending_card_body">
 							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_option"></div>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
 						</div>
 						<div class="my_progress_trending_card_footer">
 							<button>Start Course</button>
 						</div>
 					</div>
 				</div>
+				<div class="my_progress_trending_header">
+					<h1>Trending Projects </h1>
+				</div>
+				<div class="my_progess_trending_holder">
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+							
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+							
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="my_progress_trending_header">
+					<h1>Trending Career Paths </h1>
+				</div>
+				<div class="my_progess_trending_holder">
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+							
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+							
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+					<div class="my_progess_trending_card">
+						<div class="my_progess_trending_card_header">
+							<img src="assets/python_logo.png" alt="course-logo" />
+							<img src="assets/1250p.svg" alt="course-logo" />
+						</div>
+						<div class="my_progess_trending_card_body">
+							<h1>Introduction to SQL</h1>
+							<div class="my_progess_trending_card_options_holder">
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/time.svg' alt="time" />
+										<p>15 hours</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/lessons.svg' alt="time" />
+										<p>9 lessons</p>
+								</div>
+								<div class="my_progess_trending_card_option">
+										<img src='./assets/coin.svg' alt="time" />
+										<p>779 coins</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="my_progress_trending_card_footer">
+							<button>Start Course</button>
+						</div>
+					</div>
+				</div>
+
+
+
+				
 			</section>
 
 			<section class="editProfile mainTabContent" id="my_profile">
