@@ -25,7 +25,7 @@ header {
 	display: grid;
 	place-items: center;
 	.sub_header {
-		max-width: $width;
+		
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -185,12 +185,6 @@ aside {
 		}
 	}
 }
-.mainTabContent {
-	display: none;
-	animation: fadeEffect 1s;
-}
-.mainTabLinks {
-	&.active {
-		color: #ff00d4;
-	}
+#active{
+	color: #ff00d4;
 }

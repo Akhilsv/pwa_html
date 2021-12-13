@@ -1,3 +1,29 @@
+.my_progess_section {
+  width: 100%;
+  max-height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .my_progess_section {
+    max-height: 100%;
+  }
+}
+
 .my_progess_header {
   height: 40px;
   width: 90%;
@@ -34,9 +60,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -45,8 +71,16 @@
   margin: 20px auto;
 }
 
+@media (max-width: 900px) {
+  .my_progess_first_cards_holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .my_progess_first_card {
-  width: 280px;
+  width: 32%;
   height: 220px;
   background: white;
   border-radius: 10px;
@@ -69,6 +103,12 @@
 
 .my_progess_first_card h1 {
   font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .my_progess_first_card {
+    width: 90%;
+  }
 }
 
 .my_progess_first_card_header {
@@ -320,15 +360,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 20px auto;
+}
+
+@media (max-width: 900px) {
+  .my_progess_trending_holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .my_progress_trending_header {
@@ -389,7 +437,7 @@
 }
 
 .my_progess_trending_card {
-  width: 280px;
+  width: 31%;
   height: 180px;
   background: white;
   border-radius: 10px;
@@ -412,6 +460,12 @@
 
 .my_progess_trending_card h1 {
   font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .my_progess_trending_card {
+    width: 90%;
+  }
 }
 
 .my_progess_trending_card_header {
@@ -479,5 +533,10 @@
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+}
+
+#completed {
+  border: dotted 1px #272727;
+  background-color: rgba(4, 4, 255, 0.048);
 }
 /*# sourceMappingURL=my_progress.css.map */

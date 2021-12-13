@@ -49,10 +49,8 @@
 			<aside>
 				<div class="myMenu">
 					<a
-						href="##"
-						class="mainTabLinks"
-						onclick="openMainTab(event, 'my_progress')"
-						id="defaultMainTabOpen"
+						href="index.html"
+					
 					>
 						<img src="/assets/self-growth3.png" alt="progress" />
 						<p>My Progress</p>
@@ -100,17 +98,14 @@
 						<h4>PROFILE</h4>
 					</div>
 					<a
-						href="##"
-						class="mainTabLinks"
-						onclick="openMainTab(event, 'my_profile')"
+						href="myProfile.html"
+							
 					>
 						<img src="/assets/account (1).png" alt="progress" />
 						<p>My profile</p>
 					</a>
 					<a
-						href="##"
-						class="mainTabLinks"
-						onclick="openMainTab(event, 'edit_profile')"
+						href="editProfile.html"
 					>
 						<img src="/assets/edit (1).png" alt="bookmark" />
 						<p>Edit profile</p>
@@ -129,9 +124,9 @@
 
 			<!---------------My progress section---------------------->
 
-			<section class="editProfile mainTabContent" id="my_progress">
+			<section class="my_progess_section">
 				<div class="my_progess_header">
-					<h1 class="slideTabLinks" id="defaultslideTabOpen"onclick="slideTab(event,'in_progress')">In progess</h1>
+					<h1 class="slideTabLinks" id="defaultslideTabOpen" onclick="slideTab(event,'in_progress')">In progess</h1>
 					<h1 class="slideTabLinks" onclick="slideTab(event,'completed')">Completed</h1>
 				</div>
 				<div class="my_progess_first_cards_holder slideTabContent" id="in_progress">
@@ -510,407 +505,25 @@
 
 			</section>
 
-			<section class="editProfile mainTabContent" id="my_profile">
-				<h1>my Profile</h1>
-			</section>
-
-			<!---------------Edit profile section--------------------->
-			<section class="editProfile mainTabContent" id="edit_profile">
-				<!-- Edit profile Header------- -->
-				<div class="editProfileHeader">
-					<div class="editProfileHeaderTabs">
-						<button
-							class="tablinks"
-							onclick="openTab(event, 'tab1')"
-							id="defaultEditTabOpen"
-						>
-							1
-						</button>
-						<p>Personal Info</p>
-					</div>
-					<div class="editProfileHeaderTabs">
-						<button class="tablinks" onclick="openTab(event, 'tab2')">2</button>
-						<p>Educational Info</p>
-					</div>
-					<div class="editProfileHeaderTabs">
-						<button class="tablinks" onclick="openTab(event, 'tab3')">3</button>
-						<p>Professional Info</p>
-					</div>
-				</div>
-
-				<!-- Edit profile tab1 body------- -->
-				<div id="tab1" class="editProfiletabcontent">
-					<form class="editProfileForm">
-						<div class="upper__section">
-							<div class="Profile_edit">
-							<label for="profile">
-								<img src="/assets/profile.jpg" alt="" srcset="" />
-							</label>
-							<input type="file" name="profile" id="profile" />
-							<div class="button_zone">
-								<button id="upload">Upload Image</button>
-								<button id="remove">Remove Image</button>
-							</div>
-						</div>
-						<div class="details_edit">
-							<div class="details_edit_zone">
-								<div class="input_zone">
-									<label for="name">Display Name:</label>
-									<span>www.techsnap.in/profile/<input type="text" /></span>
-								</div>
-								<div class="form__group field">
-									<select name="gender" id="gender" class="form__field">
-										<option value="" disabled selected hidden>Gender</option>
-										<option value="male">Male</option>
-										<option value="female">Female</option>
-									</select>
-								</div>
-							</div>
-							<div class="details_edit_zone">
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Email "
-										name="Email "
-										id="Email "
-										required
-									/>
-									<label for="Email " class="form__label">Email </label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Phone Number"
-										name="Phone Number"
-										id="Phone Number"
-										required
-									/>
-									<label for="Phone Number" class="form__label"
-										>Phone Number</label
-									>
-								</div>
-							</div>
-							<div class="details_edit_zone">
-								<div class="form__group field">
-									<select
-										name="Select Country "
-										id="gender"
-										class="form__field"
-									>
-										<option value="" disabled selected hidden>
-											Select Country
-										</option>
-										<option value="India">India</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-										<option value="India">shimoga</option>
-									</select>
-								</div>
-								<div class="form__group field">
-									<select
-										name="Select State "
-										id="Select State "
-										class="form__field"
-									>
-										<option value="" disabled selected hidden>
-											Select State
-										</option>
-										<option value="Select State ">Male</option>
-										<option value="Select State ">Female</option>
-									</select>
-								</div>
-								<div class="form__group field">
-									<input
-										type="city"
-										class="form__field"
-										placeholder="city"
-										name="city"
-										id="city"
-										required
-									/>
-									<label for="city" class="form__label">City</label>
-								</div>
-							</div>
-							<div class="form__bio">
-								<label for="bio">Bio</label>
-								<input type="text" name="bio" id="bio" />
-							</div>
-						</div>
-						</div>
-						<div class="lower__section">
-							<div class="details_edit">
-								<div class="form__group field">
-							<input
-								type="input"
-								class="form__field"
-								placeholder="Your linkedin URl"
-								name="Your linkedin URl"
-								id="Your linkedin URl"
-								required
-							/>
-							<label for="Your linkedin URl" class="form__label">Your linkedin URl</label>
-						</div>
-						<div class="form__group field">
-							<input
-								type="input"
-								class="form__field"
-								placeholder="Your github URl"
-								name="Your github URl"
-								id="Your github URl"
-								required
-							/>
-							<label for="Your github URl" class="form__label">Your github URl</label>
-						</div>
-
-							</div>
-									<div class="details_edit">
-								<div class="form__group field">
-							<input
-								type="input"
-								class="form__field"
-								placeholder="Skills"
-								name="Skills"
-								id="Skills"
-								required
-							/>
-							<label for="Skills" class="form__label">Skills</label>
-						</div>
-						<div class="form__group field">
-							<input
-								type="input"
-								class="form__field"
-								placeholder="Languages"
-								name="Languages"
-								id="Languages"
-								required
-							/>
-							<label for="Languages" class="form__label">Languages</label>
-						</div>
-
-							</div>
-							<div class="details_edit">
-								<div class="form__group ">
-							<input
-								type="file"
-								class="resume"
-								placeholder="Skills"
-								name="Skills"
-								id="Skills"
-								required
-							/>
-							<label for="Skills" class="form__label">Upload Resume</label>
-						</div>
-
-						<div class="form__group field">
-							<input
-								type="input"
-								class="form__field"
-								placeholder="Default coding language"
-								name="Default coding language"
-								id="Default coding language"
-								required
-							/>
-							<label for="Default coding language" class="form__label">Default coding language</label>
-						</div>
-
-							</div>
-
-							</div>
-
-
-
-					</form>
-				</div>
-				<div id="tab2" class="editProfiletabcontent">
-					<div class="Educational_edit">
-						<div class="title">Highest Qualification Details</div>
-						<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Institution "
-										name="Institution "
-										id="Institution "
-										required
-									/>
-									<label for="Email " class="form__label">Institution </label>
-								</div>
-						<div class="Educational_input_section">
-							<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Year of Passing e.g. 2019 "
-										name="Year of Passing "
-										id="Year of Passing "
-										required
-									/>
-									<label for="Year of Passing " class="form__label">Year of Passing </label>
-								</div>
-									<div class="form__group field">
-									<select
-										name="Select State "
-										id="Select State "
-										class="form__field"
-									>
-										<option value="" disabled selected hidden>
-											Select State
-										</option>
-										<option value="Select State ">Male</option>
-										<option value="Select State ">Female</option>
-									</select>
-								</div>
-						</div>
-						<div class="Educational_input_section">
-							<div class="Educational_input_radio_buttons custom_radio">
-
-                           <input type="radio" id="featured-1" name="featured" checked><label for="featured-1">Percentage</label>
-                           <input type="radio" id="featured-2" name="featured"><label for="featured-2">CGPA</label>
-
-                               </div>
-
-							<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="CGPA "
-										name="CGPA "
-										id="CGPA "
-										required
-									/>
-									<label for="CGPA " class="form__label">CGPA </label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Scale/ Out of "
-										name="Scale/ Out of "
-										id="Scale/ Out of "
-										required
-									/>
-									<label for="Scale/ Out of " class="form__label">Scale/ Out of </label>
-								</div>
-						</div>
-						<div class="file_upload_zone">
-							<label for="file">
-								<img src="/assets/fileUpload.svg" alt="file" >
-							</label>
-							<input type="file" name="file" id="file">
-						</div>
-					</div>
-				</div>
-				<div id="tab3" class="editProfiletabcontent">
-					<div class="Educational_edit">
-						<div class="Educational_input_section">
-							<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Work Experience (In months)"
-										name="Work Experience (In months) "
-										id="Work Experience (In months) "
-										required
-									/>
-									<label for="Work Experience (In months) " class="form__label">Work Experience (In months)</label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Notice Period (in days)"
-										name="Notice Period (in days) "
-										id="Notice Period (in days) "
-										required
-									/>
-									<label for="Notice Period (in days)" class="form__label">Notice Period (in days)</label>
-								</div>
-						</div>
-						<div class="Educational_input_section">
-
-
-							<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Current Salary (CTC in LPA) "
-										name="Current Salary (CTC in LPA) "
-										id="Current Salary (CTC in LPA) "
-										required
-									/>
-									<label for="Current Salary (CTC in LPA) " class="form__label">Current Salary (CTC in LPA) </label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Expected Salary (CTC in LPA)"
-										name="Expected Salary (CTC in LPA)"
-										id="Expected Salary (CTC in LPA)"
-										required
-									/>
-									<label for="Expected Salary (CTC in LPA) " class="form__label">Expected Salary (CTC in LPA)</label>
-								</div>
-									<div class="Educational_input_radio_buttons custom_radio">
-							Willing to Relocate
-                           <input type="radio" id="featured-11" name="featureds" checked><label for="featured-11">Yes</label>
-                           <input type="radio" id="featured-22" name="featureds"><label for="featured-22">No</label>
-
-                               </div>
-						</div>
-							<div class="Educational_input_section">
-							<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Current Company Name"
-										name="Current Company Name"
-										id="Current Company Name"
-										required
-									/>
-									<label for="Current Company Name" class="form__label">Current Company Name</label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Designation"
-										name="Designation"
-										id="Designation"
-										required
-									/>
-									<label for="Designation" class="form__label">Designation</label>
-								</div>
-								<div class="form__group field">
-									<input
-										type="input"
-										class="form__field"
-										placeholder="Duration (in months)"
-										name="Duration (in months)"
-										id="Duration (in months)"
-										required
-									/>
-									<label for="Duration (in months)" class="form__label">Duration (in months)</label>
-								</div>
-
-						</div>
-						<div class="file_upload_zone">
-							<label for="file">
-								<img src="/assets/fileUpload.svg" alt="file" >
-							</label>
-							<input type="file" name="file" id="file">
-						</div>
-					</div>
-				</div>
-			</section>
 		</div>
 		<script src="./app.js"></script>
-		<script></script>
+		<script>
+			document.getElementById('defaultslideTabOpen').click();
+			
+function slideTab(evt, cityName) {
+	console.log(cityName);
+	let i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName('slideTabContent');
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = 'none';
+	}
+	tablinks = document.getElementsByClassName('slideTabLinks');
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace('activeSlide', '');
+	}
+	document.getElementById(cityName).style.display = 'flex';
+	evt.currentTarget.className += ' activeSlide';
+}
+		</script>
 	</body>
 </html>
