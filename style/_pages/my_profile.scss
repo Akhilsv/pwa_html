@@ -1,0 +1,175 @@
+.my_profile_holder {
+	width: 100%;
+	height: 100%;
+	max-height: calc(100vh - 60px);
+	padding: 0 40px;
+	display: grid;
+	place-items: center;
+	overflow: scroll;
+}
+
+.my_profile_banner {
+	width: 100%;
+	background-image: url('/assets/banner.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 270px;
+}
+.my_profile_bar {
+	width: 90%;
+	height: 130px;
+	background-color: rgb(253, 253, 253);
+	transform: translate(0px, -50px);
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 20px;
+}
+.my_profile_dp {
+	width: 110px;
+	height: 110px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+.my_profile_name {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-left: 30px;
+	h1 {
+	}
+	p {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-top: 6px;
+	}
+}
+.my_profile_three_cards_section {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.my_profile_three_card {
+	width: 30%;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	border-radius: 10px;
+	& .card_heading {
+		h1 {
+			color: rgb(0, 0, 0);
+			font-size: 1.2rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+            margin-bottom: 15px;
+		}
+	}
+	.form_details {
+        width:100%;
+		margin: 5px 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.question {
+		font-size: 1rem;
+		color: blue;
+        margin-right: 10px;
+	}
+    .answer{
+        font-size: 0.9rem;
+		color: rgb(0, 0, 0);
+        
+    }
+    .big_answer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.my_profile_blogs_section {
+	width: 100%;
+	min-height: 50vh;
+	margin-top: 40px;
+	padding-left: 20px;
+	padding-top: 20px;
+
+	.blogs_card_holder {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.blogs_card {
+		width: 31%;
+		margin: 20px 10px;
+		height: 380px;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		h1 {
+			font-weight: 500;
+			font-size: 1.2rem;
+			letter-spacing: 1px;
+			margin: 10px 0;
+		}
+		h2 {
+			font-weight: 700;
+			font-size: 1rem;
+			letter-spacing: 1px;
+		}
+		p {
+			font-weight: 500;
+			font-size: 0.9rem;
+			margin: 10px 0;
+			max-height: 100px;
+			color: rgb(24, 24, 24);
+		}
+		button {
+			width: 150px;
+			height: 40px;
+			outline: none;
+			background: none;
+			color: #b6228f;
+			font-weight: 600;
+			font-size: 1rem;
+			border: solid 2px #b6228f;
+		}
+	}
+	.blog_image {
+		width: 100%;
+		height: 50%;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 20px;
+		}
+	}
+	.add_blog {
+		justify-content: space-around;
+		align-items: center;
+		border: solid 2px #000;
+		border-radius: 20px;
+		h1 {
+			font-size: 3rem;
+			font-weight: 800;
+		}
+	}
+}

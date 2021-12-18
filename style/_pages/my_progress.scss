@@ -97,13 +97,16 @@
 }
 .slideTabContent {
 	display: none;
-	min-height: 300px;
+
 	h6 {
 		margin: auto;
 		font-weight: 600;
 		font-size: 1rem;
 		letter-spacing: 1px;
 	}
+}
+.nocontent {
+	min-height: 300px;
 }
 .my_progess_first_card_footer {
 	width: 100%;
@@ -127,20 +130,23 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	margin: 20px auto;
+
+	@media (max-width: 1000px) {
+		flex-direction: column;
+	}
 }
 .my_progress_your_buddy_holder {
 	width: 65%;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-
 	flex-direction: column;
 }
 .my_progress_second_cards_header {
 	width: 100%;
 	height: 50px;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -166,11 +172,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 	flex-wrap: wrap;
 }
 .my_progess_second_card {
-	width: 160px;
+	width: 26%;
 	height: 150px;
 	background: rgb(255, 255, 255);
 	border: 1px solid #000;
@@ -190,6 +195,9 @@
 	h2 {
 		font-size: 1.2rem;
 		color: #7933ff;
+	}
+	@media (max-width: 700px) {
+		width: 90%;
 	}
 }
 .my_progress_third_card {
@@ -335,7 +343,7 @@
 		cursor: pointer;
 	}
 }
-#completed{
+#completed {
 	border: dotted 1px rgb(39, 39, 39);
 	background-color: rgba(4, 4, 255, 0.048);
 }
