@@ -13,6 +13,7 @@ p {
 	background-color: #e72ed5;
 	border: none;
 	transition: all 0.5s ease;
+    margin-top: 15px;
 	&:hover {
 		background-color: #eb69de;
 	}
@@ -47,7 +48,7 @@ p {
 	min-width: 250px;
 	height: 370px;
 	margin-right: 20px;
-    margin-top: 60px;
+    margin-top: 50px;
     border: solid 1px #000 !important;
 }
 .tab-content {
