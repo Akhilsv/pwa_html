@@ -63,45 +63,104 @@
 	height: 100%;
 	background-color: rgb(255, 255, 255);
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	border-radius: 10px;
+
 	& .card_heading {
 		h1 {
 			color: rgb(0, 0, 0);
 			font-size: 1.2rem;
 			font-weight: 500;
-			letter-spacing: 1px;
-            margin-bottom: 15px;
+			letter-spacing: 0.3px;
+			margin-bottom: 15px;
+			font-family: 'Open Sans', sans-serif;
 		}
 	}
 	.form_details {
-        width:100%;
-		margin: 5px 0;
+		width: 100%;
+		margin: 6px 0;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		padding: 0 5px;
 	}
 	.question {
 		font-size: 1rem;
-		color: blue;
-        margin-right: 10px;
+		font-weight: 700;
+		color: #005eff;
+		margin-right: 10px;
+		font-family: 'Open Sans', sans-serif;
 	}
-    .answer{
-        font-size: 0.9rem;
-		color: rgb(0, 0, 0);
-        
-    }
-    .big_answer{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+	.answer {
+		font-weight: 400;
+		line-height: 1.5rem;
+		font-size: 15px;
+		color: #67748e;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.big_answer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
+.my_profile_teammate_card {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 10px 0;
+	.teammate_dp {
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 10px;
+		}
+	}
+	.teammate_details {
+		margin-left: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		height: 70%;
+		width: 70%;
+		h1 {
+			font-weight: 600;
+			font-size: 15px;
+			color: #344767;
+			word-wrap: break-word;
+			font-family: 'Open Sans', sans-serif;
+			margin-bottom: 3px;
+		}
+		p {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			width: 90%;
+			line-height: 1.25;
+			font-size: 14px;
 
+			color: #67748e;
+		}
+	}
+	.teammate_view_profile {
+		width: 20%;
+		height: 100%;
+	}
+	h6 {
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 13px;
+		white-space: nowrap;
+		color: rgb(229, 29, 176);
+		font-family: 'Open Sans', sans-serif;
+	}
+}
 .my_profile_blogs_section {
 	width: 100%;
 	min-height: 50vh;
@@ -119,7 +178,7 @@
 	.blogs_card {
 		width: 31%;
 		margin: 20px 10px;
-		height: 380px;
+		height: 400px;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
@@ -129,18 +188,23 @@
 			font-size: 1.2rem;
 			letter-spacing: 1px;
 			margin: 10px 0;
+			font-family: 'Open Sans', sans-serif;
 		}
 		h2 {
 			font-weight: 700;
+			font-family: 'Open Sans', sans-serif;
 			font-size: 1rem;
 			letter-spacing: 1px;
 		}
 		p {
-			font-weight: 500;
-			font-size: 0.9rem;
+			letter-spacing: 1px;
 			margin: 10px 0;
 			max-height: 100px;
-			color: rgb(24, 24, 24);
+			font-weight: 400;
+			line-height: 1.5rem;
+			font-size: 15px;
+			color: #67748e;
+			font-family: 'Open Sans', sans-serif;
 		}
 		button {
 			width: 150px;
@@ -150,6 +214,7 @@
 			color: #b6228f;
 			font-weight: 600;
 			font-size: 1rem;
+			margin-top: 6px;
 			border: solid 2px #b6228f;
 		}
 	}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+<link rel="stylesheet" href="/style/_pages/edit_profile.css" />
+		<link rel="stylesheet" href="/style/_headers/headers.css" />
+		<link rel="stylesheet" href="/style/_pages/accountSettings.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="sub_header">
+				<div class="Header_icon">
+					<img src="/assets/icon.svg" alt="Logo" />
+				</div>
+
+				<div class="Header_Profile">
+					<div class="Icons">
+						<div class="points">
+							<p><span>🔥 </span>0</p>
+							<p><span>🎯 </span> 0</p>
+						</div>
+						<div class="score">
+							<p><span>⚡ </span> 200</p>
+							<p>
+								<span
+									><img src="/assets/coin (3).png" alt="notifiction"
+								/></span>
+								50
+							</p>
+						</div>
+					</div>
+					<img src="/assets/bell.svg" alt="notifiction" />
+					<img class="profile_pic" src="/assets/profile.jpg" alt="avatar" />
+				</div>
+			</div>
+		</header>
+		<div class="wholeBody">
+			<!-- //------------------------sidenav--------------------------- -->
+			<aside>
+				<div class="myMenu">
+					<a href="index.html">
+						<img src="/assets/self-growth3.png" alt="progress" />
+						<p>My Progress</p>
+					</a>
+					<a href="##">
+						<img src="/assets/stage.png" alt="bookmark" />
+						<p>Competitions</p>
+					</a>
+					<a href="##">
+						<img src="/assets/leaderboard.png" alt="leader" />
+						<p>Leaderboard</p>
+					</a>
+				</div>
+				<div class="myMenu">
+					<div class="title">
+						<h4>catalog</h4>
+					</div>
+					<a href="##">
+						<img src="/assets/career-choice.png" alt="progress" />
+						<p>Career Paths</p>
+					</a>
+					<a href="##">
+						<img src="/assets/online-course2.png" alt="leader" />
+						<p>Courses</p>
+					</a>
+					<a href="##">
+						<img src="/assets/project-management (2).png" alt="leader" />
+						<p>Projects</p>
+					</a>
+					<a href="##">
+						<img src="/assets/project.png" alt="leader" />
+						<p>Practice</p>
+					</a>
+					<a href="##">
+						<img src="/assets/clipboard.png" alt="leader" />
+						<p>Assessments</p>
+					</a>
+					<a href="##">
+						<img src="/assets/deadline.png" alt="leader" />
+						<p>Live Events</p>
+					</a>
+				</div>
+				<div class="myMenu">
+					<div class="title">
+						<h4>PROFILE</h4>
+					</div>
+					<a href="myProfile.html">
+						<img src="/assets/account (1).png" alt="progress" />
+						<p>My profile</p>
+					</a>
+					<a href="editProfile.html">
+						<img src="/assets/edit (1).png" alt="bookmark" />
+						<p>Edit profile</p>
+					</a>
+
+					<a id="active" href="##">
+						<img src="/assets/user (1).png" alt="leader" />
+						<p>Account Settings</p>
+					</a>
+					<a href="##">
+						<img src="/assets/logout (1).png" alt="leader" />
+						<p>Logout</p>
+					</a>
+				</div>
+				<button>Contact us</button>
+			</aside>
+
+			<div class="accountContainer">
+				<div class="bg-transparent shadow rounded-lg d-block d-sm-flex">
+					<div class="profile-tab-nav border-right">
+						<div class="p-4">
+							<div class="img-circle text-center mb-3">
+								<img src="/assets/profile.png" alt="Image" class="pic" />
+							</div>
+							<h4 class="text-center">Account Settings</h4>
+						</div>
+						<div
+							class="nav flex-column nav-pills"
+							id="v-pills-tab"
+							role="tablist"
+							aria-orientation="vertical"
+						>
+							<a
+								class="nav-link active"
+								id="account-tab"
+								data-toggle="pill"
+								href="#account"
+								role="tab"
+								aria-controls="account"
+								aria-selected="true"
+							>
+								<i class="fa fa-cart-plus text-center mr-1"></i>
+								Subscription
+							</a>
+							<a
+								class="nav-link"
+								id="notification-tab"
+								data-toggle="pill"
+								href="#notification"
+								role="tab"
+								aria-controls="notification"
+								aria-selected="false"
+							>
+								<i class="fa fa-bell text-center mr-1"></i>
+								Notification
+							</a>
+							<a
+								class="nav-link"
+								id="password-tab"
+								data-toggle="pill"
+								href="#password"
+								role="tab"
+								aria-controls="password"
+								aria-selected="false"
+							>
+								<i class="fa fa-key text-center mr-1"></i>
+								Password
+							</a>
+							<a
+								class="nav-link"
+								id="security-tab"
+								data-toggle="pill"
+								href="#security"
+								role="tab"
+								aria-controls="security"
+								aria-selected="false"
+							>
+								<i class="fa fa-history text-center mr-1"></i>
+								History
+							</a>
+							<a
+								class="nav-link"
+								id="application-tab"
+								data-toggle="pill"
+								href="#application"
+								role="tab"
+								aria-controls="application"
+								aria-selected="false"
+							>
+								<i class="fa fa-trash text-center mr-1"></i>
+								Delete My Account
+							</a>
+							
+						</div>
+					</div>
+					<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+						<div
+							class="tab-pane fade show active"
+							id="account"
+							role="tabpanel"
+							aria-labelledby="account-tab"
+						>
+							<h3 class="account_setting_heading">Subscription</h3>
+							<div class="my_progress_third_card">
+								<h1>
+									Please take your skill test so that we can improve your
+									recommendations and can suggest you better content or projects
+								</h1>
+								
+								<p>X</p>
+							</div>
+							<h3 class="account_setting_heading">Current Plan</h3>
+							<div class="current_plan">
+								
+							</div>
+							<div>
+								<button class="btn btn-primary">Update</button>
+								<button class="btn btn-light">Cancel</button>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="password"
+							role="tabpanel"
+							aria-labelledby="password-tab"
+						>
+							<h3 class="mb-4">Password Settings</h3>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Old password</label>
+										<input type="password" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>New password</label>
+										<input type="password" class="form-control" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Confirm new password</label>
+										<input type="password" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div>
+								<button class="btn btn-primary">Update</button>
+								<button class="btn btn-light">Cancel</button>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="security"
+							role="tabpanel"
+							aria-labelledby="security-tab"
+						>
+							<h3 class="mb-4">History Settings</h3>
+							
+							<div>
+								<button class="btn btn-primary">Update</button>
+								<button class="btn btn-light">Cancel</button>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="application"
+							role="tabpanel"
+							aria-labelledby="application-tab"
+						>
+							<h3 class="mb-4">Account Deletion</h3>
+							<h5>All your profile and learning data will be permanently deleted.</h5>
+							<div>
+								<button class="btn btn-primary">Delete My Account</button>
+								
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="notification"
+							role="tabpanel"
+							aria-labelledby="notification-tab"
+						>
+							<h3 class="mb-4">Notification Settings</h3>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="notification1"
+									/>
+									<label class="form-check-label" for="notification1">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Dolorum accusantium accusamus, neque cupiditate quis
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="notification2"
+									/>
+									<label class="form-check-label" for="notification2">
+										hic nesciunt repellat perferendis voluptatum totam porro
+										eligendi.
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="notification3"
+									/>
+									<label class="form-check-label" for="notification3">
+										commodi fugiat molestiae tempora corporis. Sed dignissimos
+										suscipit
+									</label>
+								</div>
+							</div>
+							<div>
+								<button class="btn btn-primary">Update</button>
+								<button class="btn btn-light">Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>

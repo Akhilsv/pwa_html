@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+$primary: #e72ed5;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+p {
+	margin-bottom: 0px;
+}
+.btn-primary {
+	color: #fff;
+	font-weight: 600;
+	background-color: #e72ed5;
+	border: none;
+	transition: all 0.5s ease;
+	&:hover {
+		background-color: #eb69de;
+	}
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: rgb(0, 0, 0);
+	background-color: #cecece;
+}
+.accountContainer {
+	width: 100%;
+	height: 100%;
+	max-height: calc(100vh - 60px);
+	padding: 0 40px;
+	display: grid;
+	place-items: center;
+	overflow: scroll;
+	padding: 15px;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+.shadow {
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
+}
+.border-right {
+	border-right: 0 solid transparent !important;
+}
+.profile-tab-nav {
+	min-width: 250px;
+	height: 375px;
+	margin-right: 20px;
+    border: solid 1px #000 !important;
+}
+.tab-content {
+	flex: 1;
+	min-height: 100%;
+}
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills {
+	a.nav-link {
+		padding: 15px 20px;
+		border-bottom: 1px solid #ddd;
+		border-radius: 0;
+		color: #333;
+		i {
+			width: 20px;
+		}
+	}
+}
+
+.img-circle {
+	display: none;
+	img {
+		height: 100px;
+		width: 100px;
+		border-radius: 100%;
+		border: 5px solid #fff;
+	}
+}
+.p-md-5 {
+	padding: 1.5rem !important;
+}
+.current_plan {
+	width: 90%;
+	height: 200px;
+	border: solid 1.5px #000;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+.account_setting_heading {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.my_progress_third_card {
+	width: 100%;
+
+	margin: 30px auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	flex-direction: column;
+	background: #cf2fba;
+	position: relative;
+	h1 {
+		font-size: 1.2rem;
+		color: #fff;
+		width: 90%;
+		font-weight: 500;
+	}
+	button {
+		width: 150px;
+		height: 40px;
+		outline: none;
+		border: none;
+		font-weight: 600;
+		margin-top: 20px;
+		border-radius: 10px;
+	}
+	p {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		color: #fff;
+		font-weight: 600;
+	}
+}

@@ -24,9 +24,54 @@
   }
 }
 
+.my_progess_top_buttons {
+  height: 80px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px auto;
+}
+
+.my_progess_top_buttons button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #d1d1d1;
+  border-radius: 20px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+}
+
+.my_progess_top_buttons .activebtn {
+  background: #cd27ff;
+}
+
+.my_progress_button_detail_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+}
+
 .my_progess_header {
   height: 40px;
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +81,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px auto;
   border-bottom: solid 1.5px #adadad;
 }
 
@@ -56,7 +100,7 @@
 }
 
 .my_progess_first_cards_holder {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +112,6 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px auto;
 }
 
 @media (max-width: 900px) {
@@ -164,6 +207,20 @@
 
 .nocontent {
   min-height: 300px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab.active {
+  background-color: #ccc;
 }
 
 .my_progess_first_card_footer {
@@ -400,7 +457,7 @@
 .my_progress_trending_header {
   width: 90%;
   height: 30px;
-  margin: 20px auto;
+  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +516,7 @@
   height: 180px;
   background: white;
   border-radius: 10px;
-  margin: 20px 20px 20px 0;
+  margin: 10px 20px 10px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: -webkit-box;

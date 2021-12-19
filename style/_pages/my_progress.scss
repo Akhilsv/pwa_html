@@ -12,14 +12,42 @@
 		max-height: 100%;
 	}
 }
-
+.my_progess_top_buttons {
+	height: 80px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px auto;
+	button {
+		width: 180px;
+		height: 40px;
+		border: none;
+		outline: none;
+		background: #d1d1d1;
+		border-radius: 20px;
+		color: #000;
+		font-weight: 600;
+		font-size: 1rem;
+		margin: 0 15px 0 0;
+		cursor: pointer;
+	}
+	& .activebtn {
+		background: #cd27ff;
+	}
+}
+.my_progress_button_detail_section {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 20px auto;
+}
 .my_progess_header {
 	height: 40px;
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 20px auto;
 	border-bottom: solid 1.5px rgb(173, 173, 173);
 	h1 {
 		font-size: 1.2rem;
@@ -38,12 +66,11 @@
 }
 
 .my_progess_first_cards_holder {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	margin: 20px auto;
 	@media (max-width: 900px) {
 		justify-content: center;
 	}
@@ -105,8 +132,19 @@
 		letter-spacing: 1px;
 	}
 }
+
 .nocontent {
 	min-height: 300px;
+}
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: flex;
+}
+.tab.active {
+	background-color: #ccc;
 }
 .my_progess_first_card_footer {
 	width: 100%;
@@ -248,7 +286,7 @@
 .my_progress_trending_header {
 	width: 90%;
 	height: 30px;
-	margin: 20px auto;
+	margin: 0px auto;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -282,9 +320,10 @@
 .my_progess_trending_card {
 	width: 31%;
 	height: 180px;
+
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
-	margin: 20px 20px 20px 0;
+	margin: 10px 20px 10px 0;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	display: flex;
 	justify-content: space-around;

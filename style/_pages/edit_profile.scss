@@ -391,3 +391,226 @@ input:focus + label {
 		display: none;
 	}
 }
+.add_tags {
+	width: 40%;
+	padding: 20px;
+	.tag-disp {
+		width: 100%;
+		padding: 0 0 1% 0;
+		font-size: 0.8rem;
+	}
+}
+.tag {
+	display: inline-block;
+	padding: 5px 10px 5px 5px;
+	border-radius: 5px;
+	background-color: #fc00bd;
+	color: #ffffff;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 0.8rem;
+	outline: none;
+	border: 1px solid #fc00bd;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.tag::after {
+	display: inline-block;
+	margin-left: 5px;
+	content: 'x';
+}
+
+.tag:hover {
+	background-color: #ffff;
+	color: #fc00bd;
+}
+.form-textinput {
+	font-size: 1.1rem;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-width: 1px;
+	border-color: #000000;
+	width: 100%;
+	height: 30px;
+}
+
+.form-textinput:focus {
+	outline: none;
+	border-color: var(--appcolor);
+}
+
+.form-textinput::-webkit-outer-spin-button,
+.form-textinput::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-textinput[type='number'] {
+	-moz-appearance: textfield;
+}
+.editProfiletabcontentTwo {
+	position: relative;
+}
+.add_form_box {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -80px;
+	left: 20px;
+	border-radius: 50%;
+	div {
+		width: 70px;
+		height: 70px;
+		color: #fff;
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+	}
+	.add {
+		background-color: #fc00bd;
+		font-size: 1.5rem;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: 0.8s;
+		}
+	}
+}
+.deleteButton {
+	width: 100px;
+	height: 35px;
+	color: #fff;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	border: 1px solid #ff0052;
+	color: #ff0052;
+	float: right;
+	&:hover {
+		background-color: #ff0052;
+		color: #fff;
+	}
+}
+.nav_buttons_container {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	.nav_buttons_box {
+		margin: 20px;
+		button {
+			width: 150px;
+			height: 35px;
+			border: none;
+			outline: none;
+			background: rgba(10, 24, 46, 1);
+			color: #fff;
+			border-radius: 5px;
+		}
+	}
+}
+#toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    top: 40px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #img{
+	width: 50px;
+	height: 50px;
+    
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    box-sizing: border-box;
+
+    
+    background-color: #111;
+    color: #fff;
+}
+#toast #desc{
+
+    
+    color: #fff;
+   
+    padding: 16px;
+    
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 40px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 40px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 40px; opacity: 1;} 
+    to {top: 70px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 40px; opacity: 1;}
+    to {top: 70px; opacity: 0;}
+}

@@ -96,7 +96,7 @@
 						<h4>PROFILE</h4>
 					</div>
 					<a
-						href="##"
+						href="myProfile.html"
 						
 					>
 						<img src="/assets/account (1).png" alt="progress" />
@@ -110,7 +110,7 @@
 						<p>Edit profile</p>
                         
 					</a>
-					<a href="##">
+					<a href="accountSettings.html">
 						<img src="/assets/user (1).png" alt="leader" />
 						<p>Account Settings</p>
 					</a>
@@ -277,7 +277,7 @@
 
 							</div>
 									<div class="details_edit">
-								<div class="form__group field">
+								<!-- <div class="form__group field">
 							<input
 								type="input"
 								class="form__field"
@@ -287,8 +287,21 @@
 								required
 							/>
 							<label for="Skills" class="form__label">Skills</label>
+						</div> -->
+						<div class="add_tags">
+							 <div class="tag-disp" id="skillsTags"></div>
+                <div data-title="Skill's" class="form-item">
+                    <textarea class="form-textinput" id="skills" style="width: 100%;" placeholder="Skills"></textarea>
+                </div>
 						</div>
-						<div class="form__group field">
+						<div class="add_tags">
+								 <div class="tag-disp" id="spokenLanguagesTags"></div>
+                <div data-title="Spoken Language's" class="form-item">
+                    <textarea class="form-textinput" id="spokenLanguages" style="width: 100%;" placeholder="Languages"></textarea>
+                </div>
+						</div>
+					
+						<!-- <div class="form__group field">
 							<input
 								type="input"
 								class="form__field"
@@ -298,7 +311,7 @@
 								required
 							/>
 							<label for="Languages" class="form__label">Languages</label>
-						</div>
+						</div> -->
 
 							</div>
 							<div class="details_edit">
@@ -329,13 +342,20 @@
 							</div>
 
 							</div>
-
-
-
+							<!-- //------------spokenlanguages------ -->
 					</form>
+						<!-- //--------------------------------  -->
+							<div class="nav_buttons_container">
+								<div class="nav_buttons_box">
+									<button onclick="openTab(event, 'tab2')">Next</button>
+								</div>
+							</div>
+						<!--  -->
 				</div>
-				<div id="tab2" class="editProfiletabcontent">
-					<div class="Educational_edit">
+				<div id="tab2" class="editProfiletabcontent  ">
+					<div class="editProfiletabcontentTwo">
+							<div class="Educational_edit" id="educationalinfoform-collection">
+						<div class="deleteButton" onclick="destroyForm('educationalinfoform-collection')" data-eduformid="educationalinfoform-collection">Remove</div>
 						<div class="title">Highest Qualification Details</div>
 						<div class="form__group field">
 									<input
@@ -411,7 +431,25 @@
 							</label>
 							<input type="file" name="file" id="file">
 						</div>
+						
 					</div>
+						<div class="add_form_box">
+							<div class='add' onclick="addmoreforms()">+</div>
+
+
+						</div>
+							
+				
+					</div>
+				<!-- //--------------------------------  -->
+							<div class="nav_buttons_container">
+								<div class="nav_buttons_box">
+									<button onclick="openTab(event, 'tab1')">Previous</button>
+									<button onclick="openTab(event, 'tab3')">Next</button>
+								</div>
+							</div>
+						<!--  -->
+					
 				</div>
 				<div id="tab3" class="editProfiletabcontent">
 					<div class="Educational_edit">
@@ -514,6 +552,15 @@
 							<input type="file" name="file" id="file">
 						</div>
 					</div>
+					<!-- //--------------------------------  -->
+							<div class="nav_buttons_container">
+								<div class="nav_buttons_box">
+									<button onclick="openTab(event, 'tab2')">Previous</button>
+									<button onclick="launch_toast()">Save</button>
+								</div>
+							</div>
+						<!--  -->
+						<div id="toast"><div id="img">👍</div><div id="desc">Submitted Successfully</div></div>
 				</div>
 			</section>
             <script src="./app.js"></script>
@@ -535,5 +582,7 @@
 	evt.currentTarget.className += ' active';
 }
             </script>
+<script src="app.js"></script>
+
 </body>
 </html>
