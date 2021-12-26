@@ -3,5 +3,92 @@
 	min-height: 90vh;
 	max-height: calc(100vh - 60px);
 	padding: 0px 40px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.leader_title {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	h1 {
+		font-size: 1.5rem;
+	}
+	.leader_board_switch {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 200px;
+		.item {
+			font-weight: 600;
+			font-size: 1rem;
+			border-bottom: 2px solid transparent;
+			cursor: pointer;
+			&:hover {
+				border-bottom: 2px solid rgb(236, 30, 226);
+			}
+		}
+	}
+}
+table {
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	th {
+		text-align: center;
+	}
+	tr {
+		text-align: center;
+	}
+	tbody {
+		tr {
+			td {
+				background-color: rgba(0, 0, 255, 0);
+				font-size: 0.9rem;
+			}
+		}
+		.row_class {
+			display: flex;
+			align-items: center;
+			img {
+				border-radius: 50%;
+			}
+		}
+	}
+}
+#example_filter input {
+	border-radius: 5px;
+	margin: 10px;
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	outline-color: rgba(51, 51, 51, 0.356);
+	padding: 6px 10px;
+}
+.paginate_button {
+	padding: 5px !important;
+	min-width: 15px !important;
+	margin: 0 4px;
+	transition: all 0.2s ease;
+}
+.dataTables_info {
+	display: none;
+}
+.row_class {
+	font-weight: 600;
+	height: 50px;
+}
+#header {
+	height: 60px;
+}
+#search {
+	display: none;
+}
+#example_length {
+	display: none;
+}
+#example_paginate {
+	margin: 10px;
+	float: none;
+	text-align: center;
 }

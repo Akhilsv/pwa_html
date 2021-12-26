@@ -241,6 +241,14 @@
   color: #000;
   font-weight: 600;
   font-size: 1rem;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.my_progess_first_card_footer button:hover {
+  background: #dac8df;
 }
 
 .my_progress_second_section_holder {
@@ -425,6 +433,7 @@
   font-weight: 600;
   margin-top: 20px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .my_progress_third_card p {
@@ -433,6 +442,10 @@
   right: 30px;
   color: #fff;
   font-weight: 600;
+}
+
+.close_banner {
+  cursor: pointer;
 }
 
 .my_progess_trending_holder {
@@ -721,5 +734,24 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.my_progress_campus_card .row_avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 60%;
+}
+
+.my_progress_campus_card .row_avatar img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=my_progress.css.map */

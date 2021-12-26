@@ -122,11 +122,11 @@
 						<img src="/assets/career-choice.png" alt="progress" />
 						<p>Career Paths</p>
 					</a>
-					<a href="##">
+					<a href="courses.html">
 						<img src="/assets/online-course2.png" alt="leader" />
 						<p>Courses</p>
 					</a>
-					<a href="##">
+					<a href="projects.html">
 						<img src="/assets/project-management (2).png" alt="leader" />
 						<p>Projects</p>
 					</a>
@@ -175,7 +175,7 @@
 							<div class="img-circle text-center mb-3">
 								<img src="/assets/profile.png" alt="Image" class="pic" />
 							</div>
-							<h4 class="text-center account_setting_heading">
+							<h4 class="text-center account_setting_heading no-border-bottom">
 								Account Settings
 							</h4>
 						</div>
@@ -266,13 +266,22 @@
 									recommendations and can suggest you better content or projects
 								</h1>
 
-								<p>X</p>
+								<p class="close_banner">X</p>
 							</div>
-							<h3 class="account_setting_heading">Current Plan</h3>
-							<div class="current_plan"></div>
-							<div>
-								<button class="btn btn-primary">Update</button>
-								<button class="btn btn-light">Cancel</button>
+							<h3 class="account_setting_heading no-border-bottom">
+								Current Plan
+							</h3>
+							<div class="current_plan">
+								<div class="free_trail_holder">
+									<h1>Free Trail</h1>
+									<p>Lorem ipsum, dolor sit amet consectetur</p>
+									<p>Lorem ipsum, dolor sit amet consectetur</p>
+									<p>Lorem ipsum, dolor sit amet consectetur</p>
+								</div>
+								<div class="doller_holder">
+									<h1><span>$1000</span>/year</h1>
+									<button class="btn btn-primary">Upgrade to Pro</button>
+								</div>
 							</div>
 						</div>
 						<div
@@ -315,6 +324,19 @@
 								are used to grant access to Groups. You can learn more about
 								Groups here.
 							</p>
+							<div class="primary_email_holder">
+								<h5>Primary Email</h5>
+								<div class="email_holder">
+									<p>akhilsv@gmail.com</p>
+									<p>Verified</p>
+								</div>
+							</div>
+							<div class="primary_email_holder">
+								<h5>Additional Email</h5>
+								<p>You don't have any additional email.</p>
+								<input type="password" class="form-control" />
+							</div>
+							<button class="btn btn-primary">Add Email</button>
 						</div>
 						<div
 							class="tab-pane fade"
@@ -322,11 +344,35 @@
 							role="tabpanel"
 							aria-labelledby="security-tab"
 						>
-							<h3 class="mb-4 account_setting_heading">History Settings</h3>
-
-							<div>
-								<button class="btn btn-primary">Update</button>
-								<button class="btn btn-light">Cancel</button>
+							<div class="history_header">
+								<h1
+									class="slideHistoryTabLinks"
+									id="defaultslideHistoryTabLinks"
+									onclick="slideHistoryTab(event,'transaction')"
+								>
+									Transaction History
+								</h1>
+								<h1
+									class="slideHistoryTabLinks"
+									onclick="slideHistoryTab(event,'login')"
+								>
+									Login History
+								</h1>
+								<h1
+									class="slideHistoryTabLinks"
+									onclick="slideHistoryTab(event,'enrollment')"
+								>
+									Enrollment History
+								</h1>
+							</div>
+							<div class="slideHistoryTabContent" id="transaction">
+								<h1>Transaction History</h1>
+							</div>
+							<div class="slideHistoryTabContent" id="login">
+								<h1>Login History</h1>
+							</div>
+							<div class="slideHistoryTabContent" id="enrollment">
+								<h1>Enrollment Historyory</h1>
 							</div>
 						</div>
 						<div
@@ -429,6 +475,30 @@
 				let x = 'http://127.0.0.1:5502/accountSettings.html ' + location.hash;
 				localStorage.setItem('lastTab', id);
 			};
+			document.getElementById('defaultslideHistoryTabLinks').click();
+
+			function slideHistoryTab(evt, cityName) {
+				console.log(cityName);
+				let i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName('slideHistoryTabContent');
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('slideHistoryTabLinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(
+						'activeSlide',
+						'',
+					);
+				}
+				document.getElementById(cityName).style.display = 'flex';
+				evt.currentTarget.className += ' activeSlide';
+			}
+			const closeBanner = document.querySelector('.close_banner');
+			const banner = document.querySelector('.my_progress_third_card');
+			closeBanner.addEventListener('click', () => {
+				banner.style.display = 'none';
+			});
 		</script>
 	</body>
 </html>

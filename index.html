@@ -108,11 +108,11 @@
 						<img src="/assets/career-choice.png" alt="progress" />
 						<p>Career Paths</p>
 					</a>
-					<a href="##">
+					<a href="courses.html">
 						<img src="/assets/online-course2.png" alt="leader" />
 						<p>Courses</p>
 					</a>
-					<a href="##">
+					<a href="projects.html">
 						<img src="/assets/project-management (2).png" alt="leader" />
 						<p>Projects</p>
 					</a>
@@ -370,17 +370,36 @@
 							</div>
 							<div class="campus_card_row">
 								<h5 class="three">1</h5>
-								<h5 class="six">Akhil</h5>
+
+								<div class="row_avatar">
+									<img
+										src="/assets/profile.jpg"
+										alt="avatar"
+									/>
+									<h5 class="six">Akhil</h5>
+								</div>
 								<h5 class="three">1200</h5>
 							</div>
 							<div class="campus_card_row">
 								<h5 class="three">1</h5>
-								<h5 class="six">Akhil</h5>
+								<div class="row_avatar">
+									<img
+										src="/assets/profile.jpg"
+										alt="avatar"
+									/>
+									<h5>Akhil</h5>
+								</div>
 								<h5 class="three">1200</h5>
 							</div>
 							<div class="campus_card_row">
 								<h5 class="three">1</h5>
-								<h5 class="six">Akhil</h5>
+								<div class="row_avatar">
+									<img
+										src="/assets/profile.jpg"
+										alt="avatar"
+									/>
+									<h5 >Akhil</h5>
+								</div>
 								<h5 class="three">1200</h5>
 							</div>
 						</div>
@@ -393,7 +412,7 @@
 						recommendations and can suggest you better content or projects
 					</h1>
 					<button>Take Test</button>
-					<p>X</p>
+					<p class="close_banner">X</p>
 				</div>
 
 				<div class="my_progress_trending_header">
@@ -729,6 +748,11 @@
 					tab.classList.add('active');
 					target.classList.add('active');
 				});
+			});
+			const closeBanner = document.querySelector('.close_banner');
+			const banner = document.querySelector('.my_progress_third_card');
+			closeBanner.addEventListener('click', () => {
+				banner.style.display = 'none';
 			});
 		</script>
 	</body>

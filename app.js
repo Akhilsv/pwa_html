@@ -105,8 +105,152 @@ document.addEventListener('click', function (event) {
 	var isClickInsideBell = notification_bell.contains(event.target);
 	if (!isClickInsideAvatar) {
 		Profile_dropDown.style.opacity = '0';
+		Profile_dropDown.style.pointerEvents = 'none';
+
 	}
 	if (!isClickInsideBell) {
 		notification_dropDown.style.opacity = '0';
+		notification_dropDown.style.pointerEvents = 'none';
+
 	}
+});
+
+// ---------leaderboard data------------------------
+
+var dataSet = [
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'01',
+		'wipro',
+		'70',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'02',
+		'tcs',
+		'90',
+		'885',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'03',
+		'wipro',
+		'30',
+		'785',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'04',
+		'tcs',
+		'10',
+		'85',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'05',
+		'wipro',
+		'50',
+		'385',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'02',
+		'tcs',
+		'80',
+		'685',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'01',
+		'wipro',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'01',
+		'tcs',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'01',
+		'wipro',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'01',
+		'tcs',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'01',
+		'wipro',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'01',
+		'tcs',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+		'01',
+		'wipro',
+		'80',
+		'985',
+		'VTU',
+	],
+	[
+		`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+		'01',
+		'tcs',
+		'80',
+		'985',
+		'VTU',
+	],
+];
+
+$(document).ready(function () {
+	$('#example').DataTable({
+		data: dataSet,
+		order: [],
+		language: {
+			searchPlaceholder: 'Search',
+			search: `<img id="search" src="https://img.icons8.com/office/16/000000/search--v2.png"/>`,
+		},
+		lengthMenu: [
+			[5, 10, 25, 50, -1],
+			[5, 10, 25, 50, 'All'],
+		],
+		columns: [
+			{ title: 'Candidate Name' },
+			{ title: 'Rank' },
+			{ title: 'Courese' },
+			{ title: 'Level' },
+			{ title: 'Score' },
+			{ title: 'University' },
+		],
+	});
 });

@@ -10,6 +10,22 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<meta charset="UTF-8" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
+		/>
+		<script
+			type="text/javascript"
+			language="javascript"
+			src="https://code.jquery.com/jquery-3.3.1.js"
+		></script>
+		<script
+			type="text/javascript"
+			language="javascript"
+			src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"
+		></script>
 		<title>Document</title>
 	</head>
 	<body>
@@ -104,11 +120,11 @@
 						<img src="/assets/career-choice.png" alt="progress" />
 						<p>Career Paths</p>
 					</a>
-					<a href="##">
+					<a href="courses.html">
 						<img src="/assets/online-course2.png" alt="leader" />
 						<p>Courses</p>
 					</a>
-					<a href="##">
+					<a href="projects.html">
 						<img src="/assets/project-management (2).png" alt="leader" />
 						<p>Projects</p>
 					</a>
@@ -152,10 +168,31 @@
 			<!---------------LeaderBoard section---------------------->
 
 			<section class="leader_board_section">
-				<h1>LeaderBoard</h1>
+				<div class="leader_title">
+					<h1>Groups and Leaderboards</h1>
+					<!-- <div class="leader_board_switch">
+						<div class="item">
+							Global
+						</div>
+						<div class="item">
+							My College
+						</div>
+					</div> -->
+				</div>
+				<table id="example" class="display compact" style="width: 100%">
+					<thead>
+						<tr id="header">
+							<th>Candidate Name</th>
+							<th>Rank</th>
+							<th>Courese</th>
+							<th>Level</th>
+							<th>Score</th>
+							<th>University</th>
+						</tr>
+					</thead>
+				</table>
 			</section>
 		</div>
 		<script src="./app.js"></script>
-
 	</body>
 </html>

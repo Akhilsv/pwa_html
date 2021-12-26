@@ -52,7 +52,7 @@ p {
 
 .profile-tab-nav {
   min-width: 250px;
-  height: 370px;
+  height: 368px;
   margin-right: 20px;
   margin-left: 40px;
   margin-top: 50px;
@@ -105,13 +105,82 @@ p {
   width: 90%;
   height: 180px;
   border: solid 1.5px #000;
-  margin-bottom: 15px;
+  margin: 15px 0;
   border-radius: 10px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.free_trail_holder {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.free_trail_holder h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: magenta;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.free_trail_holder p {
+  font-weight: 500;
+}
+
+.doller_holder {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doller_holder h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.doller_holder span {
+  font-size: 1.6rem;
 }
 
 .account_setting_heading {
   font-size: 1.2rem;
   font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #000;
+}
+
+.no-border-bottom {
+  border: none;
+  padding-bottom: 0;
 }
 
 .my_progress_third_card {
@@ -158,6 +227,46 @@ p {
   right: 30px;
   color: #fff;
   font-weight: 600;
+}
+
+.primary_email_holder {
+  width: 100%;
+  margin: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.primary_email_holder h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.primary_email_holder p {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.primary_email_holder .email_holder {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .no-emails {
@@ -265,5 +374,48 @@ p {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.close_banner {
+  cursor: pointer;
+}
+
+.history_header {
+  height: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1.5px #adadad;
+}
+
+.history_header h1 {
+  font-size: 1rem;
+  margin: 0 22px 0 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  height: 41px;
+}
+
+.activeSlide {
+  border-bottom: solid 2px #000;
+  color: #cd27ff;
+}
+
+.slideHistoryTabContent {
+  display: none;
+  padding: 50px 0;
+}
+
+.slideHistoryTabContent h1 {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=accountSettings.css.map */
