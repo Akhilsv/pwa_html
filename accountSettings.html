@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -25,7 +25,7 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
 			rel="stylesheet"
 		/>
-<link rel="stylesheet" href="/style/_pages/edit_profile.css" />
+		<link rel="stylesheet" href="/style/_pages/edit_profile.css" />
 		<link rel="stylesheet" href="/style/_headers/headers.css" />
 		<link rel="stylesheet" href="/style/_pages/accountSettings.css" />
 		<title>Document</title>
@@ -54,7 +54,39 @@
 						</div>
 					</div>
 					<img src="/assets/bell.svg" alt="notifiction" />
-					<img class="profile_pic" src="/assets/profile.jpg" alt="avatar" />
+					<img
+						class="profile_pic avatar"
+						src="/assets/profile.jpg"
+						alt="avatar"
+					/>
+					<div class="profile_dropDown">
+						<a href="#" class="profile_dropDown_item">
+							<span
+								><img
+									src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-dashboard-blogger-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+							/></span>
+							<p>View Dashboard</p>
+						</a>
+						<a href="#" class="profile_dropDown_item">
+							<span
+								><img src="https://img.icons8.com/ios/50/000000/user.png"
+							/></span>
+							<p>View Profile</p>
+						</a>
+						<a href="#" class="profile_dropDown_item">
+							<span
+								><img
+									src="https://img.icons8.com/ios/50/000000/user-not-found.png"
+							/></span>
+							<p>Edit</p>
+						</a>
+						<a href="#" class="profile_dropDown_item">
+							<span
+								><img src="https://img.icons8.com/windows/32/000000/exit.png"
+							/></span>
+							<p>Logout</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -136,7 +168,9 @@
 							<div class="img-circle text-center mb-3">
 								<img src="/assets/profile.png" alt="Image" class="pic" />
 							</div>
-							<h4 class="text-center account_setting_heading">Account Settings</h4>
+							<h4 class="text-center account_setting_heading">
+								Account Settings
+							</h4>
 						</div>
 						<div
 							class="nav flex-column nav-pills"
@@ -152,6 +186,7 @@
 								role="tab"
 								aria-controls="account"
 								aria-selected="true"
+								onclick="myHash('account')"
 							>
 								<i class="fa fa-cart-plus text-center mr-1"></i>
 								Subscription
@@ -164,6 +199,7 @@
 								role="tab"
 								aria-controls="notification"
 								aria-selected="false"
+								onclick="myHash('notification')"
 							>
 								<i class="fa fa-bell text-center mr-1"></i>
 								Notification
@@ -176,6 +212,7 @@
 								role="tab"
 								aria-controls="password"
 								aria-selected="false"
+								onclick="myHash('password')"
 							>
 								<i class="fa fa-key text-center mr-1"></i>
 								Password
@@ -188,6 +225,7 @@
 								role="tab"
 								aria-controls="security"
 								aria-selected="false"
+								onclick="myHash('security')"
 							>
 								<i class="fa fa-history text-center mr-1"></i>
 								History
@@ -200,11 +238,11 @@
 								role="tab"
 								aria-controls="application"
 								aria-selected="false"
+								onclick="myHash('application')"
 							>
 								<i class="fa fa-trash text-center mr-1"></i>
 								Delete My Account
 							</a>
-							
 						</div>
 					</div>
 					<div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
@@ -220,13 +258,11 @@
 									Please take your skill test so that we can improve your
 									recommendations and can suggest you better content or projects
 								</h1>
-								
+
 								<p>X</p>
 							</div>
 							<h3 class="account_setting_heading">Current Plan</h3>
-							<div class="current_plan">
-								
-							</div>
+							<div class="current_plan"></div>
 							<div>
 								<button class="btn btn-primary">Update</button>
 								<button class="btn btn-light">Cancel</button>
@@ -261,10 +297,17 @@
 									</div>
 								</div>
 							</div>
+
 							<div>
-								<button class="btn btn-primary">Update</button>
-								<button class="btn btn-light">Cancel</button>
+								<button class="btn btn-primary">Change Password</button>
 							</div>
+							<h3 class="mb-4 account_setting_heading">Email</h3>
+							<p>
+								All emails addresses that are associated with your account are
+								listed below. Verified emails have a checkmark next to them and
+								are used to grant access to Groups. You can learn more about
+								Groups here.
+							</p>
 						</div>
 						<div
 							class="tab-pane fade"
@@ -273,7 +316,7 @@
 							aria-labelledby="security-tab"
 						>
 							<h3 class="mb-4 account_setting_heading">History Settings</h3>
-							
+
 							<div>
 								<button class="btn btn-primary">Update</button>
 								<button class="btn btn-light">Cancel</button>
@@ -286,10 +329,11 @@
 							aria-labelledby="application-tab"
 						>
 							<h3 class="mb-4 account_setting_heading">Account Deletion</h3>
-							<p>All your profile and learning data will be permanently deleted.</p>
+							<p>
+								All your profile and learning data will be permanently deleted.
+							</p>
 							<div>
 								<button class="btn btn-primary">Delete My Account</button>
-								
 							</div>
 						</div>
 						<div
@@ -298,61 +342,86 @@
 							role="tabpanel"
 							aria-labelledby="notification-tab"
 						>
-							<h3 class="mb-4 account_setting_heading">Notification Settings</h3>
-							<div class="form-group">
-								<div class="form-check">
-									<input
-										class="form-check-input"
-										type="checkbox"
-										value=""
-										id="notification1"
-									/>
-									<label class="form-check-label" for="notification1">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Dolorum accusantium accusamus, neque cupiditate quis
-									</label>
+							<h3 class="mb-4 account_setting_heading">Notification</h3>
+							<h6>I want to recieve email about</h6>
+							<div class="notification-item">
+								<div class="content">
+									<h1>OnBoarding</h1>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
 								</div>
+
+								<label class="switch">
+									<input type="checkbox" checked />
+									<span class="slider round"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<div class="form-check">
-									<input
-										class="form-check-input"
-										type="checkbox"
-										value=""
-										id="notification2"
-									/>
-									<label class="form-check-label" for="notification2">
-										hic nesciunt repellat perferendis voluptatum totam porro
-										eligendi.
-									</label>
+							<div class="notification-item">
+								<div class="content">
+									<h1>OnBoarding</h1>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
 								</div>
+
+								<label class="switch">
+									<input type="checkbox" />
+									<span class="slider round"></span>
+								</label>
 							</div>
-							<div class="form-group">
-								<div class="form-check">
-									<input
-										class="form-check-input"
-										type="checkbox"
-										value=""
-										id="notification3"
-									/>
-									<label class="form-check-label" for="notification3">
-										commodi fugiat molestiae tempora corporis. Sed dignissimos
-										suscipit
-									</label>
+							<div class="notification-item">
+								<div class="content">
+									<h1>OnBoarding</h1>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
 								</div>
+
+								<label class="switch">
+									<input type="checkbox" />
+									<span class="slider round"></span>
+								</label>
 							</div>
+							<div class="notification-item">
+								<div class="content">
+									<h1>OnBoarding</h1>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+								</div>
+
+								<label class="switch">
+									<input type="checkbox" />
+									<span class="slider round"></span>
+								</label>
+							</div>
+							<div class="notification-item no-emails">
+								<div class="content">
+									<h1>Don't send me any emails</h1>
+									<p>
+										You only receive necessary emails such as for password
+										reset. All the above will be turned off.
+									</p>
+								</div>
+
+								<label class="switch">
+									<input type="checkbox" />
+									<span class="slider round"></span>
+								</label>
+							</div>
+
 							<div>
-								<button class="btn btn-primary">Update</button>
-								<button class="btn btn-light">Cancel</button>
+								<button class="btn btn-primary">Save All Changes</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="./app.js"></script>
+		<script>
+			const myHash = (id) => {
+				location.hash = id;
+				let x = 'http://127.0.0.1:5502/accountSettings.html ' + location.hash;
+				localStorage.setItem('lastTab', id);
+			};
+		</script>
 	</body>
 </html>

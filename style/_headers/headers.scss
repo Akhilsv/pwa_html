@@ -25,7 +25,6 @@ header {
 	display: grid;
 	place-items: center;
 	.sub_header {
-		
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -94,6 +93,7 @@ header {
 				width: 45px;
 				border-radius: 50%;
 				height: 45px;
+				cursor: pointer;
 			}
 		}
 	}
@@ -185,6 +185,55 @@ aside {
 		}
 	}
 }
-#active{
+#active {
 	color: #ff00d4;
+}
+.avatar {
+	margin: 0 30px;
+	display: grid;
+	place-items: center;
+	height: 40px;
+	width: 40px;
+}
+.profile_dropDown {
+	width: 220px;
+	height: 250px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 58px;
+	right: 25px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	transition-duration: 0.5s;
+	z-index: 5;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	opacity: 0;
+	pointer-events: none;
+}
+.profile_dropDown_item {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	max-width: 220px;
+	width: 100%;
+	z-index: 5;
+	text-decoration: none;
+	color: #000;
+	border-left: solid 5px transparent;
+	font-weight: 500;
+}
+.profile_dropDown_item:hover {
+	border-left-color: rgb(236, 69, 208);
+	background-color: #e0e0e0;
+	color: rgb(236, 69, 208);
+	font-weight: 600;
+}
+.profile_dropDown_item span {
+	margin: 10px;
+}
+.profile_dropDown_item span img {
+	width: 22px;
+	object-fit: contain;
 }

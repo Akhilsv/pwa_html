@@ -76,3 +76,20 @@ function launch_toast() {
 		x.className = x.className.replace('show', '');
 	}, 5000);
 }
+ const Profile = document.querySelector('.avatar');
+ const Profile_dropDown = document.querySelector('.profile_dropDown');
+ Profile.addEventListener('click', () => {
+		if (Profile_dropDown.style.opacity === '1') {
+			Profile_dropDown.style.opacity = '0';
+			Profile_dropDown.style.pointerEvents = 'none';
+		} else {
+			Profile_dropDown.style.opacity = '1';
+			Profile_dropDown.style.pointerEvents = 'all';
+		}
+ });
+ document.addEventListener('click', function (event) {
+		var isClickInsideElement = Profile.contains(event.target);
+		if (!isClickInsideElement) {
+			Profile_dropDown.style.opacity = '0';
+		}
+ });
