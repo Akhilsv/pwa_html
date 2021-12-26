@@ -307,16 +307,21 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 40px;
 }
 
 .my_progress_campus_holder {
+  height: 90%;
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -455,18 +460,38 @@
 }
 
 .my_progress_trending_header {
-  width: 90%;
+  width: 87%;
   height: 30px;
-  margin: 0px auto;
+  margin: 0px 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.my_progress_trending_header .heading_icon_holder {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my_progress_trending_header p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .my_progress_trending_header h1 {
@@ -557,6 +582,20 @@
           align-items: center;
 }
 
+.my_progess_trending_card_header .resolution {
+  width: 40px;
+  height: 20px;
+  background: #fbff04;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.my_progess_trending_card_header .resolution p {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
 .my_progess_trending_card_header img {
   width: 30px;
   height: 30px;
@@ -617,7 +656,7 @@
 
 .my_progress_campus_card {
   width: 280px;
-  height: 170px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

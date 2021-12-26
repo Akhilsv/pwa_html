@@ -197,11 +197,14 @@
 }
 .second {
 	justify-content: flex-end;
+	align-items: flex-start;
+	height: 40px;
 }
 .my_progress_campus_holder {
+	height: 90%;
 	width: 30%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-end;
 	flex-direction: column;
 }
@@ -285,12 +288,24 @@
 	}
 }
 .my_progress_trending_header {
-	width: 90%;
+	width: 87%;
 	height: 30px;
-	margin: 0px auto;
+	margin: 0px 55px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
+	& .heading_icon_holder {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	p{
+		font-size: 1rem;
+		font-weight: 500;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
 	h1 {
 		font-size: 1.2rem;
 		margin: 0 20px 0 0;
@@ -343,6 +358,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	& .resolution {
+		width: 40px;
+		height: 20px;
+		background: rgb(251, 255, 4);
+		display: grid;
+		place-items: center;
+		p {
+			font-size: 0.6rem;
+			font-weight: 600;
+		}
+	}
 	img {
 		width: 30px;
 		height: 30px;
@@ -389,7 +415,7 @@
 }
 .my_progress_campus_card {
 	width: 280px;
-	height: 170px;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
