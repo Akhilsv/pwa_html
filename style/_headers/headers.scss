@@ -100,6 +100,7 @@ header {
 }
 aside {
 	width: 250px;
+	max-width: 250px;
 	height: calc(100vh - 60px);
 	background-color: $sidenav;
 	display: flex;
@@ -219,7 +220,7 @@ aside {
 	max-width: 220px;
 	width: 100%;
 	z-index: 5;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #000;
 	border-left: solid 5px transparent;
 	font-weight: 500;
@@ -236,4 +237,29 @@ aside {
 .profile_dropDown_item span img {
 	width: 22px;
 	object-fit: contain;
+}
+.notification_bell {
+	cursor: pointer;
+}
+.notification_dropdown {
+	width: 220px;
+	height: 250px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 58px;
+	right: 105px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 10px;
+	transition-duration: 0.5s;
+	z-index: 5;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	opacity: 0;
+	pointer-events: none;
+	h1 {
+		font-size: 1rem;
+		font-weight: 500;
+	}
 }

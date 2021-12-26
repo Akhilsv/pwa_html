@@ -76,20 +76,37 @@ function launch_toast() {
 		x.className = x.className.replace('show', '');
 	}, 5000);
 }
- const Profile = document.querySelector('.avatar');
- const Profile_dropDown = document.querySelector('.profile_dropDown');
- Profile.addEventListener('click', () => {
-		if (Profile_dropDown.style.opacity === '1') {
-			Profile_dropDown.style.opacity = '0';
-			Profile_dropDown.style.pointerEvents = 'none';
-		} else {
-			Profile_dropDown.style.opacity = '1';
-			Profile_dropDown.style.pointerEvents = 'all';
-		}
- });
- document.addEventListener('click', function (event) {
-		var isClickInsideElement = Profile.contains(event.target);
-		if (!isClickInsideElement) {
-			Profile_dropDown.style.opacity = '0';
-		}
- });
+const Profile = document.querySelector('.avatar');
+const Profile_dropDown = document.querySelector('.profile_dropDown');
+Profile.addEventListener('click', () => {
+	if (Profile_dropDown.style.opacity === '1') {
+		Profile_dropDown.style.opacity = '0';
+		Profile_dropDown.style.pointerEvents = 'none';
+	} else {
+		Profile_dropDown.style.opacity = '1';
+		Profile_dropDown.style.pointerEvents = 'all';
+	}
+});
+const notification_bell = document.querySelector('.notification_bell');
+const notification_dropDown = document.querySelector('.notification_dropdown');
+notification_bell.addEventListener('click', () => {
+	console.log('here');
+	if (notification_dropDown.style.opacity === '1') {
+		notification_dropDown.style.opacity = '0';
+		notification_dropDown.style.pointerEvents = 'none';
+	} else {
+		notification_dropDown.style.opacity = '1';
+		notification_dropDown.style.pointerEvents = 'all';
+	}
+});
+
+document.addEventListener('click', function (event) {
+	var isClickInsideAvatar = Profile.contains(event.target);
+	var isClickInsideBell = notification_bell.contains(event.target);
+	if (!isClickInsideAvatar) {
+		Profile_dropDown.style.opacity = '0';
+	}
+	if (!isClickInsideBell) {
+		notification_dropDown.style.opacity = '0';
+	}
+});

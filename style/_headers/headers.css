@@ -154,6 +154,7 @@ header .sub_header .Header_Profile .profile_pic {
 
 aside {
   width: 250px;
+  max-width: 250px;
   height: calc(100vh - 60px);
   background-color: #0a182e;
   display: -webkit-box;
@@ -331,7 +332,7 @@ aside .myMenu a p:hover {
   max-width: 220px;
   width: 100%;
   z-index: 5;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #000;
   border-left: solid 5px transparent;
   font-weight: 500;
@@ -352,5 +353,44 @@ aside .myMenu a p:hover {
   width: 22px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.notification_bell {
+  cursor: pointer;
+}
+
+.notification_dropdown {
+  width: 220px;
+  height: 250px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 58px;
+  right: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  z-index: 5;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notification_dropdown h1 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 /*# sourceMappingURL=headers.css.map */
