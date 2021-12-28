@@ -205,6 +205,19 @@
   letter-spacing: 1px;
 }
 
+.content {
+  min-height: 300px;
+  border: dotted 1px #272727;
+  background-color: rgba(4, 4, 255, 0.048);
+}
+
+.content h6 {
+  margin: auto;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
 .nocontent {
   min-height: 300px;
 }
@@ -662,7 +675,7 @@
   cursor: pointer;
 }
 
-#completed {
+#completed, #career_completed {
   border: dotted 1px #272727;
   background-color: rgba(4, 4, 255, 0.048);
 }

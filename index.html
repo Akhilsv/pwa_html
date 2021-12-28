@@ -160,13 +160,13 @@
 					<button
 						class="slidebtnLinks"
 						id="defaultslidebtnOpen"
-						onclick="slidebtn(event,'my_course_btn')"
+						onclick="slidebtn(event,'my_course_btn','in_progress','progress_1')"
 					>
 						My Courses
 					</button>
 					<button
 						class="slidebtnLinks"
-						onclick="slidebtn(event,'my_careerpath_btn')"
+						onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2')"
 					>
 						My Careerpath
 					</button>
@@ -179,13 +179,16 @@
 				>
 					<div class="my_progess_header">
 						<h1
-							class="slideTabLinks"
+							class="slideTabLinks progress_1"
 							id="defaultslideTabOpen"
-							onclick="slideTab(event,'in_progress')"
+							onclick="slideTab('progress_1','in_progress')"
 						>
 							In progess
 						</h1>
-						<h1 class="slideTabLinks" onclick="slideTab(event,'completed')">
+						<h1
+							class="slideTabLinks completed_1"
+							onclick="slideTab('completed_1','completed')"
+						>
 							Completed
 						</h1>
 					</div>
@@ -239,6 +242,67 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- -----in progress else-block-part---- -->
+					<!-- <div
+						class="my_progess_first_cards_holder content"
+						
+					>
+						<h6>No Completed Projects</h6>
+					</div> -->
+
+
+
+<!-- -----completed else-block-part---- -->
+					<!-- <div
+						class="my_progess_first_cards_holder"
+					>
+						<div class="my_progess_first_card">
+							<div class="my_progess_first_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<h1>Introduction to Python</h1>
+							</div>
+							<div class="my_progess_first_card_body">
+								<p>
+									Master the basics of data analysis in Python. Expand your
+									skillset by learning scientific computing with numpy.
+								</p>
+							</div>
+							<div class="my_progess_first_card_footer">
+								<button>go to course</button>
+							</div>
+						</div>
+						<div class="my_progess_first_card">
+							<div class="my_progess_first_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<h1>Introduction to Python</h1>
+							</div>
+							<div class="my_progess_first_card_body">
+								<p>
+									Master the basics of data analysis in Python. Expand your
+									skillset by learning scientific computing with numpy.
+								</p>
+							</div>
+							<div class="my_progess_first_card_footer">
+								<button>go to course</button>
+							</div>
+						</div>
+						<div class="my_progess_first_card">
+							<div class="my_progess_first_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<h1>Introduction to Python</h1>
+							</div>
+							<div class="my_progess_first_card_body">
+								<p>
+									Master the basics of data analysis in Python. Expand your
+									skillset by learning scientific computing with numpy.
+								</p>
+							</div>
+							<div class="my_progess_first_card_footer">
+								<button>go to course</button>
+							</div>
+						</div>
+					</div> -->
 					<div
 						class="my_progess_first_cards_holder slideTabContent nocontent"
 						id="completed"
@@ -253,20 +317,23 @@
 				>
 					<div class="my_progess_header">
 						<h1
-							class="slideTabLinks"
+							class="slideTabLinks progress_2"
 							id="defaultslideTabOpen"
-							onclick="slideTab(event,'in_progress')"
+							onclick="slideTab('progress_2','career_progress')"
 						>
 							In progess
 						</h1>
-						<h1 class="slideTabLinks" onclick="slideTab(event,'completed')">
+						<h1
+							class="slideTabLinks completed_2"
+							onclick="slideTab('completed_2','career_completed')"
+						>
 							Completed
 						</h1>
 					</div>
 
 					<div
 						class="my_progess_first_cards_holder slideTabContent"
-						id="in_progress"
+						id="career_progress"
 					>
 						<div class="my_progess_first_card">
 							<div class="my_progess_first_card_header">
@@ -316,12 +383,22 @@
 					</div>
 					<div
 						class="my_progess_first_cards_holder slideTabContent nocontent"
-						id="completed"
+						id="career_completed"
 					>
 						<h6>No Completed Projects</h6>
 					</div>
 				</div>
+	<!-- -----in progress else-block-part---- -->
+					<!-- <div
+						class="my_progess_first_cards_holder content"
+						
+					>
+						<h6>No Completed Projects</h6>
+					</div> -->
 
+
+
+<!-- -----completed else-block-part---- -->
 				<div class="my_progress_second_section_holder">
 					<div class="my_progress_your_buddy_holder">
 						<div class="my_progress_second_cards_header">
@@ -372,10 +449,7 @@
 								<h5 class="three">1</h5>
 
 								<div class="row_avatar">
-									<img
-										src="/assets/profile.jpg"
-										alt="avatar"
-									/>
+									<img src="/assets/profile.jpg" alt="avatar" />
 									<h5 class="six">Akhil</h5>
 								</div>
 								<h5 class="three">1200</h5>
@@ -383,10 +457,7 @@
 							<div class="campus_card_row">
 								<h5 class="three">1</h5>
 								<div class="row_avatar">
-									<img
-										src="/assets/profile.jpg"
-										alt="avatar"
-									/>
+									<img src="/assets/profile.jpg" alt="avatar" />
 									<h5>Akhil</h5>
 								</div>
 								<h5 class="three">1200</h5>
@@ -394,11 +465,8 @@
 							<div class="campus_card_row">
 								<h5 class="three">1</h5>
 								<div class="row_avatar">
-									<img
-										src="/assets/profile.jpg"
-										alt="avatar"
-									/>
-									<h5 >Akhil</h5>
+									<img src="/assets/profile.jpg" alt="avatar" />
+									<h5>Akhil</h5>
 								</div>
 								<h5 class="three">1200</h5>
 							</div>
@@ -697,10 +765,10 @@
 		<script src="./app.js"></script>
 		<script>
 			document.getElementById('defaultslidebtnOpen').click();
-			document.getElementById('defaultslideTabOpen').click();
 
 			function slideTab(evt, cityName) {
 				let i, tabcontent, tablinks;
+
 				tabcontent = document.getElementsByClassName('slideTabContent');
 				for (i = 0; i < tabcontent.length; i++) {
 					tabcontent[i].style.display = 'none';
@@ -713,11 +781,15 @@
 					);
 				}
 				document.getElementById(cityName).style.display = 'flex';
-				evt.currentTarget.className += ' activeSlide';
+				console.log(evt);
+
+				const event = document.getElementsByClassName(evt)[0];
+				event.classList.add("activeSlide");
 			}
 
-			function slidebtn(evt, cityName) {
+			function slidebtn(evt, cityName, defaultTabClass, evts) {
 				let i, tabcontent, tablinks;
+				slideTab(evts, defaultTabClass);
 				tabcontent = document.getElementsByClassName('slidebtnContent');
 				for (i = 0; i < tabcontent.length; i++) {
 					tabcontent[i].style.display = 'none';
@@ -734,7 +806,6 @@
 			}
 			const tabs = document.querySelectorAll('[data-tab-target]');
 			const tabContents = document.querySelectorAll('[data-tab-content]');
-			console.log(tabs);
 			tabs.forEach((tab) => {
 				tab.addEventListener('click', () => {
 					const target = document.querySelector(tab.dataset.tabTarget);
