@@ -52,7 +52,7 @@ function addmoreforms() {
 	lastNewEducationalInfoDiv += 1;
 	document.getElementsByClassName(
 		'editProfiletabcontentTwo',
-	)[0].innerHTML += `<div class="Educational_edit" id=educationalinfoform-collection_${lastNewEducationalInfoDiv}> <div class="deleteButton" onclick="destroyForm('educationalinfoform-collection_${lastNewEducationalInfoDiv}')\" data-eduformid=educationalinfoform-collection_${lastNewEducationalInfoDiv} >Remove</div> <div class="title">Highest Qualification Details</div> <div class="form__group field"><input type="input" class="form__field" placeholder="Institution" name="Institution" id="Institution" required /> <label for="Email" class="form__label" >Institution </label> </div> <div class="Educational_input_section" ><div class="form__group field"><input type="input" class="form__field" placeholder="YearofPassinge.g.2019" name="YearofPassing" id="YearofPassing" required /> <labelfor="YearofPassing" class="form__label">Year of Passing </label></div><div class="form__group field"> <select name="SelectState" id="SelectState" class="form__field"><option value="" disabled selected hidden >SelectState </option> <option value="SelectState"> Male </option> <option value="SelectState"> Female </option> </select> </div> </div> <div class="Educational_input_section"><div class="Educational_input_radio_buttons custom_radio"><input type="radio" id="featured-1_${lastNewEducationalInfoDiv}" name="featured_${lastNewEducationalInfoDiv}" checked><label for="featured-1_${lastNewEducationalInfoDiv}">Percentage</label><input type="radio" id="featured-2_${lastNewEducationalInfoDiv}" name="featureds_${lastNewEducationalInfoDiv}"><label for="featured-2_${lastNewEducationalInfoDiv}">CGPA </label> </div><div class="form__group field"> <input type="input" class="form__field" placeholder="CGPA" name="CGPA" id="CGPA" required/> <label for="CGPA" class="form__label"> CGPA </label> </div> <div class="form__group field"> <input type="input" class="form__field" placeholder="Scale/Outof" name="Scale/Outof" id="Scale/Outof" required/><label for="Scale/Outof" class="form__label">Scale / Out of </label> </div> </div> <div class="file_upload_zone"> <label for="file"><img src="/assets/fileUpload.svg" alt="file"> </label> <input type="file" name="file" id="file"> </div> </div>`;
+	)[0].innerHTML += `<div class="Educational_edit" id=educationalinfoform-collection_${lastNewEducationalInfoDiv}> <div class="deleteButton" onclick="destroyForm('educationalinfoform-collection_${lastNewEducationalInfoDiv}')\" data-eduformid=educationalinfoform-collection_${lastNewEducationalInfoDiv} >Remove</div> <div class="title">Highest Qualification Details</div> <div class="form__group field"><input type="input" class="form__field" placeholder="Institution" name="Institution" id="Institution" required /> <label for="Email" class="form__label" >Institution </label> </div> <div class="Educational_input_section" ><div class="form__group field"><input type="input" class="form__field" placeholder="YearofPassinge.g.2019" name="YearofPassing" id="YearofPassing" required /> <labelfor="YearofPassing" class="form__label">Year of Passing </label></div><div class="form__group field"> <select name="SelectState" id="SelectState" class="form__field"><option value="" disabled selected hidden >SelectState </option> <option value="SelectState"> Male </option> <option value="SelectState"> Female </option> </select> </div> </div> <div class="Educational_input_section"><div class="Educational_input_radio_buttons custom_radio"><input type="radio" id="featured-1_${lastNewEducationalInfoDiv}" name="featured_${lastNewEducationalInfoDiv}" checked><label for="featured-1_${lastNewEducationalInfoDiv}">Percentage</label><input type="radio" id="featured-2_${lastNewEducationalInfoDiv}" name="featureds_${lastNewEducationalInfoDiv}"><label for="featured-2_${lastNewEducationalInfoDiv}">CGPA </label> </div><div class="form__group field"> <input type="input" class="form__field" placeholder="CGPA" name="CGPA" id="CGPA" required/> <label for="CGPA" class="form__label"> CGPA </label> </div> <div class="form__group field"> <input type="input" class="form__field" placeholder="Scale/Outof" name="Scale/Outof" id="Scale/Outof" required/><label for="Scale/Outof" class="form__label">Scale / Out of </label> </div> </div>  </div>`;
 }
 function destroyForm(parent, childID) {
 	document.getElementById(parent).childNodes.forEach(function (element) {
@@ -117,3 +117,16 @@ document.addEventListener('click', function (event) {
 
 // ---------leaderboard data------------------------
 
+const slideMenu = () => {
+	const sideMenu = document.querySelector('.sideMenu');
+	const ham = document.querySelector('#ham_icon');
+
+	if (sideMenu.style.left === '0px') {
+		sideMenu.style.left = '-250px';
+		ham.src = 'https://img.icons8.com/android/96/000000/menu.png';
+	} else {
+		ham.src =
+			'https://img.icons8.com/material-outlined/24/000000/delete-sign.png';
+		sideMenu.style.left = '0';
+	}
+};

@@ -39,6 +39,12 @@ p {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .accountContainer {
+    width: 100%;
+  }
+}
+
 .shadow {
   height: 100%;
   width: 100%;
@@ -103,7 +109,7 @@ p {
 
 .current_plan {
   width: 90%;
-  height: 180px;
+  min-height: 180px;
   border: solid 1.5px #000;
   margin: 15px 0;
   border-radius: 10px;
@@ -111,6 +117,16 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .current_plan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .free_trail_holder {
@@ -129,6 +145,18 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .free_trail_holder {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .free_trail_holder h1 {
@@ -159,6 +187,16 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 600px) {
+  .doller_holder {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .doller_holder h1 {

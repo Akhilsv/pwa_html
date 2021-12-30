@@ -19,6 +19,8 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px auto;
+	@media (max-width: 600px) {
+	}
 	button {
 		width: 180px;
 		height: 40px;
@@ -162,7 +164,7 @@
 	display: grid;
 	place-items: center;
 	button {
-		width: 90%;
+		width: 200px;
 		height: 40px;
 		border: none;
 		outline: none;
@@ -189,6 +191,7 @@
 
 	@media (max-width: 1000px) {
 		flex-direction: column;
+		width: 100%;
 	}
 }
 .my_progress_your_buddy_holder {
@@ -197,6 +200,9 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-direction: column;
+	@media (max-width: 1000px) {
+		width: 80%;
+	}
 }
 .my_progress_second_cards_header {
 	width: 100%;
@@ -215,6 +221,10 @@
 	justify-content: flex-end;
 	align-items: flex-start;
 	height: 40px;
+	@media (max-width: 600px) {
+		justify-content: center;
+		align-items: center;
+	}
 }
 .my_progress_campus_holder {
 	height: 90%;
@@ -223,6 +233,11 @@
 	justify-content: flex-start;
 	align-items: flex-end;
 	flex-direction: column;
+	@media (max-width: 600px) {
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
 }
 .my_progress_second_card_holder {
 	width: 100%;
@@ -255,12 +270,11 @@
 		color: #7933ff;
 	}
 	@media (max-width: 700px) {
-		width: 90%;
+		width: 100%;
 	}
 }
 .my_progress_third_card {
 	width: 87%;
-	min-height: 120px;
 	margin: 30px auto;
 	display: flex;
 	justify-content: flex-start;
@@ -314,17 +328,25 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 900px) {
+		margin: 0px 10px 0 30px;
+		width: 83%;
+	}
 	& .heading_icon_holder {
-		width: 300px;
+		width: 280px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: 900px) {
+			width: 240px;
+		}
 	}
 	p {
 		font-size: 1rem;
 		font-weight: 500;
 		letter-spacing: 1px;
 		cursor: pointer;
+		white-space: nowrap;
 	}
 	h1 {
 		font-size: 1.2rem;
@@ -429,10 +451,10 @@
 		cursor: pointer;
 	}
 }
-#completed ,#career_completed{
+#completed,
+#career_completed {
 	border: dotted 1px rgb(39, 39, 39);
 	background-color: rgba(4, 4, 255, 0.048);
-	
 }
 .my_progress_campus_card {
 	width: 280px;
@@ -445,6 +467,9 @@
 	background: rgb(255, 255, 255);
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	@media (max-width: 600px) {
+		width: 300px;
+	}
 	& .three {
 		width: 30%;
 	}

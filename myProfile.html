@@ -19,9 +19,15 @@
     <title>Document</title>
 </head>
 <body>
-   <header>
+   	<header>
 			<div class="sub_header">
 				<div class="Header_icon">
+					<div class="ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
 					<img src="/assets/icon.svg" alt="Logo" />
 				</div>
 
@@ -41,7 +47,11 @@
 							</p>
 						</div>
 					</div>
-						<img src="/assets/bell.svg" alt="notifiction" class="notification_bell"/>
+					<img
+						src="/assets/bell.svg"
+						alt="notifiction"
+						class="notification_bell"
+					/>
 					<div class="notification_dropdown">
 						<h1>Notifications</h1>
 					</div>
@@ -83,11 +93,9 @@
 		</header>
         <div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
-			<aside>
+		<aside class="sideMenu">
 				<div class="myMenu">
-					<a
-						href="index.html"
-					>
+					<a href="index.html" >
 						<img src="/assets/self-growth3.png" alt="progress" />
 						<p>My Progress</p>
 					</a>
@@ -133,16 +141,11 @@
 					<div class="title">
 						<h4>PROFILE</h4>
 					</div>
-					<a
-						href="myProfile.html"
-						id="active"
-					>
+					<a href="myProfile.html" id="active">
 						<img src="/assets/account (1).png" alt="progress" />
 						<p>My profile</p>
 					</a>
-					<a
-						href="editProfile.html"
-					>
+					<a href="editProfile.html">
 						<img src="/assets/edit (1).png" alt="bookmark" />
 						<p>Edit profile</p>
 					</a>
@@ -295,6 +298,7 @@
 			</div>
 			
             <script src="./app.js"></script>
+			</script>
 
 </body>
 </html>

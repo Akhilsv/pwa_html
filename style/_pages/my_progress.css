@@ -245,7 +245,7 @@
 }
 
 .my_progess_first_card_footer button {
-  width: 90%;
+  width: 200px;
   height: 40px;
   border: none;
   outline: none;
@@ -284,6 +284,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -302,6 +303,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .my_progress_your_buddy_holder {
+    width: 80%;
+  }
 }
 
 .my_progress_second_cards_header {
@@ -334,6 +341,17 @@
   height: 40px;
 }
 
+@media (max-width: 600px) {
+  .second {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .my_progress_campus_holder {
   height: 90%;
   width: 30%;
@@ -350,6 +368,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .my_progress_campus_holder {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .my_progress_second_card_holder {
@@ -405,13 +435,12 @@
 
 @media (max-width: 700px) {
   .my_progess_second_card {
-    width: 90%;
+    width: 100%;
   }
 }
 
 .my_progress_third_card {
   width: 87%;
-  min-height: 120px;
   margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,8 +529,15 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .my_progress_trending_header {
+    margin: 0px 10px 0 30px;
+    width: 83%;
+  }
+}
+
 .my_progress_trending_header .heading_icon_holder {
-  width: 300px;
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,11 +549,18 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .my_progress_trending_header .heading_icon_holder {
+    width: 240px;
+  }
+}
+
 .my_progress_trending_header p {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .my_progress_trending_header h1 {
@@ -675,7 +718,8 @@
   cursor: pointer;
 }
 
-#completed, #career_completed {
+#completed,
+#career_completed {
   border: dotted 1px #272727;
   background-color: rgba(4, 4, 255, 0.048);
 }
@@ -700,6 +744,12 @@
   background: white;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media (max-width: 600px) {
+  .my_progress_campus_card {
+    width: 300px;
+  }
 }
 
 .my_progress_campus_card .three {

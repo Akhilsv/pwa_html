@@ -31,9 +31,15 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<header>
+	<header>
 			<div class="sub_header">
 				<div class="Header_icon">
+					<div class="ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
 					<img src="/assets/icon.svg" alt="Logo" />
 				</div>
 
@@ -99,9 +105,9 @@
 		</header>
 		<div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
-			<aside>
+		<aside class="sideMenu">
 				<div class="myMenu">
-					<a href="index.html">
+					<a href="index.html" >
 						<img src="/assets/self-growth3.png" alt="progress" />
 						<p>My Progress</p>
 					</a>
@@ -155,8 +161,7 @@
 						<img src="/assets/edit (1).png" alt="bookmark" />
 						<p>Edit profile</p>
 					</a>
-
-					<a id="active" href="##">
+					<a href="accountSettings.html" id="active">
 						<img src="/assets/user (1).png" alt="leader" />
 						<p>Account Settings</p>
 					</a>

@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -43,6 +45,14 @@ header .sub_header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  header .sub_header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 header .sub_header .Icons {
@@ -116,6 +126,12 @@ header .sub_header .Icons .score p span {
 
 header .sub_header .Header_icon {
   margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .sub_header .Header_icon img {
@@ -152,6 +168,23 @@ header .sub_header .Header_Profile .profile_pic {
   cursor: pointer;
 }
 
+.ham #ham_icon {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .ham #ham_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 aside {
   width: 250px;
   max-width: 250px;
@@ -168,11 +201,18 @@ aside {
           flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 700px) {
   aside {
-    display: none;
+    position: absolute;
+    z-index: 15;
+    left: -250px;
+    top: 60px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 }
 

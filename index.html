@@ -20,6 +20,12 @@
 		<header>
 			<div class="sub_header">
 				<div class="Header_icon">
+					<div class="ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
 					<img src="/assets/icon.svg" alt="Logo" />
 				</div>
 
@@ -85,7 +91,7 @@
 		</header>
 		<div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
-			<aside>
+			<aside class="sideMenu">
 				<div class="myMenu">
 					<a href="index.html" id="active">
 						<img src="/assets/self-growth3.png" alt="progress" />
@@ -251,9 +257,7 @@
 						<h6>No Completed Projects</h6>
 					</div> -->
 
-
-
-<!-- -----completed else-block-part---- -->
+					<!-- -----completed else-block-part---- -->
 					<!-- <div
 						class="my_progess_first_cards_holder"
 					>
@@ -388,17 +392,15 @@
 						<h6>No Completed Projects</h6>
 					</div>
 				</div>
-	<!-- -----in progress else-block-part---- -->
-					<!-- <div
+				<!-- -----in progress else-block-part---- -->
+				<!-- <div
 						class="my_progess_first_cards_holder content"
 						
 					>
 						<h6>No Completed Projects</h6>
 					</div> -->
 
-
-
-<!-- -----completed else-block-part---- -->
+				<!-- -----completed else-block-part---- -->
 				<div class="my_progress_second_section_holder">
 					<div class="my_progress_your_buddy_holder">
 						<div class="my_progress_second_cards_header">
@@ -784,7 +786,7 @@
 				console.log(evt);
 
 				const event = document.getElementsByClassName(evt)[0];
-				event.classList.add("activeSlide");
+				event.classList.add('activeSlide');
 			}
 
 			function slidebtn(evt, cityName, defaultTabClass, evts) {
@@ -825,6 +827,7 @@
 			closeBanner.addEventListener('click', () => {
 				banner.style.display = 'none';
 			});
+
 		</script>
 	</body>
 </html>

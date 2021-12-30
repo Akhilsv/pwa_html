@@ -6,6 +6,9 @@
 	display: grid;
 	place-items: center;
 	overflow: scroll;
+	@media (max-width: 600px) {
+		padding: 0;
+	}
 }
 
 .my_profile_banner {
@@ -15,6 +18,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 270px;
+	@media (max-width: 600px) {
+		background-size: 100% 100%;
+		height: 220px;
+	}
 }
 .my_profile_bar {
 	width: 90%;
@@ -27,6 +34,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	padding: 10px 20px;
+	@media (max-width: 600px) {
+		width: 80%;
+	}
 }
 .my_profile_dp {
 	width: 110px;
@@ -43,8 +53,12 @@
 	align-items: flex-start;
 	flex-direction: column;
 	margin-left: 30px;
-	h1 {
+	@media (max-width: 600px) {
+		h1 {
+			font-size: 1rem;
+		}
 	}
+
 	p {
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -53,14 +67,17 @@
 }
 .my_profile_three_cards_section {
 	width: 100%;
-	height: 500px;
+	min-height: 500px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 }
 .my_profile_three_card {
 	width: 30%;
-	height: 100%;
+	height: 480px;
 	background-color: rgb(255, 255, 255);
 	display: flex;
 	justify-content: flex-start;
@@ -70,7 +87,10 @@
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	border-radius: 10px;
-
+	@media (max-width: 600px) {
+		width: 85%;
+		margin: 10px 0;
+	}
 	& .card_heading {
 		h1 {
 			color: rgb(0, 0, 0);
@@ -108,6 +128,7 @@
 		align-items: flex-start;
 	}
 }
+
 .my_profile_teammate_card {
 	width: 100%;
 	height: 70px;
@@ -167,22 +188,32 @@
 	margin-top: 40px;
 	padding-left: 20px;
 	padding-top: 20px;
-
+	@media (max-width: 600px) {
+		display: grid;
+		place-items: center;
+		padding: 0;
+	}
 	.blogs_card_holder {
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		align-items: center;
+		@media (max-width: 600px) {
+			flex-direction: column;
+		}
 	}
 	.blogs_card {
 		width: 31%;
 		margin: 20px 10px;
-		height: 400px;
+		height: 470px;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;
 		align-items: flex-start;
+		@media (max-width: 600px) {
+			width: 85%;
+		}
 		h1 {
 			font-weight: 500;
 			font-size: 1.2rem;
@@ -199,7 +230,6 @@
 		p {
 			letter-spacing: 1px;
 			margin: 10px 0;
-			max-height: 100px;
 			font-weight: 400;
 			line-height: 1.5rem;
 			font-size: 15px;
@@ -220,7 +250,7 @@
 	}
 	.blog_image {
 		width: 100%;
-		height: 50%;
+		height: 45%;
 		img {
 			width: 100%;
 			height: 100%;
