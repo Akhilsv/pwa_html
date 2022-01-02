@@ -1,6 +1,5 @@
 .editProfile {
 	width: 90%;
-
 	max-height: calc(100vh - 60px);
 	display: flex;
 	justify-content: flex-start;
@@ -133,8 +132,11 @@
 		label {
 			cursor: pointer;
 			img {
-				object-fit: contain;
-				width: 150px;
+				object-fit: cover;
+				max-width: 150px;
+				min-width: 150px;
+				max-height: 150px;
+				min-height: 150px;
 				border-radius: 50%;
 			}
 		}
@@ -152,12 +154,12 @@
 				background-color: #000;
 				color: #fff;
 			}
-			button {
+			label {
+				display: grid;
+				place-items: center;
 				width: 160px;
 				height: 35px;
-				border: none;
-				outline: none;
-				font-weight: 600;
+				font-weight: 500;
 				text-transform: capitalize;
 				margin-top: 10px;
 				border-radius: 10px;
@@ -221,7 +223,7 @@
 					border: none;
 					outline: none;
 					border-bottom: 2px solid #3333;
-					width: 180px;
+					width: 320px;
 					height: 40px;
 					background: none;
 				}
@@ -299,6 +301,8 @@
 	font-size: 1rem;
 	color: #000000;
 	white-space: nowrap;
+	pointer-events: none;
+
 	@media (max-width: 650px) {
 		font-size: 0.8rem;
 	}
@@ -446,15 +450,28 @@ input:focus + label {
 	box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #000000;
 }
 .file_upload_zone {
-	width: 100%;
-	height: 200px;
 	display: grid;
 	place-items: center;
-	label {
-		cursor: pointer;
+	@media (max-width: 700px) {
+		left: 10px;
 	}
-	input {
-		display: none;
+	div {
+		width: 70px;
+		height: 70px;
+		color: #fff;
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+	}
+	.add {
+		background-color: #fc00bd;
+		font-size: 1.5rem;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		&:hover {
+			transform: scale(1.1);
+			transition-duration: 0.8s;
+		}
 	}
 }
 .add_tags {
@@ -525,35 +542,7 @@ input:focus + label {
 .editProfiletabcontentTwo {
 	position: relative;
 }
-.add_form_box {
-	width: 70px;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: absolute;
-	bottom: -80px;
-	left: 20px;
-	border-radius: 50%;
-	div {
-		width: 70px;
-		height: 70px;
-		color: #fff;
-		display: grid;
-		place-items: center;
-		border-radius: 50%;
-	}
-	.add {
-		background-color: #fc00bd;
-		font-size: 1.5rem;
-		cursor: pointer;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-		&:hover {
-			transform: scale(1.1);
-			transition-duration: 0.8s;
-		}
-	}
-}
+
 .deleteButton {
 	width: 100px;
 	height: 35px;

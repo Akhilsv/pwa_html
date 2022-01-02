@@ -15,9 +15,15 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+  	<header>
 			<div class="sub_header">
 				<div class="Header_icon">
+					<div class="ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
 					<img src="/assets/icon.svg" alt="Logo" />
 				</div>
 
@@ -37,7 +43,11 @@
 							</p>
 						</div>
 					</div>
-						<img src="/assets/bell.svg" alt="notifiction" class="notification_bell"/>
+					<img
+						src="/assets/bell.svg"
+						alt="notifiction"
+						class="notification_bell"
+					/>
 					<div class="notification_dropdown">
 						<h1>Notifications</h1>
 					</div>
@@ -79,12 +89,9 @@
 		</header>
         <div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
-			<aside>
+			<aside class="sideMenu">
 				<div class="myMenu">
-					<a
-						href="index.html"
-						
-					>
+					<a href="index.html" >
 						<img src="/assets/self-growth3.png" alt="progress" />
 						<p>My Progress</p>
 					</a>
@@ -130,20 +137,13 @@
 					<div class="title">
 						<h4>PROFILE</h4>
 					</div>
-					<a
-						href="myProfile.html"
-						
-					>
+					<a href="myProfile.html">
 						<img src="/assets/account (1).png" alt="progress" />
 						<p>My profile</p>
 					</a>
-					<a
-						href="editProfile.html"
-                        id="active"
-					>
+					<a href="editProfile.html" id="active">
 						<img src="/assets/edit (1).png" alt="bookmark" />
 						<p>Edit profile</p>
-                        
 					</a>
 					<a href="accountSettings.html">
 						<img src="/assets/user (1).png" alt="leader" />
@@ -156,7 +156,6 @@
 				</div>
 				<button>Contact us</button>
 			</aside>
-
     <section class="editProfile" id="edit_profile">
 				<!-- Edit profile Header------- -->
 				<div class="editProfileHeader">
@@ -186,19 +185,28 @@
 						<div class="upper__section">
 							<div class="Profile_edit">
 							<label for="profile">
-								<img src="/assets/profile.jpg" alt="" srcset="" />
+								<img src="/assets/profile.png" alt="" srcset="" class="profile_image" onerror="this.onerror=null;this.src='/assets/profile.png';"/>
 							</label>
-							<input type="file" name="profile" id="profile" />
+							<input type="file" name="profile" id="profile" onchange="handleChange()"/>
 							<div class="button_zone">
-								<button id="upload">Upload Image</button>
-								<button id="remove">Remove Image</button>
+								<label id="upload" for="profile">Upload Image</label>
+								<label id="remove" onclick="removeHandler()">Remove Image</label>
 							</div>
 						</div>
 						<div class="details_edit">
 							<div class="details_edit_zone display">
-								<div class="input_zone">
-									<label for="name">Display Name:</label>
-									<div><p>www.techsnap.in/profile/</p><input type="text" /></div>
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Phone Number"
+										name="Phone Number"
+										id="Phone Number"
+										required
+									/>
+									<label for="Phone Number" class="form__label"
+										>Display Name</label
+									>
 								</div>
 								<div class="form__group field ">
 									<select name="gender" id="gender" class="form__field">
@@ -460,22 +468,18 @@
 									<label for="Scale/ Out of " class="form__label">Scale/ Out of </label>
 								</div>
 						</div>
-						<div class="file_upload_zone">
-							<label for="file">
-								<img src="/assets/fileUpload.svg" alt="file" >
-							</label>
-							<input type="file" name="file" id="file">
-						</div>
+					
 						
 					</div>
-						<div class="add_form_box">
-							<div class='add' onclick="addmoreforms()">+</div>
-
-
-						</div>
+					
 							
 				
 					</div>
+						
+					<div class="file_upload_zone">
+								<div class='add' onclick="addmoreforms()">+</div>
+						</div>
+					
 				<!-- //--------------------------------  -->
 							<div class="nav_buttons_container">
 								<div class="nav_buttons_box">
@@ -484,7 +488,7 @@
 								</div>
 							</div>
 						<!--  -->
-					
+							
 				</div>
 				<div id="tab3" class="editProfiletabcontent">
 					<div class="Educational_edit">
@@ -580,12 +584,6 @@
 								</div>
 
 						</div>
-						<div class="file_upload_zone">
-							<label for="file">
-								<img src="/assets/fileUpload.svg" alt="file" >
-							</label>
-							<input type="file" name="file" id="file">
-						</div>
 					</div>
 					<!-- //--------------------------------  -->
 							<div class="nav_buttons_container">
@@ -616,6 +614,25 @@
 	document.getElementById(cityName).style.display = 'block';
 	evt.currentTarget.className += ' active';
 }
+//-----------------------------------------------
+const handleChange=(e)=>{
+	const img=document.querySelector("#profile").files;
+	if (img.length>0) {
+			const src1 = URL.createObjectURL(img[0]);
+			console.log(src1);
+			const preview1 = document.querySelector('.profile_image');
+			preview1.src = src1;
+			
+		}
+}
+const removeHandler=()=>{
+		const preview1 = document.querySelector('.profile_image');
+	const img=document.querySelector("#profile")
+	img.value=''
+			preview1.src = "/assets/profile.png";
+}
+//------------------------------------------------
+
             </script>
 <script src="app.js"></script>
 

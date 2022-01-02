@@ -16,6 +16,12 @@
 		<header>
 			<div class="sub_header">
 				<div class="Header_icon">
+					<div class="ham" onclick="slideMenu()">
+						<img
+							id="ham_icon"
+							src="https://img.icons8.com/android/96/000000/menu.png"
+						/>
+					</div>
 					<img src="/assets/icon.svg" alt="Logo" />
 				</div>
 
@@ -40,6 +46,9 @@
 						alt="notifiction"
 						class="notification_bell"
 					/>
+					<div class="notification_dropdown">
+						<h1>Notifications</h1>
+					</div>
 					<img
 						class="profile_pic avatar"
 						src="/assets/profile.jpg"
@@ -73,17 +82,14 @@
 							<p>Logout</p>
 						</a>
 					</div>
-					<div class="notification_dropdown">
-						<h1>Notifications</h1>
-					</div>
 				</div>
 			</div>
 		</header>
 		<div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
-			<aside>
+			<aside class="sideMenu">
 				<div class="myMenu">
-					<a href="index.html">
+					<a href="index.html" >
 						<img src="/assets/self-growth3.png" alt="progress" />
 						<p>My Progress</p>
 					</a>
@@ -91,7 +97,7 @@
 						<img src="/assets/stage.png" alt="bookmark" />
 						<p>Competitions</p>
 					</a>
-					<a href="leaderBoard.html" >
+					<a href="leaderBoard.html">
 						<img src="/assets/leaderboard.png" alt="leader" />
 						<p>Leaderboard</p>
 					</a>
@@ -108,7 +114,7 @@
 						<img src="/assets/online-course2.png" alt="leader" />
 						<p>Courses</p>
 					</a>
-					<a href="##" id="active">
+					<a href="projects.html" id="active">
 						<img src="/assets/project-management (2).png" alt="leader" />
 						<p>Projects</p>
 					</a>
@@ -156,6 +162,8 @@
 			</section>
 		</div>
 		<script src="./app.js"></script>
-
+		<script>
+		
+		</script>
 	</body>
 </html>
