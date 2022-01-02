@@ -35,6 +35,9 @@ p {
 	&::-webkit-scrollbar {
 		display: none;
 	}
+	@media (max-width: 600px) {
+		width: 100%;
+	}
 }
 .shadow {
 	height: 100%;
@@ -90,12 +93,16 @@ p {
 }
 .current_plan {
 	width: 90%;
-	height: 180px;
+	min-height: 180px;
 	border: solid 1.5px #000;
 	margin: 15px 0;
 	border-radius: 10px;
 	padding: 10px 20px;
 	display: flex;
+	@media (max-width: 600px) {
+		flex-direction: column;
+		width: 100%;
+	}
 }
 .free_trail_holder {
 	width: 70%;
@@ -105,6 +112,11 @@ p {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	@media (max-width: 600px) {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
 	h1 {
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -123,7 +135,11 @@ p {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-
+	@media (max-width: 600px) {
+		width: 100%;
+		justify-content: center;
+		margin-top: 20px;
+	}
 	h1 {
 		font-size: 1rem;
 		font-weight: 600;

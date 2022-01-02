@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 .my_progess_section {
   width: 100%;
   max-height: calc(100vh - 60px);
@@ -245,7 +246,7 @@
 }
 
 .my_progess_first_card_footer button {
-  width: 90%;
+  width: 200px;
   height: 40px;
   border: none;
   outline: none;
@@ -284,6 +285,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -302,6 +304,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .my_progress_your_buddy_holder {
+    width: 80%;
+  }
 }
 
 .my_progress_second_cards_header {
@@ -334,6 +342,17 @@
   height: 40px;
 }
 
+@media (max-width: 600px) {
+  .second {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .my_progress_campus_holder {
   height: 90%;
   width: 30%;
@@ -350,6 +369,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .my_progress_campus_holder {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .my_progress_second_card_holder {
@@ -405,13 +436,12 @@
 
 @media (max-width: 700px) {
   .my_progess_second_card {
-    width: 90%;
+    width: 100%;
   }
 }
 
 .my_progress_third_card {
   width: 87%;
-  min-height: 120px;
   margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,8 +530,15 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .my_progress_trending_header {
+    margin: 0px 10px 0 30px;
+    width: 83%;
+  }
+}
+
 .my_progress_trending_header .heading_icon_holder {
-  width: 300px;
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,11 +550,18 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .my_progress_trending_header .heading_icon_holder {
+    width: 240px;
+  }
+}
+
 .my_progress_trending_header p {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .my_progress_trending_header h1 {
@@ -529,7 +573,7 @@
 
 .my_progess_trending_card_options_holder {
   width: 100%;
-  height: 60px;
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,6 +596,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 10px;
+}
+
+.my_progess_trending_card_option .white {
+  color: white;
 }
 
 .my_progess_trending_card_option p {
@@ -592,6 +640,47 @@
   .my_progess_trending_card {
     width: 90%;
   }
+}
+
+.my_progess_trending_card .trending_card_author {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my_progess_trending_card .trending_card_author p {
+  font-size: 0.8rem;
+  margin-right: 10px;
+  color: dimgray;
+  font-weight: 600;
+}
+
+.my_progess_trending_card .trending_card_hashtags {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.my_progess_trending_card .trending_card_hashtags p {
+  font-size: 0.8rem;
+  margin-right: 10px;
+  color: #cd27ff;
+  font-weight: 600;
 }
 
 .my_progess_trending_card_header {
@@ -675,7 +764,140 @@
   cursor: pointer;
 }
 
-#completed, #career_completed {
+.second_card {
+  height: 350px;
+}
+
+.second_card .trending_card_banner {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.second_card .trending_card_banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.my_progess_trending_third_card {
+  width: 31%;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  margin: 10px 20px 10px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my_progess_trending_third_card h1 {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .my_progess_trending_third_card {
+    width: 90%;
+  }
+}
+
+.my_progess_trending_third_card .trending_third_card_header {
+  width: 100%;
+  padding: 10px 20px;
+  height: 90px;
+  background: #e85b60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.my_progess_trending_third_card .my_progess_trending_third_card_body {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.my_progess_trending_third_card .my_progess_trending_third_card_body p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #3b3b3b;
+}
+
+.my_progess_trending_third_card .my_progress_tick_holder {
+  width: 100%;
+  height: 100px;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my_progess_trending_third_card .my_progress_tick_holder .tick {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 3px 0;
+}
+
+.my_progess_trending_third_card .my_progress_tick_holder .tick span {
+  color: #7933ff;
+  margin-right: 10px;
+}
+
+.my_progess_trending_third_card .my_progress_tick_holder .tick p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#completed,
+#career_completed {
   border: dotted 1px #272727;
   background-color: rgba(4, 4, 255, 0.048);
 }
@@ -700,6 +922,12 @@
   background: white;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media (max-width: 600px) {
+  .my_progress_campus_card {
+    width: 300px;
+  }
 }
 
 .my_progress_campus_card .three {
