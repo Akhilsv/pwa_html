@@ -43,6 +43,7 @@
 		justify-content: flex-start;
 		position: relative;
 		margin-bottom: 20px;
+		white-space: nowrap;
 		&::after {
 			content: '';
 			background-color: #04193c;

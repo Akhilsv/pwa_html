@@ -22,6 +22,7 @@
 @media (max-width: 700px) {
   .editProfile {
     max-height: 100%;
+    width: 100%;
   }
 }
 
@@ -42,6 +43,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 500px) {
+  .editProfileHeader {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #F6F6F6;
+    z-index: 55;
+    width: 100%;
+  }
 }
 
 .editProfileHeaderTabs {
@@ -289,7 +301,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 500px;
-    padding: 30px;
   }
 }
 
@@ -315,7 +326,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -331,6 +342,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .details_edit .details_edit_zone .input_zone label {
@@ -393,6 +405,8 @@
 @media (max-width: 700px) {
   .form__bio {
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -400,7 +414,7 @@
   border: none;
   outline: none;
   background: none;
-  border-bottom: 2px solid #333;
+  border-bottom: 1px solid #333;
   width: 100%;
   font-weight: 600;
   font-size: 18px;
@@ -428,8 +442,11 @@
 
 @media (max-width: 630px) {
   .form__group {
-    width: 90%;
+    width: 100%;
     margin: 5px auto;
+  }
+  .form__group input {
+    width: 100%;
   }
 }
 
@@ -437,7 +454,7 @@
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 1px solid #000000;
   outline: 0;
   font-size: 1rem;
   color: black;
@@ -719,8 +736,9 @@ input:focus + label {
 
 @media (max-width: 680px) {
   .add_tags {
-    width: 90%;
-    padding: 15px;
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0;
   }
 }
 

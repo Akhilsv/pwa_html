@@ -10,6 +10,7 @@
 	padding: 0 40px 0 20px;
 	@media (max-width: 700px) {
 		max-height: 100%;
+		width: 100%;
 	}
 }
 .sub_editProfile {
@@ -22,6 +23,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width: 500px) {
+		position: sticky;
+		top: 0;
+		background-color: #F6F6F6;
+		z-index: 55;
+		width: 100%;
+	}
 }
 .editProfileHeaderTabs {
 	min-width: 130px;
@@ -178,7 +186,6 @@
 		@media (max-width: 720px) {
 			flex-wrap: wrap;
 			height: 500px;
-			padding: 30px;
 		}
 	}
 	.details_edit_zone {
@@ -189,13 +196,14 @@
 		@media (max-width: 650px) {
 			flex-direction: column;
 			height: fit-content;
-			width: 90%;
+			width: 100%;
 			margin: 0 auto;
 		}
 		.input_zone {
 			display: flex;
 			align-items: flex-start;
 			flex-direction: column;
+			width: 100%;
 
 			label {
 				font-family: Nunito;
@@ -240,12 +248,14 @@
 	margin-top: 10px;
 	@media (max-width: 700px) {
 		width: 100%;
+		margin: 0 auto;
+		padding: 0;
 	}
 	input {
 		border: none;
 		outline: none;
 		background: none;
-		border-bottom: 2px solid #333;
+		border-bottom: 1px solid #333;
 		width: 100%;
 		font-weight: 600;
 		font-size: 18px;
@@ -268,15 +278,18 @@
 	margin: 20px 10px;
 	width: 40%;
 	@media (max-width: 630px) {
-		width: 90%;
+		width: 100%;
 		margin: 5px auto;
+		input {
+			width: 100%;
+		}
 	}
 }
 .form__field {
 	font-family: inherit;
 	width: 100%;
 	border: 0;
-	border-bottom: 1.5px solid #000000;
+	border-bottom: 1px solid #000000;
 	outline: 0;
 	font-size: 1rem;
 	color: rgb(0, 0, 0);
@@ -478,8 +491,9 @@ input:focus + label {
 	width: 40%;
 	padding: 20px;
 	@media (max-width: 680px) {
-		width: 90%;
-		padding: 15px;
+		width: 100%;
+		padding: 0px;
+		margin: 10px 0;
 	}
 	.tag-disp {
 		width: 100%;

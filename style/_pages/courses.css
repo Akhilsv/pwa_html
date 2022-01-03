@@ -66,6 +66,7 @@
           justify-content: flex-start;
   position: relative;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .banner .banner_tag::after {
