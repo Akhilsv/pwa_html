@@ -188,7 +188,7 @@ header .sub_header .Header_Profile .profile_pic {
 
 aside {
   width: 250px;
-  max-width: 250px;
+  max-width: 220px;
   height: calc(100vh - 60px);
   background-color: #0a182e;
   display: -webkit-box;

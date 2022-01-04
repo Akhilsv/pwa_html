@@ -220,7 +220,7 @@
 	}
 }
 .second {
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
 	height: 40px;
 	@media (max-width: 600px) {
@@ -276,7 +276,7 @@
 	}
 }
 .my_progress_third_card {
-	width: 87%;
+	width: 90%;
 	margin: 30px auto;
 	display: flex;
 	justify-content: flex-start;
@@ -315,7 +315,7 @@
 .my_progess_trending_holder {
 	width: 90%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 20px auto;
@@ -381,12 +381,12 @@
 	}
 }
 .my_progess_trending_card {
-	width: 31%;
+	width: 31.2%;
 	height: 180px;
 
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
-	margin: 10px 20px 10px 0;
+	margin: 10px 0px 10px 0;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	display: flex;
 	justify-content: space-around;
@@ -499,7 +499,7 @@
 	height: 400px;
 	background: rgb(255, 255, 255);
 	border-radius: 10px;
-	margin: 10px 20px 10px 0;
+	margin: 10px 0px 10px 0;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	display: flex;
 	justify-content: flex-start;
@@ -570,8 +570,8 @@
 	background-color: rgba(4, 4, 255, 0.048);
 }
 .my_progress_campus_card {
-	width: 280px;
-	height: 150px;
+	width: 100%;
+	height: 168px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -580,8 +580,9 @@
 	background: rgb(255, 255, 255);
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	box-sizing: border-box;
 	@media (max-width: 600px) {
-		width: 300px;
+		width: 90%;
 	}
 	& .three {
 		width: 30%;

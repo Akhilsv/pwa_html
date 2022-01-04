@@ -333,9 +333,9 @@
 }
 
 .second {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -441,7 +441,7 @@
 }
 
 .my_progress_third_card {
-  width: 87%;
+  width: 90%;
   margin: 30px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,9 +496,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -611,11 +611,11 @@
 }
 
 .my_progess_trending_card {
-  width: 31%;
+  width: 31.2%;
   height: 180px;
   background: white;
   border-radius: 10px;
-  margin: 10px 20px 10px 0;
+  margin: 10px 0px 10px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: -webkit-box;
@@ -784,7 +784,7 @@
   height: 400px;
   background: white;
   border-radius: 10px;
-  margin: 10px 20px 10px 0;
+  margin: 10px 0px 10px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: -webkit-box;
@@ -903,8 +903,8 @@
 }
 
 .my_progress_campus_card {
-  width: 280px;
-  height: 150px;
+  width: 100%;
+  height: 168px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,11 +922,13 @@
   background: white;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
   .my_progress_campus_card {
-    width: 300px;
+    width: 90%;
   }
 }
 
