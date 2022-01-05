@@ -89,6 +89,8 @@ Profile.addEventListener('click', () => {
 });
 const notification_bell = document.querySelector('.notification_bell');
 const notification_dropDown = document.querySelector('.notification_dropdown');
+const notification_dots = document.querySelector('.notification_dots');
+console.log(notification_dots);
 notification_bell.addEventListener('click', () => {
 	console.log('here');
 	if (notification_dropDown.style.opacity === '1') {
@@ -103,15 +105,14 @@ notification_bell.addEventListener('click', () => {
 document.addEventListener('click', function (event) {
 	var isClickInsideAvatar = Profile.contains(event.target);
 	var isClickInsideBell = notification_bell.contains(event.target);
+	var isClickInsideDots = notification_dots.contains(event.target);
 	if (!isClickInsideAvatar) {
 		Profile_dropDown.style.opacity = '0';
 		Profile_dropDown.style.pointerEvents = 'none';
-
 	}
-	if (!isClickInsideBell) {
+	if (!isClickInsideBell && !isClickInsideDots) {
 		notification_dropDown.style.opacity = '0';
 		notification_dropDown.style.pointerEvents = 'none';
-
 	}
 });
 
