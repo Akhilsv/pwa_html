@@ -31,7 +31,7 @@
 
 				<div class="Header_Profile">
 					<div class="Icons">
-						<div class="points">
+						<div class="points" onclick="goalsDrop()">
 							<p><span>🔥 </span>0</p>
 							<p><span>🎯 </span> 0</p>
 						</div>
@@ -45,11 +45,13 @@
 							</p>
 						</div>
 					</div>
+
 					<img
 						src="/assets/bell.svg"
 						alt="notifiction"
 						class="notification_bell"
 					/>
+
 					<div class="notification_dropdown">
 						<div class="notification_item">
 							<div class="notification_item_icon">
@@ -106,7 +108,7 @@
 							</div>
 						</div>
 						<div class="see_all_notifications">
-							<p>See all notifications</p>
+							<a href="notification.html"><p>See all notifications</p></a>
 						</div>
 					</div>
 					<img
@@ -141,6 +143,73 @@
 							/></span>
 							<p>Logout</p>
 						</a>
+					</div>
+				</div>
+			</div>
+			<div class="goals_DropDown">
+				<div class="title">
+					<h2>Daily Goals</h2>
+					<p>Edit Goals</p>
+				</div>
+				<div class="info_text">
+					<p>How does streak work , know more obout here</p>
+					<span>^</span>
+				</div>
+				<div class="goals_section">
+					<div class="left_section">
+						<div class="total_streak_day">
+							<div class="title">
+								<p>Total Streak</p>
+								<img
+									src="https://img.icons8.com/color/48/000000/share--v1.png"
+								/>
+							</div>
+							<div class="streak_body">
+								<img
+									src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-fire-blogger-vitaliy-gorbachev-flat-vitaly-gorbachev.png"
+								/>
+								<div class="body_details">
+									<p>0</p>
+									<span>Day Streak</span>
+								</div>
+							</div>
+						</div>
+						<div class="total_streak_freeeze">
+							<div class="streak_body">
+								<img
+									src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-fire-kitchen-kiranshastry-lineal-color-kiranshastry.png"
+								/>
+								<div class="body_details">
+									<p>0</p>
+									<span>Streak Freeze</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_section">
+						<div class="right_box">
+							<div class="title">
+								<p>Daily Goal</p>
+								<div class="time_box">
+									<span>11:34:13</span>
+								</div>
+								<div class="streak_body">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAJEUlEQVRoge2ae1BU1x3HP3cXMD5YlLcoAjEYrS0m8ZVBTUAj7Zg2mUx9RMF0kk7zKHE6MY5R0xonbafKxDjTIjZOp5pI0CbG2o4xVtGCWOOrRK1GBSuCsYCEFRAJht17+sfZZe+59y6L6J9+Z/aP8/rd3/ee83udu3AP93APPUG7m8JEJvGEkYVgHDAKiAcG+obbgSagCsFJNMq0Cpru1rPvmIiYyhA08oCFwITbkCmAY0AxToq1MlqU0RdPhCdGhc93aJrrfwUZhVNmPpXU5dT+6EDbcWTPzs1mYWF3SGAZ8AoQ2QcRGjAZmIyX34pprMdJgVZGS9Ib/8kUQmwCRqGxecrMp5I8Du2fmmCUQAjAQsTRRxLPoXEBWNpHEma4gOV4OL8qb8laIcQB5NEkrLO5v8eh7ZNtrdoR7v25nYDbOlpiCpE4eA+YH3TSwCgYNw3SxkJCCgyKkv3trdBYC5fOwOkKuNlmWdrmjGTS+D20OeW7Cdc7SE2gq+vY5nC9raHaEe7J/nzXrqt3RERMJoEIdgOPWAadYZA9B2a9AI9kg8PZszCvByoPwO5NULZdtoFNifN5M215N4m0FBfO6BT01nrvpaq6bV0RsTeBf9cXZGw0i+zV0fKROGhLYvo8KKmClSUw4YnQJEASn5gDb22FDy9A1mwA9g15PEBihCQhOtu5crXF2RURmwu8iKZ12IkMuSO+41QOPKwMuGJgxWbI/GFoxXuBzvK/851Ph+EVHkkiRpKou3SFjq4I/7QL9S3ffo+NE7rM60N7LQdFmEkkj4K1/4DEVPs1Xg+cOwb1NXD9muwbEg9D02DMJLkjJlQmz8ArzvREolPXxU/sSIQkIqbyHJBnIVFYIRUzo6oSPloHn38KN67bC3VFw6OzYN5iSA+8n2NVTUFJRHtamHdtZ9HK4nePBtM16NHyxYnzyOjsUyIG/nTCuhPuRih8DfZvQ7r5XsDhgOnPwqJ1uIlg9vIitMyXER4PdZeuwC2dKa1HmXm9nGe+3s1AT0cjYYy2BE4fgu+IDHbqa1+x2Uqi+iSseBoa63pHwA9dh9IS3KePkj8om46GJvprGjk/ms+M6aN5qG4/Eb9cZNQnAS9LgRX26trAtxu1GIPd9HmwapuVxKvT4Jt2qxCHA1LHQnyybDfWQe2XkoAPbvqRf98UahyRJMfHULSugLiYmICMlXOkew6gDScpdrsSbEcWKiScYfDS79QZ7ka5E2YSUbGQtwxyFlrtyN0Ie7dA8Wrcbe0BEuImRd98SZxTV+e/tBoO/hV0r7/HhYcFQJFZYfs4opkMPHuO9DhGFL5mPU4TnpBxYd7r9s4gOgGeXYK76Dj5g3MCJG4dIq6xGgoXq/OHjeyOMQaNF9qpbCEiMolHZrEBzHpBnVRVKQ3bTKJgt/RKPcB9vYX837xLzbcOkiN0SULvlIOlJfK4Ks9+3qQgk0UWsSGJEEYWRtsZGCXTDiM+Wqd6p6hYWPUXCAs3PVTIXWusAyEkiTd+RU3dFZKHJVH0+7XEDRoQmK/r8PE6Vcb4GTBAyUs1vGSFJiKLogAypqpph6dLxgkj8pZZd6J0K8xNhTkpMCcF95x08l/9RYBEwa+JS02H3GXqusO7unMvQNpnxlSzlhmhifjS527c/1119NwxNdg5HDBTNSlKt8LbC7ptyE0/8ttSqGluJTnaJUn4vdP3F0oZfrS54fxxVV6aSQfBg6GJCBKUtjluNNaq7dSx0oi71wt4L/CWFRcrblLUdYS4aMPuRSdCyhhVZv1ltW3WQcPiSaxENAYp7QGmuqm5Xm3HDVPbfptA1rJ+EiP0djZ0+rzTtSvqGn+sCfYMf00TgMvc0acK8XYQjs5I0UbRrX8RK3zeSburdx6AXUAUtCvxvuOGOh4zVG03mQq2hBGQmAINtWjA+51lgMENDk2DuOHqGvMOxSap7fZWs5aW8tLuaDUq7YYQ5/XyWRmxu9dr8PKa7reuYSChafBKgbojzfVQe67nZ5h1EFwLTQSqlNalM+romEmqq9V1mXYY4c/LjAolpsLbH1sj9Z4PlPwLVwyMVuMxNSYd5MWHArujdVI5WqcrpF/3F0POMFlP7C0OzCleLSOwy5DwZc+VP/+xMRs0QEsTlKxR+zKfVAsvTxecPmReecrcYd0RnXKkw5G42SYvCoyYt9jk+5th5Vz5UDPik+1JeLrgrbnWmDTXlG+dKDXbqY6T8pBEtMNcQ94ABrB7kzop/WFZFBlReQCW/ABav7YqbUZLE7yeA1+Uqf05efCAmljwmeUu7qhWhuUhwdxvsdIq2w5X/6vOWLROeicjKg9A7oNQUgDuBqvU5nr4cI2cYyYxNA3y16p9X1VD+SdmKVvMHRCssMpiMF5qMQaerNnSWI24eEoWVmYXDfKYpIyR7hh8hdU51bD9GBAJ6w/BSFMK9eYzULHT2NNKP1K0Uiz+2HZHfBXYeqWzbDsc+ps68YFxUgG72xRdh5qzcOQz+as5a09iaJo9iYM7zCRAo9COhBwKAjEZFxGcBwIR0BUNG49D0v3q5JYmWRSVltgraweHQ9pE/lpZBhhx9SL8bCK0GypaQY+XDz3mCuIxchEmexmeLq+DohOsC6pPynri8C6ZxdrBFSNd7NzFVsMGaVv5U602CfO1CrZZF/SCCICYxgdgKi+Hp8M7e6w744fXI1Px+ppA1I9O9F3QTQx+rXr1ovR8VhJbtQoW9KRnaCJZDMJLGTBeGXBFw7I/w9SnQ4noHQ7ugNU/VY+TxHH6k63t5WZPy3uVhopM4nFSgbnoAnj8xzK3Gjaytyqr+KoaNiy1GrbEBWBabz7R9f6zwgxi6GIXgkctgw6ndM+znpc1ts3drgKvB47vk8Gu/BPjdY9RsxN4eNIXoEPi9j70yGO2AfN9sBEDIiHD96EnMVX90NNwWSaApyrsL/UCeJ/+5Ic6Tkb0qcIRj5GLzlo0bFzXHaEeWNyTdwqGPpdqvui/FMjHpvS8TbQi+AP38U6wgBcKd/55OovB6OQCeQgm0fvyWQeOAlvoR0lfCfhxd/8wkEUsXh5H8BDy03I8gTvkG77KrgoHXxBOubaf5rv5/Hu4h3sIjv8D8wYwb1ycaQkAAAAASUVORK5CYII="
+									/>
+									<div class="body_details">
+										<p>10/200</p>
+										<span>Points</span>
+									</div>
+								</div>
+								<div class="progress_streak">
+									<div class="progress_bar">
+										<div class="bar" style="width: 10%"></div>
+									</div>
+									<button>Achieve Score</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1085,6 +1154,7 @@
 			closeBanner.addEventListener('click', () => {
 				banner.style.display = 'none';
 			});
+			
 		</script>
 	</body>
 </html>

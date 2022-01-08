@@ -101,14 +101,31 @@ notification_bell.addEventListener('click', () => {
 		notification_dropDown.style.pointerEvents = 'all';
 	}
 });
+//--------------------------------------------------------------------------
+const goalsSection = document.querySelector('.goals_DropDown');
+const goalButton = document.querySelector('.points');
 
+const goalsDrop = () => {
+	if (goalsSection.style.visibility == 'visible') {
+		goalsSection.style.visibility = 'hidden';
+	} else {
+		goalsSection.style.visibility = 'visible';
+	}
+};
+//--------------------------------
 document.addEventListener('click', function (event) {
 	var isClickInsideAvatar = Profile.contains(event.target);
 	var isClickInsideBell = notification_bell.contains(event.target);
 	var isClickInsideDots = notification_dots.contains(event.target);
+	var isClickInsideGoal = goalButton.contains(event.target);
+	var isClickInsideGoalSection = goalsSection.contains(event.target);
+
 	if (!isClickInsideAvatar) {
 		Profile_dropDown.style.opacity = '0';
 		Profile_dropDown.style.pointerEvents = 'none';
+	}
+	if (!isClickInsideGoal && !isClickInsideGoalSection) {
+		goalsSection.style.visibility = 'hidden';
 	}
 	if (!isClickInsideBell && !isClickInsideDots) {
 		notification_dropDown.style.opacity = '0';
