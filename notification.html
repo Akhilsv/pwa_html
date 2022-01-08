@@ -161,12 +161,31 @@
 					<div class="title">
 						<h2>Notification Center</h2>
 						<div class="page_notifiction_switch">
-							<div class="switch">recent</div>
-							<div class="switch">opened</div>
-							<div class="switch">seen</div>
+							<div
+								class="switch notificationTablinks"
+								id="defaultNotificationTab"
+								onclick="notificationTabHandler(event, 'recent')"
+							>
+								<h1>recent</h1>
+							</div>
+							<div
+								class="switch notificationTablinks"
+								onclick="notificationTabHandler(event, 'opened')"
+							>
+								<h1>opened</h1>
+							</div>
+							<div
+								class="switch notificationTablinks"
+								onclick="notificationTabHandler(event, 'seen')"
+							>
+								<h1>seen</h1>
+							</div>
 						</div>
 					</div>
-					<div class="page_notifications_section">
+					<div
+						class="page_notifications_section notificationTabcontent"
+						id="recent"
+					>
 						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
@@ -184,7 +203,7 @@
 								<span onclick="popup()" class="popup">...</span>
 							</div>
 						</div>
-                        <div class="page_notification_item">
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -200,7 +219,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -216,7 +236,13 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+					</div>
+					<div
+						class="page_notifications_section notificationTabcontent"
+						id="opened"
+					>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -232,7 +258,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -248,7 +275,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -264,7 +292,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -280,7 +309,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -296,7 +326,8 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -312,7 +343,13 @@
 								<p>2h</p>
 								<span onclick="popup()" class="popup">...</span>
 							</div>
-						</div><div class="page_notification_item">
+						</div>
+					</div>
+					<div
+						class="page_notifications_section notificationTabcontent"
+						id="seen"
+					>
+						<div class="page_notification_item">
 							<div class="image">
 								<img src="/assets/profile.png" alt="profile" />
 							</div>
@@ -335,13 +372,27 @@
 		</div>
 		<script src="./app.js"></script>
 		<script>
+			document.getElementById('defaultNotificationTab').click();
+			console.log();
+			function notificationTabHandler(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName('notificationTabcontent');
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = 'none';
+				}
+				tablinks = document.getElementsByClassName('notificationTablinks');
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(' active', '');
+				}
+				document.getElementById(cityName).style.display = 'block';
+				evt.currentTarget.className += ' active';
+			}
 			const notificationPopup = document.querySelector('.popup');
 			notificationPopup.addEventListener('click', (e) => {
 				console.log(e);
 			});
 			const popup = (e) => {
 				console.log('ki');
-				
 			};
 		</script>
 	</body>

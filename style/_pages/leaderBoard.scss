@@ -32,20 +32,29 @@
 	}
 	.leader_board_switch {
 		width: 100%;
-		height: 50px;
+		height: 80px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		.item {
+		.leaderBoard_tablinks {
 			font-weight: 600;
 			font-size: 1rem;
 			margin-right: 30px;
 			border-bottom: 2px solid transparent;
 			cursor: pointer;
+			h1 {
+				font-size: 1.2rem;
+			}
 			&:hover {
 				border-bottom: 2px solid rgb(236, 30, 226);
 			}
 		}
+	}
+}
+.active {
+	color: rgb(236, 30, 226);
+	h1 {
+		border-bottom: 2px solid rgb(236, 30, 226);
 	}
 }
 table {
@@ -72,6 +81,7 @@ table {
 		}
 	}
 }
+
 #example_filter input {
 	border-radius: 5px;
 	margin: 10px;
@@ -100,8 +110,22 @@ table {
 #search {
 	display: none;
 }
-#example_length {
-	display: none;
+.dataTables_length {
+	width: 300px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-weight: 600;
+	select {
+		outline: none;
+		border: none;
+		height: 30px;
+		font-weight: 600;
+
+		text-align: center;
+		margin: 0 10px;
+		width: 60px;
+	}
 }
 #example_paginate {
 	margin: 10px;

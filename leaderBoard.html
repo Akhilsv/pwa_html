@@ -177,18 +177,30 @@
 				<div class="leader_title">
 					<h1>Groups and Leaderboards</h1>
 					<div class="leader_board_switch">
-						<div class="item">
-							Global
+						<div
+							class="leaderBoard_tablinks"
+							id="defaultClick"
+							onclick="leaderTabSlide('global')"
+						>
+							<h1>Global</h1>
 						</div>
-						<div class="item">
-							 College
+						<div
+							class="leaderBoard_tablinks"
+							onclick="leaderTabSlide('college')"
+						>
+							<h1>College</h1>
 						</div>
-						<div class="item">
-							 Group
+						<div class="leaderBoard_tablinks" onclick="leaderTabSlide('group')">
+							<h1>Group</h1>
 						</div>
 					</div>
 				</div>
-				<table id="example" class="display compact" style="width: 100%">
+				<table
+					id="example"
+					id="London"
+					class="display compact"
+					style="width: 100%"
+				>
 					<thead>
 						<tr id="header">
 							<th>Candidate Name</th>
@@ -203,133 +215,184 @@
 			</section>
 		</div>
 		<script>
-			var dataSet = [
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'01',
-					'wipro',
-					'70',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'02',
-					'tcs',
-					'90',
-					'885',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'03',
-					'wipro',
-					'30',
-					'785',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'04',
-					'tcs',
-					'10',
-					'85',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'05',
-					'wipro',
-					'50',
-					'385',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'02',
-					'tcs',
-					'80',
-					'685',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'01',
-					'wipro',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'01',
-					'tcs',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'01',
-					'wipro',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'01',
-					'tcs',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'01',
-					'wipro',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'01',
-					'tcs',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
-					'01',
-					'wipro',
-					'80',
-					'985',
-					'VTU',
-				],
-				[
-					`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
-					'01',
-					'tcs',
-					'80',
-					'985',
-					'VTU',
-				],
-			];
-
-			$(document).ready(function () {
-				$('#example').DataTable({
-					data: dataSet,
-					dom: '<"pull-left"f><"pull-right"l>tip',
+			const tablinks = document.querySelectorAll('.leaderBoard_tablinks');
+			for (let i = 0; i < tablinks.length; i++) {
+				tablinks[i].addEventListener('click', function () {
+					tablinks.forEach((a) => {
+						a.classList.remove('active');
+					});
+					tablinks[i].classList.toggle('active');
+					console.log(tablinks[i]);
+				});
+			}
+			const leaderTabSlide = (dataSet) => {
+				var global = [
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Alan Biju</div>`,
+						'01',
+						'wipro',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+				];
+				var college = [
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+				];
+				var group = [
+					[
+						`<div class="row_class"><img class='profile_pic avatar' src='/assets/profile.jpg' alt='avatar'/>Akhil Biju</div>`,
+						'01',
+						'tcs',
+						'80',
+						'985',
+						'VTU',
+					],
+				];
+				const table = $('#example').DataTable({
+					destroy: true,
+					data:
+						dataSet === 'global'
+							? global
+							: dataSet === 'college'
+							? college
+							: group,
+					dom: '<"pull-left"l><"pull-right"f>tip',
 					order: [],
 					language: {
 						searchPlaceholder: 'Search',
 						search: `<img id="search" src="https://img.icons8.com/office/16/000000/search--v2.png"/>`,
 					},
 					lengthMenu: [
-						[10, 25, 50, -1],
-						[10, 25, 50, 'All'],
+						[5, 25, 50, -1],
+						[5, 25, 50, 'All'],
 					],
 					columns: [
 						{ title: 'Candidate Name' },
@@ -340,8 +403,8 @@
 						{ title: 'University' },
 					],
 				});
-			});
+			};
+			document.getElementById('defaultClick').click();
 		</script>
-		<script src="./app.js"></script>
 	</body>
 </html>
