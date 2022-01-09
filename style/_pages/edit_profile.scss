@@ -26,7 +26,7 @@
 	@media (max-width: 500px) {
 		position: sticky;
 		top: 0;
-		background-color: #F6F6F6;
+		background-color: #f6f6f6;
 		z-index: 55;
 		width: 100%;
 	}
@@ -583,14 +583,32 @@ input:focus + label {
 	justify-content: flex-end;
 	.nav_buttons_box {
 		margin: 20px;
-		button {
-			width: 150px;
+		display: flex;
+		align-items: center;
+		div {
+			width: 100px;
+			display: grid;
+			place-items: center;
+			cursor: pointer;
 			height: 35px;
-			border: none;
-			outline: none;
 			background: rgba(10, 24, 46, 1);
 			color: #fff;
 			border-radius: 5px;
+			margin-right: 10px;
+			@media (max-width: 500px) {
+				width: 90px;
+			}
+		}
+		button {
+			width: 120px;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			height: 35px;
+			background: rgba(10, 24, 46, 1);
+			color: #fff;
+			border-radius: 5px;
+			margin-right: 10px;
 			@media (max-width: 500px) {
 				width: 90px;
 			}

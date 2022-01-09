@@ -156,7 +156,7 @@
 				</div>
 				<button>Contact us</button>
 			</aside>
-    <section class="editProfile" id="edit_profile">
+    <form class="editProfile" id="edit_profile">
 				<!-- Edit profile Header------- -->
 				<div class="editProfileHeader">
 					<div class="editProfileHeaderTabs">
@@ -181,7 +181,7 @@
 
 				<!-- Edit profile tab1 body------- -->
 				<div id="tab1" class="editProfiletabcontent">
-					<form class="editProfileForm">
+					<div class="editProfileForm">
 						<div class="upper__section">
 							<div class="Profile_edit">
 							<label for="profile">
@@ -386,11 +386,11 @@
 
 							</div>
 							<!-- //------------spokenlanguages------ -->
-					</form>
+						</div>
 						<!-- //--------------------------------  -->
 							<div class="nav_buttons_container">
 								<div class="nav_buttons_box">
-									<button onclick="openTab(event, 'tab2')">Next</button>
+									<div onclick="openTab(event, 'tab2')">Next</div>
 								</div>
 							</div>
 						<!--  -->
@@ -483,8 +483,8 @@
 				<!-- //--------------------------------  -->
 							<div class="nav_buttons_container">
 								<div class="nav_buttons_box">
-									<button onclick="openTab(event, 'tab1')">Previous</button>
-									<button onclick="openTab(event, 'tab3')">Next</button>
+									<div onclick="openTab(event, 'tab1')">Previous</div>
+									<div onclick="openTab(event, 'tab3')">Next</div>
 								</div>
 							</div>
 						<!--  -->
@@ -588,14 +588,14 @@
 					<!-- //--------------------------------  -->
 							<div class="nav_buttons_container">
 								<div class="nav_buttons_box">
-									<button onclick="openTab(event, 'tab2')">Previous</button>
-									<button onclick="launch_toast()">Save</button>
+									<div onclick="openTab(event, 'tab2')">Previous</div>
+									<button onclick="launch_toast()" type="submit">Save</button>
 								</div>
 							</div>
 						<!--  -->
 						<div id="toast"><div id="img">👍</div><div id="desc">Submitted Successfully</div></div>
 				</div>
-			</section>
+			</form>
             <script src="./app.js"></script>
             <script>
                 document.getElementById('defaultEditTabOpen').click();
