@@ -748,7 +748,6 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
-  border-top: solid 1px #cfcfcf;
 }
 
 .my_progress_trending_card_footer button {
