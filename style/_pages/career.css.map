@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAChB,gBAAgB,EAAE,UAAU;CAC5B",
+    "mappings": "",
     "sources": [
         "career.scss"
     ],

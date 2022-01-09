@@ -50,7 +50,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     z-index: 55;
     width: 100%;
   }
@@ -847,16 +847,43 @@ input:focus + label {
 
 .nav_buttons_container .nav_buttons_box {
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav_buttons_container .nav_buttons_box button {
-  width: 150px;
+.nav_buttons_container .nav_buttons_box div {
+  width: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
   height: 35px;
-  border: none;
-  outline: none;
   background: #0a182e;
   color: #fff;
   border-radius: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .nav_buttons_container .nav_buttons_box div {
+    width: 90px;
+  }
+}
+
+.nav_buttons_container .nav_buttons_box button {
+  width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 35px;
+  background: #0a182e;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 @media (max-width: 500px) {
