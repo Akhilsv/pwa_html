@@ -884,4 +884,24 @@ aside .myMenu a p:hover {
 .goals_section .progress_streak button:hover {
   background-color: #00c1c4;
 }
+
+.power_dropDown {
+  position: absolute;
+  top: 60px;
+  background-color: #00aeff;
+  width: 350px;
+  height: 400px;
+  right: 16%;
+  visibility: hidden;
+}
+
+.coin_dropDown {
+  position: absolute;
+  top: 60px;
+  background-color: #00ff62;
+  width: 350px;
+  height: 400px;
+  right: 10%;
+  visibility: hidden;
+}
 /*# sourceMappingURL=headers.css.map */

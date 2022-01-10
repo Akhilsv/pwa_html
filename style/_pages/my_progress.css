@@ -461,7 +461,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: #7933ff;
-  position: relative;
 }
 
 .my_progress_third_card h1 {

@@ -149,3 +149,22 @@ const slideMenu = () => {
 		sideMenu.style.left = '0';
 	}
 };
+
+const powerSection = document.querySelector('.power_dropDown');
+const coinSection = document.querySelector('.coin_dropDown');
+
+
+const powerhandler = () => {
+	if (powerSection.style.visibility == 'visible') {
+		powerSection.style.visibility = 'hidden';
+	} else {
+		powerSection.style.visibility = 'visible';
+	}
+}
+const Coinhandler = () => {
+	if (coinSection.style.visibility == 'visible') {
+		coinSection.style.visibility = 'hidden';
+	} else {
+		coinSection.style.visibility = 'visible';
+	}
+}

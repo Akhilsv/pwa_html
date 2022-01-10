@@ -78,7 +78,6 @@
 .page_notifications_section .page_notification_item {
   width: 80%;
   min-height: 120px;
-  background-color: #ffff;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: -webkit-box;
@@ -90,7 +89,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 700px) {
@@ -139,6 +138,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.page_notifications_section .page_notification_item .notify_text .button_zone button:nth-child(1) {
+  border-radius: 50px;
 }
 
 .page_notifications_section .page_notification_item .notify_text p {
@@ -196,5 +206,10 @@
 
 .active h1 {
   border-bottom: 2px solid #b5098f;
+}
+
+.recent {
+  background: #E2F0FE;
+  border-bottom: 1px solid #c9dcf0;
 }
 /*# sourceMappingURL=notification.css.map */
