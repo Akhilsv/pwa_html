@@ -134,7 +134,7 @@ aside {
 	transition: all 0.3s ease;
 	@media (max-width: 700px) {
 		position: absolute;
-		z-index: 15;
+		z-index: 21;
 		left: -250px;
 		top: 60px;
 		transition: all 0.3s ease;
@@ -608,7 +608,7 @@ aside {
 	width: 350px;
 	height: 400px;
 	right: 16%;
-	visibility:hidden;
+	visibility: hidden;
 }
 .coin_dropDown {
 	position: absolute;
@@ -617,5 +617,5 @@ aside {
 	width: 350px;
 	height: 400px;
 	right: 10%;
-	visibility:hidden;
+	visibility: hidden;
 }
