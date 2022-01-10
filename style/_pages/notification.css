@@ -17,7 +17,7 @@
 
 @media (max-width: 700px) {
   .page_notification_conatiner {
-    padding: 20px 10px;
+    padding: 0;
   }
 }
 
@@ -94,7 +94,8 @@
 
 @media (max-width: 700px) {
   .page_notifications_section .page_notification_item {
-    width: 90vw;
+    width: 100vw;
+    padding: 0;
   }
 }
 

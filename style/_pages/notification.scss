@@ -11,7 +11,7 @@
 		place-items: center;
 	}
 	@media (max-width: 700px) {
-		padding: 20px 10px;
+		padding:0;
 	}
 	.page_notifiction_switch {
 		width: 350px;
@@ -57,7 +57,8 @@
 		justify-content: space-between;
 		margin: 0 auto;
 		@media (max-width: 700px) {
-			width: 90vw;
+			width: 100vw;
+			padding: 0;
 		}
 		.image {
 			display: grid;
