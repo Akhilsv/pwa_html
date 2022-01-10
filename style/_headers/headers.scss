@@ -17,6 +17,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	max-height: 100vh;
+	padding-top:60px;
 }
 header {
 	width: 100%;
@@ -25,6 +26,7 @@ header {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	display: grid;
 	place-items: center;
+	position: absolute;
 	.sub_header {
 		width: 100%;
 		height: 100%;
@@ -235,7 +237,7 @@ aside {
 	justify-content: space-between;
 	flex-direction: column;
 	transition-duration: 0.5s;
-	z-index: 5;
+	z-index: 555;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	opacity: 0;
 	pointer-events: none;
@@ -271,7 +273,7 @@ aside {
 .notification_dropdown {
 	width: 350px;
 	background-color: #ffffff;
-	position: absolute;
+	position: fixed;
 	top: 58px;
 	right: 60px;
 	display: flex;
@@ -279,13 +281,16 @@ aside {
 	justify-content: flex-start;
 	flex-direction: column;
 	transition-duration: 0.5s;
-	z-index: 5;
+	z-index: 555;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	border: solid 1px #000;
 	opacity: 0;
 	border-bottom: solid 1px #000;
-
+	box-sizing: border-box;
 	pointer-events: none;
+	@media (max-width: 600px) {
+		right: 30px;
+	}
 	h1 {
 		font-size: 1rem;
 		font-weight: 500;
@@ -307,6 +312,8 @@ aside {
 	width: 100%;
 	height: 80px;
 	display: flex;
+	z-index: 555;
+
 	align-items: center;
 	justify-content: flex-start;
 	border-bottom: solid 1px #000;
@@ -370,7 +377,7 @@ aside {
 }
 .goals_DropDown {
 	width: 600px;
-	height: 500px;
+	height: 250px;
 	z-index: 55;
 	position: absolute;
 	right: 10%;
@@ -419,14 +426,18 @@ aside {
 }
 .goals_section {
 	width: 100%;
+	height: 100%;
 	padding: 5px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	background-color: #ffff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	.left_section,
 	.right_section {
 		width: calc(50% - 2.5px);
-		height: 360px;
+		height: 100%;
 		border-radius: 5px;
 		padding: 10px;
 	}

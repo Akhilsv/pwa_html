@@ -22,9 +22,15 @@
 }
 
 .feed_container {
-  width: 70%;
+  width: 80%;
   height: 100%;
   margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .feed_container {
+    width: 100%;
+  }
 }
 
 .feed_container .title {
@@ -50,6 +56,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 280px;
+}
+
+@media (max-width: 700px) {
+  .feed_container .feed_input_conatiner {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .feed_container .feed_input_conatiner .profile {

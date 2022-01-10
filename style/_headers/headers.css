@@ -21,6 +21,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   max-height: 100vh;
+  padding-top: 60px;
 }
 
 header {
@@ -32,6 +33,7 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  position: absolute;
 }
 
 header .sub_header {
@@ -358,7 +360,7 @@ aside .myMenu a p:hover {
           flex-direction: column;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  z-index: 5;
+  z-index: 555;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   opacity: 0;
@@ -406,7 +408,7 @@ aside .myMenu a p:hover {
 .notification_dropdown {
   width: 350px;
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   top: 58px;
   right: 60px;
   display: -webkit-box;
@@ -424,13 +426,21 @@ aside .myMenu a p:hover {
           flex-direction: column;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  z-index: 5;
+  z-index: 555;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border: solid 1px #000;
   opacity: 0;
   border-bottom: solid 1px #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .notification_dropdown {
+    right: 30px;
+  }
 }
 
 .notification_dropdown h1 {
@@ -459,6 +469,7 @@ aside .myMenu a p:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 555;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -553,7 +564,7 @@ aside .myMenu a p:hover {
 
 .goals_DropDown {
   width: 600px;
-  height: 500px;
+  height: 250px;
   z-index: 55;
   position: absolute;
   right: 10%;
@@ -621,6 +632,7 @@ aside .myMenu a p:hover {
 
 .goals_section {
   width: 100%;
+  height: 100%;
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,12 +643,15 @@ aside .myMenu a p:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .goals_section .left_section,
 .goals_section .right_section {
   width: calc(50% - 2.5px);
-  height: 360px;
+  height: 100%;
   border-radius: 5px;
   padding: 10px;
 }

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 .my_progess_section {
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-height: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +93,6 @@
   text-transform: capitalize;
   font-weight: 600;
   cursor: pointer;
-  position: relative;
   height: 100%;
 }
 
@@ -113,6 +114,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
@@ -143,6 +145,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: -1;
 }
 
 .my_progess_first_card h1 {
@@ -655,6 +658,10 @@
           align-items: center;
 }
 
+.my_progess_trending_card .trending_card_author .pink {
+  color: #e915c6;
+}
+
 .my_progess_trending_card .trending_card_author p {
   font-size: 0.8rem;
   margin-right: 10px;
@@ -722,7 +729,6 @@
 
 .my_progess_trending_card_body {
   width: 90%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,6 +754,7 @@
   display: -ms-grid;
   display: grid;
   place-items: center;
+  border-top: solid 1px #cfcfcf;
 }
 
 .my_progress_trending_card_footer button {
@@ -761,6 +768,22 @@
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.certificate_card {
+  height: 400px;
+  margin: 0px 10px 10px 10px;
+}
+
+.certificate_card .trending_card_banner {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.certificate_card .trending_card_banner img {
+  width: 100%;
+  height: 100%;
 }
 
 .second_card {
@@ -896,7 +919,8 @@
 }
 
 #completed,
-#career_completed {
+#career_completed,
+#internship_completed {
   border: dotted 1px #272727;
   background-color: rgba(4, 4, 255, 0.048);
 }

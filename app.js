@@ -86,6 +86,7 @@ Profile.addEventListener('click', () => {
 		Profile_dropDown.style.opacity = '1';
 		Profile_dropDown.style.pointerEvents = 'all';
 	}
+	
 });
 const notification_bell = document.querySelector('.notification_bell');
 const notification_dropDown = document.querySelector('.notification_dropdown');
@@ -123,6 +124,7 @@ document.addEventListener('click', function (event) {
 	if (!isClickInsideAvatar) {
 		Profile_dropDown.style.opacity = '0';
 		Profile_dropDown.style.pointerEvents = 'none';
+
 	}
 	if (!isClickInsideGoal && !isClickInsideGoalSection) {
 		goalsSection.style.visibility = 'hidden';

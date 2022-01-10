@@ -2,7 +2,7 @@
 
 .my_progess_section {
 	width: 100%;
-
+	box-sizing: border-box;
 	max-height: calc(100vh - 60px);
 	display: flex;
 	justify-content: flex-start;
@@ -59,11 +59,9 @@
 		text-transform: capitalize;
 		font-weight: 600;
 		cursor: pointer;
-		position: relative;
 		height: 100%;
 	}
 }
-
 .activeSlide {
 	border-bottom: solid 3px #000;
 	color: #cd27ff;
@@ -75,6 +73,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
+	z-index: -1;
 	@media (max-width: 900px) {
 		justify-content: center;
 	}
@@ -91,6 +90,7 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
+	z-index: -1;
 	h1 {
 		font-size: 1.2rem;
 	}
@@ -403,6 +403,9 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		& .pink {
+			color: rgb(233, 21, 198);
+		}
 		p {
 			font-size: 0.8rem;
 			margin-right: 10px;
@@ -410,6 +413,7 @@
 			font-weight: 600;
 		}
 	}
+
 	& .trending_card_hashtags {
 		width: 90%;
 		display: flex;
@@ -451,7 +455,6 @@
 }
 .my_progess_trending_card_body {
 	width: 90%;
-	height: 100px;
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-start;
@@ -481,9 +484,22 @@
 		cursor: pointer;
 	}
 }
-
+.certificate_card {
+	height: 400px;
+	margin: 0px 10px 10px 10px;
+	& .trending_card_banner {
+		width: 100%;
+		height: 250px;
+		margin-bottom: 10px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
 .second_card {
 	height: 350px;
+
 	& .trending_card_banner {
 		width: 100%;
 		height: 150px;
@@ -565,7 +581,8 @@
 	}
 }
 #completed,
-#career_completed {
+#career_completed,
+#internship_completed {
 	border: dotted 1px rgb(39, 39, 39);
 	background-color: rgba(4, 4, 255, 0.048);
 }
