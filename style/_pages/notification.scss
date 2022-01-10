@@ -10,12 +10,19 @@
 		display: grid;
 		place-items: center;
 	}
+	@media (max-width: 700px) {
+		padding: 20px 10px;
+	}
 	.page_notifiction_switch {
 		width: 350px;
 		height: 125px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media (max-width: 700px) {
+			width: 80vw;
+			height: 70px;
+		}
 		.switch {
 			font-size: 1.2rem;
 			font-weight: 600;
@@ -41,14 +48,18 @@
 	flex-direction: column;
 	padding: 10px;
 	.page_notification_item {
-		width: 100%;
-		height: 100px;
+		width: 80%;
+
+		min-height: 120px;
 		background-color: #ffff;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 10px;
+		margin: 15px auto;
+		@media (max-width: 700px) {
+			width: 90vw;
+		}
 		.image {
 			display: grid;
 			place-items: center;
@@ -71,19 +82,32 @@
 			justify-content: space-around;
 			flex-direction: column;
 			height: 100%;
+			& .button_zone {
+				display: flex;
+			}
 			p {
 				font-size: 0.9rem;
 				letter-spacing: 0.5px;
 				color: rgb(70, 70, 70);
 				font-weight: 600;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-height: 40px;
+			}
+			#delete {
+				&:hover {
+					color: white;
+					background: red;
+				}
 			}
 			button {
-				width: 120px;
+				padding: 0 15px;
 				height: 30px;
-				border-radius: 10px;
 				border: 1px solid #b5098f;
 				outline: none;
 				color: #b5098f;
+				margin-top: 10px;
+				margin-right: 10px;
 				transition: all 0.2s ease-in;
 				cursor: pointer;
 				font-weight: 600;

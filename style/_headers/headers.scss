@@ -17,7 +17,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	max-height: 100vh;
-	padding-top:60px;
+	padding-top: 60px;
 }
 header {
 	width: 100%;
@@ -231,7 +231,7 @@ aside {
 	background-color: #ffffff;
 	position: absolute;
 	top: 58px;
-	right: 25px;
+	right: 12px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -275,7 +275,7 @@ aside {
 	background-color: #ffffff;
 	position: fixed;
 	top: 58px;
-	right: 60px;
+	right: 12px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
@@ -283,7 +283,6 @@ aside {
 	transition-duration: 0.5s;
 	z-index: 555;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	border: solid 1px #000;
 	opacity: 0;
 	border-bottom: solid 1px #000;
 	box-sizing: border-box;

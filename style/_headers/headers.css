@@ -344,7 +344,7 @@ aside .myMenu a p:hover {
   background-color: #ffffff;
   position: absolute;
   top: 58px;
-  right: 25px;
+  right: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,7 +410,7 @@ aside .myMenu a p:hover {
   background-color: #ffffff;
   position: fixed;
   top: 58px;
-  right: 60px;
+  right: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,7 +429,6 @@ aside .myMenu a p:hover {
   z-index: 555;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: solid 1px #000;
   opacity: 0;
   border-bottom: solid 1px #000;
   -webkit-box-sizing: border-box;
