@@ -36,8 +36,8 @@
 							<p><span>🎯 </span> 0</p>
 						</div>
 						<div class="score">
-							<p><span>⚡ </span> 200</p>
-							<p>
+							<p class="shock" onclick="powerhandler()"><span>⚡ </span> 200</p>
+							<p class="coin" onclick="Coinhandler()">
 								<span
 									><img src="/assets/coin (3).png" alt="notifiction"
 								/></span>
@@ -153,7 +153,7 @@
 				</div>
 				<div class="info_text">
 					<p>How does streak work , know more obout here</p>
-					<span>^</span>
+					<span onclick="closeInfo()">X</span>
 				</div>
 				<div class="goals_section">
 					<div class="left_section">
@@ -213,6 +213,8 @@
 					</div>
 				</div>
 			</div>
+			<div class="power_dropDown">power</div>
+			<div class="coin_dropDown"></div>
 		</header>
 		<div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->

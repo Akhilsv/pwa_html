@@ -86,12 +86,9 @@ Profile.addEventListener('click', () => {
 		Profile_dropDown.style.opacity = '1';
 		Profile_dropDown.style.pointerEvents = 'all';
 	}
-	
 });
 const notification_bell = document.querySelector('.notification_bell');
 const notification_dropDown = document.querySelector('.notification_dropdown');
-const notification_dots = document.querySelector('.notification_dots');
-console.log(notification_dots);
 notification_bell.addEventListener('click', () => {
 	console.log('here');
 	if (notification_dropDown.style.opacity === '1') {
@@ -113,23 +110,49 @@ const goalsDrop = () => {
 		goalsSection.style.visibility = 'visible';
 	}
 };
+const powerSection = document.querySelector('.power_dropDown');
+const coinSection = document.querySelector('.coin_dropDown');
+
+const powerhandler = () => {
+	if (powerSection.style.visibility == 'visible') {
+		powerSection.style.visibility = 'hidden';
+	} else {
+		powerSection.style.visibility = 'visible';
+	}
+};
+const Coinhandler = () => {
+	if (coinSection.style.visibility == 'visible') {
+		coinSection.style.visibility = 'hidden';
+	} else {
+		coinSection.style.visibility = 'visible';
+	}
+};
+const power = document.querySelector('.shock');
+const coin = document.querySelector('.coin');
 //--------------------------------
 document.addEventListener('click', function (event) {
 	var isClickInsideAvatar = Profile.contains(event.target);
 	var isClickInsideBell = notification_bell.contains(event.target);
-	var isClickInsideDots = notification_dots.contains(event.target);
+	var isClickInsideDropdown = notification_dropDown.contains(event.target);
 	var isClickInsideGoal = goalButton.contains(event.target);
 	var isClickInsideGoalSection = goalsSection.contains(event.target);
+	let isClickInsideShock = power.contains(event.target);
+	let isClickInsideCoin = coin.contains(event.target);
 
 	if (!isClickInsideAvatar) {
 		Profile_dropDown.style.opacity = '0';
 		Profile_dropDown.style.pointerEvents = 'none';
-
+	}
+	if (!isClickInsideShock) {
+		powerSection.style.visibility = 'hidden';
+	}
+	if (!isClickInsideCoin) {
+		coinSection.style.visibility = 'hidden';
 	}
 	if (!isClickInsideGoal && !isClickInsideGoalSection) {
 		goalsSection.style.visibility = 'hidden';
 	}
-	if (!isClickInsideBell && !isClickInsideDots) {
+	if (!isClickInsideBell && !isClickInsideDropdown) {
 		notification_dropDown.style.opacity = '0';
 		notification_dropDown.style.pointerEvents = 'none';
 	}
@@ -149,22 +172,7 @@ const slideMenu = () => {
 		sideMenu.style.left = '0';
 	}
 };
-
-const powerSection = document.querySelector('.power_dropDown');
-const coinSection = document.querySelector('.coin_dropDown');
-
-
-const powerhandler = () => {
-	if (powerSection.style.visibility == 'visible') {
-		powerSection.style.visibility = 'hidden';
-	} else {
-		powerSection.style.visibility = 'visible';
-	}
-}
-const Coinhandler = () => {
-	if (coinSection.style.visibility == 'visible') {
-		coinSection.style.visibility = 'hidden';
-	} else {
-		coinSection.style.visibility = 'visible';
-	}
-}
+const closeInfo = () => {
+	const info = document.querySelector('.info_text');
+	info.style.display = 'none';
+};

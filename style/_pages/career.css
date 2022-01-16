@@ -1,5 +1,5 @@
-.title {
-  width: 100%;
+.all_title {
+  width: 94%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,15 +9,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
-.title p {
+.all_title p {
   font-size: 1.3rem;
   font-weight: 600;
 }
 
-.title span {
+.all_title span {
   font-size: 0.8rem;
 }
 

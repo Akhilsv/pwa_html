@@ -43,7 +43,7 @@ header {
 			align-items: center;
 			justify-content: space-around;
 			@media (max-width: 700px) {
-				display: none;
+				width: 150px;
 			}
 			.points {
 				display: flex;
@@ -54,6 +54,9 @@ header {
 				height: 40px;
 				border-radius: 20px;
 				cursor: pointer;
+				@media (max-width: 700px) {
+					display: none;
+				}
 				p {
 					font-weight: 500;
 					font-size: 0.9rem;
@@ -67,11 +70,15 @@ header {
 				align-items: center;
 				width: 150px;
 				justify-content: space-around;
-
+				@media (max-width: 700px) {
+					width: 50px;
+				}
 				p {
 					font-weight: 500;
 					font-size: 0.9rem;
 					display: flex;
+					cursor: pointer;
+
 					align-items: center;
 					span {
 						margin-right: 2px;
@@ -86,6 +93,9 @@ header {
 			img {
 				object-fit: contain;
 				width: 150px;
+				@media (max-width: 700px) {
+					display: none;
+				}
 			}
 		}
 		.Header_Profile {
@@ -229,6 +239,7 @@ aside {
 	width: 220px;
 	height: 250px;
 	background-color: #ffffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	position: absolute;
 	top: 58px;
 	right: 12px;
@@ -238,7 +249,6 @@ aside {
 	flex-direction: column;
 	transition-duration: 0.5s;
 	z-index: 555;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	opacity: 0;
 	pointer-events: none;
 }
@@ -288,7 +298,8 @@ aside {
 	box-sizing: border-box;
 	pointer-events: none;
 	@media (max-width: 600px) {
-		right: 30px;
+		width: 90vw;
+		right: 20px;
 	}
 	h1 {
 		font-size: 1rem;
@@ -375,17 +386,17 @@ aside {
 	}
 }
 .goals_DropDown {
-	width: 600px;
-	height: 250px;
+	width: 400px;
+	height: 230px;
 	z-index: 55;
 	position: absolute;
 	right: 10%;
 	top: 75px;
 	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	background-color: #fff;
 	visibility: hidden;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	&::after {
 		content: '';
 		width: 20px;
@@ -394,23 +405,23 @@ aside {
 		position: absolute;
 		top: -10px;
 		transform: rotate(45deg);
-		left: 60%;
+		left: 45%;
 	}
 	.title {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		margin: 10px 0;
-		padding: 10px;
+		padding:0 10px;
 		p {
 			color: #00aeff;
 		}
 	}
 	.info_text {
 		width: 100%;
-		height: 40px;
+		height: 30px;
 		background-color: #f0eeee;
 		display: flex;
 		align-items: center;
@@ -418,8 +429,11 @@ aside {
 		padding: 0 10px;
 		margin-bottom: 15px;
 		p {
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			letter-spacing: 1px;
+		}
+		span{
+			cursor: pointer;
 		}
 	}
 }
@@ -431,14 +445,12 @@ aside {
 	align-items: flex-start;
 	justify-content: space-between;
 	background-color: #ffff;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	.left_section,
 	.right_section {
 		width: calc(50% - 2.5px);
 		height: 100%;
 		border-radius: 5px;
-		padding: 10px;
+		padding:5px;
 	}
 	.left_section {
 		.total_streak_day {
@@ -447,7 +459,7 @@ aside {
 			border-radius: 5px;
 			.title {
 				width: 100%;
-				height: 40px;
+				height: 30px;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -455,17 +467,17 @@ aside {
 					color: #000;
 				}
 				img {
-					width: 20px;
+					width: 10px;
 				}
 			}
 			.streak_body {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 80px;
+				height: 40px;
 				img {
 					object-fit: contain;
-					width: 50px;
+					width: 30px;
 				}
 				.body_details {
 					margin-left: 20px;
@@ -473,7 +485,7 @@ aside {
 						font-weight: 600;
 					}
 					span {
-						font-size: 0.9rem;
+						font-size: 0.8rem;
 						font-weight: 500;
 						color: rgb(77, 76, 76);
 					}
@@ -486,7 +498,7 @@ aside {
 			border-radius: 5px;
 			.title {
 				width: 100%;
-				height: 40px;
+				height: 20px;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -504,7 +516,7 @@ aside {
 				height: 100%;
 				img {
 					object-fit: contain;
-					width: 50px;
+					width: 30px;
 				}
 				.body_details {
 					margin-left: 20px;
@@ -512,7 +524,7 @@ aside {
 						font-weight: 600;
 					}
 					span {
-						font-size: 0.9rem;
+						font-size: 0.8rem;
 						font-weight: 500;
 						color: rgb(77, 76, 76);
 					}
@@ -530,11 +542,11 @@ aside {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 80px;
+			height: 40px;
 			margin-top: 15px;
 			img {
 				object-fit: contain;
-				width: 50px;
+				width: 30px;
 			}
 			.body_details {
 				margin-left: 20px;
@@ -559,7 +571,7 @@ aside {
 			}
 			.time_box {
 				width: 120px;
-				height: 45px;
+				height: 40px;
 				background-color: #e9b7bbb6;
 				display: grid;
 				place-items: center;
@@ -604,18 +616,23 @@ aside {
 .power_dropDown {
 	position: absolute;
 	top: 60px;
-	background-color: #00aeff;
-	width: 350px;
-	height: 400px;
+	background-color: #ffffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 200px;
+	height: 200px;
 	right: 16%;
+	z-index: 555;
+
 	visibility: hidden;
 }
 .coin_dropDown {
 	position: absolute;
 	top: 60px;
-	background-color: #00ff62;
-	width: 350px;
-	height: 400px;
+	background-color: #ffffff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 200px;
+	height: 250px;
 	right: 10%;
+	z-index: 555;
 	visibility: hidden;
 }

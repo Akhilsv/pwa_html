@@ -18,7 +18,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 30px;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +157,7 @@
 
 .banner .banner_tag p {
   font-style: normal;
-  color: #0500ff;
+  color: #4d4d4d;
   font-size: 0.9rem;
   font-weight: bold;
   line-height: 1.3rem;
@@ -290,7 +289,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
-  height: 60px;
+  height: 50px;
 }
 
 .course_card .course_body .title span {
@@ -315,6 +314,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 5px 0;
 }
 
 .course_card .course_body .icons .icon_item {
@@ -347,7 +347,7 @@
 
 .course_card .course_body .par {
   width: 100%;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .course_card .course_body .par p {
