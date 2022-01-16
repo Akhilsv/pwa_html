@@ -106,10 +106,11 @@
 		margin: 6px 0;
 		display: flex;
 		justify-content: flex-start;
-		align-items: center;
+		align-items: flex-start;
 		padding: 0 5px;
 	}
 	.question {
+		white-space: nowrap;
 		font-size: 1rem;
 		font-weight: 700;
 		color: #005eff;

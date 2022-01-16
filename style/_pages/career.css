@@ -71,7 +71,7 @@
 
 .career_path_card .trending_third_card_header {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 12px;
   height: 110px;
   background: #e85b60;
   display: -webkit-box;
@@ -122,7 +122,7 @@
 
 .career_path_card .career_path_cards_body {
   width: 100%;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 10px 10px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -151,6 +151,11 @@
 
 .career_path_card .my_progess_trending_card_option .white {
   color: white;
+}
+
+.career_path_card .my_progess_trending_card_option img {
+  width: 20px;
+  height: 20px;
 }
 
 .career_path_card .my_progess_trending_card_option p {

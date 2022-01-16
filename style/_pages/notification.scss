@@ -11,7 +11,7 @@
 		place-items: center;
 	}
 	@media (max-width: 700px) {
-		padding:0;
+		padding: 0;
 	}
 	.page_notifiction_switch {
 		width: 350px;
@@ -49,7 +49,7 @@
 	padding: 10px;
 	.page_notification_item {
 		width: 80%;
-
+		position: relative;
 		min-height: 120px;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		display: flex;
@@ -147,6 +147,16 @@
 	}
 }
 .recent {
-	background: #E2F0FE;
+	background: #e2f0fe;
 	border-bottom: 1px solid #c9dcf0;
+	::after {
+		content: '';
+		position: absolute;
+		top: 45%;
+		left: 2%;
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		background: rgb(11, 173, 248);
+	}
 }

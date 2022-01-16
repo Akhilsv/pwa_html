@@ -36,9 +36,9 @@
 							<p><span>🎯 </span> 0</p>
 						</div>
 						<div class="score">
-							<p onclick="powerhandler()"><span>⚡ </span> 200</p>
+							<p><span>⚡ </span> 200</p>
 							<p>
-								<span onclick="Coinhandler()"
+								<span
 									><img src="/assets/coin (3).png" alt="notifiction"
 								/></span>
 								50
@@ -213,12 +213,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="power_dropDown">
-				power
-			</div>
-			<div class="coin_dropDown">
-
-			</div>
 		</header>
 		<div class="wholeBody">
 			<!-- //------------------------sidenav--------------------------- -->
@@ -301,7 +295,7 @@
 			<!---------------My progress section---------------------->
 
 			<section class="my_progess_section">
-				<div class="my_progess_top_buttons">
+				<!-- <div class="my_progess_top_buttons">
 					<button
 						class="slidebtnLinks"
 						id="defaultslidebtnOpen"
@@ -333,6 +327,42 @@
 					>
 						My Certification
 					</button>
+				</div> -->
+
+				<div class="tabs_wrap">
+					<ul>
+						<li
+							class="slidebtnLinks"
+							id="defaultslidebtnOpen"
+							onclick="slidebtn(event,'my_course_btn','in_progress','progress_1')"
+						>
+							My Progress
+						</li>
+						<li
+							class="slidebtnLinks"
+							onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3')"
+						>
+							My Projects
+						</li>
+						<li
+							class="slidebtnLinks"
+							onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2')"
+						>
+							My Careerpath
+						</li>
+						<li
+							class="slidebtnLinks"
+							onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4')"
+						>
+							My Internship
+						</li>
+						<li
+							class="slidebtnLinks"
+							onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4')"
+						>
+							My Certification
+						</li>
+					</ul>
 				</div>
 
 				<div
@@ -770,7 +800,7 @@
 						class="my_progess_first_cards_holder slideTabContent"
 						id="certificate_progress"
 					>
-						<div class="my_progess_trending_card  certificate_card">
+						<div class="my_progess_trending_card certificate_card">
 							<div class="trending_card_banner">
 								<img src="assets/banner.png" alt="banner" />
 							</div>
@@ -795,12 +825,12 @@
 								<p class="pink">Project Manager :</p>
 								<p>Akhil Sv</p>
 							</div>
-							
+
 							<div class="my_progress_trending_card_footer">
 								<button>View in details</button>
 							</div>
 						</div>
-						<div class="my_progess_trending_card  certificate_card">
+						<div class="my_progess_trending_card certificate_card">
 							<div class="trending_card_banner">
 								<img src="assets/banner.png" alt="banner" />
 							</div>
@@ -825,12 +855,12 @@
 								<p class="pink">Project Manager :</p>
 								<p>Akhil Sv</p>
 							</div>
-							
+
 							<div class="my_progress_trending_card_footer">
 								<button>View in details</button>
 							</div>
 						</div>
-						<div class="my_progess_trending_card  certificate_card">
+						<div class="my_progess_trending_card certificate_card">
 							<div class="trending_card_banner">
 								<img src="assets/banner.png" alt="banner" />
 							</div>
@@ -855,7 +885,7 @@
 								<p class="pink">Project Manager :</p>
 								<p>Akhil Sv</p>
 							</div>
-							
+
 							<div class="my_progress_trending_card_footer">
 								<button>View in details</button>
 							</div>
@@ -1168,7 +1198,7 @@
 							<div class="my_progess_trending_card_options_holder">
 								<div class="my_progess_trending_card_option">
 									<img src="./assets/time.svg" alt="time" />
-									<p class="white">15 hours</p>
+									<p class="white">Blog included</p>
 								</div>
 								<div class="my_progess_trending_card_option">
 									<img src="./assets/lessons.svg" alt="time" />

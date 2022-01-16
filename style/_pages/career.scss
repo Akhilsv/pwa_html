@@ -40,7 +40,7 @@
 
 	& .trending_third_card_header {
 		width: 100%;
-		padding: 10px 20px;
+		padding: 10px 12px;
 		height: 110px;
 		background: #e85b60;
 		display: flex;
@@ -72,7 +72,7 @@
 	}
 	& .career_path_cards_body {
 		width: 100%;
-		padding: 20px 20px 10px 20px;
+		padding: 20px 10px 10px 10px;
 		box-sizing: border-box;
 
 		p {
@@ -91,6 +91,10 @@
 		margin-right: 10px;
 		& .white {
 			color: white;
+		}
+		img {
+			width: 20px;
+			height: 20px;
 		}
 		p {
 			font-size: 0.7rem;

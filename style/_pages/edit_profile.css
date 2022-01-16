@@ -81,7 +81,7 @@
   }
 }
 
-.editProfileHeaderTabs button {
+.editProfileHeaderTabs div {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -99,13 +99,13 @@
   transition: all 0.5 ease;
 }
 
-.editProfileHeaderTabs button.active {
+.editProfileHeaderTabs div.active {
   background-color: black;
   color: #fff;
 }
 
 @media (max-width: 600px) {
-  .editProfileHeaderTabs button {
+  .editProfileHeaderTabs div {
     width: 40px;
     height: 40px;
   }
