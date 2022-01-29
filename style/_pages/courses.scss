@@ -16,6 +16,7 @@
 	padding: 30px;
 	display: flex;
 	align-items: center;
+	position: relative;
 	margin-bottom: 20px;
 	@media (max-width: 900px) {
 		flex-direction: column-reverse;
@@ -24,14 +25,16 @@
 	}
 	& .yellow_tag {
 		height: 50px;
+		width: 40%;
 		background: #f3c60c;
-		transform: translateY(48px) translateX(-30px);
-		position: relative;
+		// transform: translateY(48px) translateX(-30px);
+		bottom: -25px;
+		left: 0;
+		position: absolute;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		@media (max-width: 900px) {
-			transform: translate(-25px, 10px);
 			width: 100vw;
 		}
 
@@ -39,6 +42,10 @@
 			font-size: 0.9rem;
 			padding-left: 20px;
 			font-weight: 600;
+			@media (max-width: 700px) {
+				font-size: 0.8rem;
+				padding-left: 10px;
+			}
 		}
 		& .hide {
 			position: absolute;

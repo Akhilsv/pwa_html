@@ -352,35 +352,36 @@
 				</div> -->
 
 				<div class="tabs_wrap">
+					<li class="mobile_view" onclick="mobileDropdown('')"><h1>My Progress</h1> <span>˄</span></li>
 					<ul>
 						<li
 							class="slidebtnLinks"
 							id="defaultslidebtnOpen"
-							onclick="slidebtn(event,'my_course_btn','in_progress','progress_1')"
+							onclick="slidebtn(event,'my_course_btn','in_progress','progress_1');  mobileDropdown('My progress');"
 						>
 							My Progress
 						</li>
 						<li
 							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3')"
+							onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3');  mobileDropdown('My Projects');"
 						>
 							My Projects
 						</li>
 						<li
 							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2')"
+							onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2'); mobileDropdown('My Careerpath');"
 						>
 							My Careerpath
 						</li>
 						<li
 							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4')"
+							onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4'); mobileDropdown('My Internship');"
 						>
 							My Internship
 						</li>
 						<li
 							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4')"
+							onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4'); mobileDropdown('My Certification');"
 						>
 							My Certification
 						</li>
@@ -1412,6 +1413,26 @@
 			closeBanner.addEventListener('click', () => {
 				banner.style.display = 'none';
 			});
+			const tabs_wrap = document.querySelector('.tabs_wrap ul');
+			const he = document.querySelector('.mobile_view h1');
+			const hes = document.querySelector('.mobile_view span');
+			const mobileDropdown = (text) => {
+				var x = window.matchMedia('(max-width: 700px)');
+				if (text != '') {
+					he.innerHTML = text;
+				}
+				if (x.matches) {
+					if (tabs_wrap.style.display === 'none') {
+						tabs_wrap.style.display = 'flex';
+						hes.innerHTML = "˄";
+					} else {
+						tabs_wrap.style.display = 'none';
+						hes.innerHTML = "˅";
+
+					}
+				}
+			};
 		</script>
 	</body>
 </html>
+}

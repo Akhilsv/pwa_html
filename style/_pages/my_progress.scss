@@ -651,12 +651,39 @@ button {
 	border-bottom: 1px solid #ebedec;
 	width: 90%;
 	margin: 20px auto;
+	& .mobile_view {
+		border: solid 1px #000;
+		font-weight: 600;
+		list-style: none;
+		white-space: nowrap;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		background: #e9ecf1;
+		border: 1px solid #c1c4c9;
+		padding: 13px 35px;
+		margin-bottom: 15px;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		display: none;
+		h1 {
+			font-size: 1rem;
+		}
+		@media (max-width: 700px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	@media (max-width: 700px) {
+	}
 }
 
 .tabs_wrap ul {
 	display: flex;
 
 	justify-content: center;
+
 	@media (max-width: 700px) {
 		flex-direction: column;
 		align-items: center;
@@ -675,6 +702,7 @@ button {
 	padding: 13px 15px;
 	cursor: pointer;
 	transition: all 0.5s ease;
+
 	@media (max-width: 700px) {
 		border-bottom: 0px;
 		border-right-color: #000000;
