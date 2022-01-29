@@ -118,7 +118,6 @@ button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  z-index: 1;
 }
 
 @media (max-width: 900px) {
@@ -149,7 +148,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: -1;
 }
 
 .my_progess_first_card h1 {
@@ -267,7 +265,6 @@ button {
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 222;
   cursor: pointer;
 }
 
@@ -468,7 +465,18 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #7933ff;
-  position: relative;
+}
+
+.my_progress_third_card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .my_progress_third_card h1 {
@@ -490,9 +498,6 @@ button {
 }
 
 .my_progress_third_card p {
-  position: absolute;
-  top: 30px;
-  right: 30px;
   color: #fff;
   font-weight: 600;
 }

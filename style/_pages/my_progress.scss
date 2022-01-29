@@ -75,7 +75,6 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	z-index: 1;
 	@media (max-width: 900px) {
 		justify-content: center;
 	}
@@ -92,7 +91,6 @@ button {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
-	z-index: -1;
 	h1 {
 		font-size: 1.2rem;
 	}
@@ -181,7 +179,6 @@ button {
 		font-size: 1rem;
 		text-transform: capitalize;
 		transition: all 0.5s ease;
-		z-index: 222;
 		cursor: pointer;
 		&:hover {
 			background: rgb(218, 200, 223);
@@ -289,7 +286,11 @@ button {
 	padding: 20px;
 	flex-direction: column;
 	background: #7933ff;
-	position: relative;
+	& .header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 	h1 {
 		font-size: 1.2rem;
 		color: #fff;
@@ -307,9 +308,6 @@ button {
 		cursor: pointer;
 	}
 	p {
-		position: absolute;
-		top: 30px;
-		right: 30px;
 		color: #fff;
 		font-weight: 600;
 	}
@@ -374,7 +372,7 @@ button {
 	justify-content: flex-start;
 	align-items: center;
 	margin-right: 10px;
-	
+
 	& .white {
 		color: white;
 	}
