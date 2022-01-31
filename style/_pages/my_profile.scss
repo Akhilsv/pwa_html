@@ -2,7 +2,6 @@
 	width: 100%;
 	height: 100%;
 	max-height: calc(100vh - 60px);
-	padding: 0 40px;
 	display: grid;
 	place-items: center;
 	overflow: scroll;
@@ -75,18 +74,20 @@
 		flex-direction: column;
 	}
 }
-.my_profile_three_card {
-	width: 30%;
-	height: 480px;
+.slideProfileContent{
+	width:100%;
+
+}
+.my_profile_content_holder {
+	min-width: 100%;
 	background-color: rgb(255, 255, 255);
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-	border-radius: 10px;
+	border: 1px solid #000;
+	margin-top: 10px;
 	@media (max-width: 600px) {
 		width: 85%;
 		margin: 10px 0;
@@ -131,17 +132,19 @@
 }
 
 .my_profile_teammate_card {
-	width: 100%;
-	height: 70px;
+	width: 60%;
+	height: 80px;
 	display: flex;
 	justify-content: flex-start;
+	padding-left: 20px;
 	align-items: center;
 	margin: 10px 0;
+	border: solid rgb(112, 112, 112) 1px;
 	.teammate_dp {
 		img {
 			width: 60px;
 			height: 60px;
-			border-radius: 10px;
+			border-radius: 50%;
 		}
 	}
 	.teammate_details {
@@ -186,9 +189,11 @@
 .my_profile_blogs_section {
 	width: 100%;
 	min-height: 50vh;
-	margin-top: 40px;
+	margin-top: 20px;
 	padding-left: 20px;
 	padding-top: 20px;
+	background: #fff;
+	border: solid 1px #000;
 	@media (max-width: 600px) {
 		display: grid;
 		place-items: center;
@@ -255,7 +260,6 @@
 		img {
 			width: 100%;
 			height: 100%;
-			border-radius: 20px;
 		}
 	}
 	.add_blog {
@@ -267,5 +271,148 @@
 			font-size: 3rem;
 			font-weight: 800;
 		}
+	}
+}
+
+.white_ban {
+	position: sticky;
+	width: 100%;
+	top: 0px;
+	z-index: 55;
+	background-color: rgb(255, 255, 255);
+	height: fit-content;
+	border-radius: 5px;
+	border: solid 1px #000;
+}
+.tabs_wrap {
+	width: 100%;
+}
+
+.tabs_wrap ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	@media (max-width: 700px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.tabs_wrap ul li {
+	height: 50px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	cursor: pointer;
+	span {
+		display: grid;
+		place-items: center;
+		margin: 0 6px;
+		img {
+			width: 15px;
+			object-fit: contain;
+		}
+	}
+}
+.activeSlide {
+	border-bottom: solid 3px #000;
+	color: #cd27ff;
+}
+.post_section {
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background: #fff;
+	.post_box {
+		width: 70%;
+	
+		min-height: 300px;
+		padding: 20px;
+		border-radius: 8px;
+		margin-bottom: 15px;
+		@media (max-width: 700px) {
+			width: 100%;
+		}
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		}
+		.avater_section {
+			width: 100%;
+			.profile {
+				display: flex;
+				align-items: center;
+				img {
+					width: 40px;
+					border-radius: 50%;
+					height: 40px;
+				}
+				.name {
+					margin-left: 15px;
+					p {
+						font-weight: 600;
+						font-size: 0.9rem;
+					}
+					span {
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+		.para {
+			width: 100%;
+			margin-top: 10px;
+			font-size: 0.85rem;
+			color: #333;
+		}
+		.photo {
+			width: 100%;
+			margin: 10px 0;
+			img {
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+.post_tages {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.tags_box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.tags {
+			margin-right: 5px;
+			font-size: 0.8rem;
+			font-weight: 600;
+			border: 1px solid #e95bca;
+			padding: 4px;
+			color: #cc39ac;
+		}
+	}
+	.time {
+		p {
+			font-size: 0.8rem;
+			color: #333;
+		}
+	}
+}
+.post_icons {
+	margin-top: 20px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	img {
+		width: 25px;
+		object-fit: contain;
 	}
 }
