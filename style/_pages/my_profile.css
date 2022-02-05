@@ -436,7 +436,7 @@
   position: sticky;
   width: 100%;
   top: 0px;
-  z-index: 55;
+  z-index: 5;
   background-color: white;
   height: -webkit-fit-content;
   height: -moz-fit-content;
