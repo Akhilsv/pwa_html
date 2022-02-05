@@ -53,7 +53,7 @@
 
 @media (max-width: 600px) {
   .my_profile_bar {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -64,6 +64,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+@media (max-width: 600px) {
+  .my_profile_dp {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .my_profile_name {
@@ -140,8 +147,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 10px;
-  border: 1px solid #000;
-  margin-top: 10px;
 }
 
 @media (max-width: 600px) {
@@ -219,10 +224,24 @@
   border: solid #707070 1px;
 }
 
+@media (max-width: 700px) {
+  .my_profile_teammate_card {
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
 .my_profile_teammate_card .teammate_dp img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  .my_profile_teammate_card .teammate_dp img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .my_profile_teammate_card .teammate_details {
@@ -263,7 +282,9 @@
 }
 
 .my_profile_teammate_card .teammate_view_profile {
-  width: 20%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 100%;
 }
 
@@ -276,14 +297,18 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@media (max-width: 700px) {
+  .my_profile_teammate_card h6 {
+    margin-right: 7px;
+  }
+}
+
 .my_profile_blogs_section {
   width: 100%;
   min-height: 50vh;
-  margin-top: 20px;
   padding-left: 20px;
   padding-top: 20px;
   background: #fff;
-  border: solid 1px #000;
 }
 
 @media (max-width: 600px) {
@@ -417,11 +442,51 @@
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 5px;
-  border: solid 1px #000;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tabs_wrap {
   width: 100%;
+}
+
+.tabs_wrap .mobile_view {
+  list-style: none;
+  white-space: nowrap;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: none;
+  position: relative;
+}
+
+.tabs_wrap .mobile_view h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.tabs_wrap .mobile_view span {
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: 700px) {
+  .tabs_wrap .mobile_view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .tabs_wrap ul {
@@ -433,11 +498,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 @media (max-width: 700px) {
   .tabs_wrap ul {
+    display: none;
+    border-top: solid 1px #979797;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -481,9 +548,14 @@
   color: #cd27ff;
 }
 
+@media (max-width: 700px) {
+  .activeSlide {
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+  }
+}
+
 .post_section {
   width: 100%;
-  margin-top: 20px;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;

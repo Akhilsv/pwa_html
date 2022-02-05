@@ -1416,18 +1416,21 @@
 			const tabs_wrap = document.querySelector('.tabs_wrap ul');
 			const he = document.querySelector('.mobile_view h1');
 			const hes = document.querySelector('.mobile_view span');
+
 			const mobileDropdown = (text) => {
 				var x = window.matchMedia('(max-width: 700px)');
 				if (text != '') {
 					he.innerHTML = text;
 				}
 				if (x.matches) {
-					if (tabs_wrap.style.display === 'none') {
-						tabs_wrap.style.display = 'flex';
-						hes.innerHTML = "˄";
-					} else {
+					if (tabs_wrap.style.display === 'flex') {
+						console.log("here");
 						tabs_wrap.style.display = 'none';
 						hes.innerHTML = "˅";
+					} else {
+						console.log("here else");
+						tabs_wrap.style.display = 'flex';
+						hes.innerHTML = "^";
 
 					}
 				}

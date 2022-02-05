@@ -171,37 +171,39 @@
 				</div>
 				<div class="white_ban">
 			  	<div class="tabs_wrap">
+					  <li class="mobile_view" onclick="mobileDropdown('')"><h1>Personal Information </h1> <span>˄</span></li>
 					<ul>
+
 						<li
 							class="slideProfileLinks"
 							id="defaultProfileLinks"
-									onclick="slideProfile(event,'Personal')"
+									onclick="slideProfile(event,'Personal'); mobileDropdown('Personal Information');"
 						>
 						<span><img src="/assets/bell.svg" alt="icon" ></span>
 							Personal Information 
 						</li>
 						<li
 							class="slideProfileLinks"
-							onclick="slideProfile(event,'Education')"
+							onclick="slideProfile(event,'Education');  mobileDropdown('Education and Experience');"
 						>	<span><img src="/assets/bell.svg" alt="icon" ></span>
 							Education and Experience
 						</li>
 						<li
 							class="slideProfileLinks"
-							onclick="slideProfile(event,'Blogs')"
+							onclick="slideProfile(event,'Blogs');  mobileDropdown('Blogs');"
 						>	<span><img src="/assets/bell.svg" alt="icon" ></span>
 							Blogs
 						</li>
 						<li
 							class="slideProfileLinks"
-							onclick="slideProfile(event,'Teammates')"
+							onclick="slideProfile(event,'Teammates');  mobileDropdown('Teammates');"
 						>
 						<span><img src="/assets/bell.svg" alt="icon" ></span>
 							Teammates
 						</li>
 						<li
 							class="slideProfileLinks"
-							onclick="slideProfile(event,'Posts')"
+							onclick="slideProfile(event,'Posts');  mobileDropdown('Posts');"
 						>	<span><img src="/assets/bell.svg" alt="icon" ></span>
 							Posts
 						</li>
@@ -539,6 +541,26 @@
 				document.getElementById(cityName).style.display = 'flex';
 				evt.currentTarget.className += ' activeSlide';
 			}
+			const tabs_wrap = document.querySelector('.tabs_wrap ul');
+			const he = document.querySelector('.mobile_view h1');
+			const hes = document.querySelector('.mobile_view span');
+
+			const mobileDropdown = (text) => {
+				var x = window.matchMedia('(max-width: 700px)');
+				if (text != '') {
+					he.innerHTML = text;
+				}
+				if (x.matches) {
+					if (tabs_wrap.style.display === 'flex') {
+						tabs_wrap.style.display = 'none';
+						hes.innerHTML = "˅";
+					} else {
+						tabs_wrap.style.display = 'flex';
+						hes.innerHTML = "^";
+
+					}
+				}
+			};
 			</script>
 
 </body>

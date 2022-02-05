@@ -1048,7 +1048,6 @@ button {
   background: #e9ecf1;
   border: 1px solid #c1c4c9;
   padding: 13px 35px;
-  margin-bottom: 15px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1057,6 +1056,11 @@ button {
 
 .tabs_wrap .mobile_view h1 {
   font-size: 1rem;
+}
+
+.tabs_wrap .mobile_view h1 span {
+  text-align: right;
+  color: red;
 }
 
 @media (max-width: 700px) {
@@ -1084,6 +1088,7 @@ button {
 
 @media (max-width: 700px) {
   .tabs_wrap ul {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

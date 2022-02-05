@@ -34,7 +34,7 @@
 	align-items: center;
 	padding: 10px 20px;
 	@media (max-width: 600px) {
-		width: 80%;
+		width: 90%;
 	}
 }
 .my_profile_dp {
@@ -44,6 +44,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+	@media (max-width: 600px) {
+		width: 80px;
+		height: 80px;
+	}
 }
 .my_profile_name {
 	width: 50%;
@@ -74,9 +78,8 @@
 		flex-direction: column;
 	}
 }
-.slideProfileContent{
-	width:100%;
-
+.slideProfileContent {
+	width: 100%;
 }
 .my_profile_content_holder {
 	min-width: 100%;
@@ -86,8 +89,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 10px;
-	border: 1px solid #000;
-	margin-top: 10px;
 	@media (max-width: 600px) {
 		width: 85%;
 		margin: 10px 0;
@@ -140,11 +141,19 @@
 	align-items: center;
 	margin: 10px 0;
 	border: solid rgb(112, 112, 112) 1px;
+	@media (max-width: 700px) {
+		width: 100%;
+		padding-left: 10px;
+	}
 	.teammate_dp {
 		img {
 			width: 60px;
 			height: 60px;
 			border-radius: 50%;
+			@media (max-width: 700px) {
+				width: 40px;
+				height: 40px;
+			}
 		}
 	}
 	.teammate_details {
@@ -174,7 +183,7 @@
 		}
 	}
 	.teammate_view_profile {
-		width: 20%;
+		width: max-content;
 		height: 100%;
 	}
 	h6 {
@@ -184,16 +193,17 @@
 		white-space: nowrap;
 		color: rgb(229, 29, 176);
 		font-family: 'Open Sans', sans-serif;
+		@media (max-width: 700px) {
+			margin-right: 7px;
+		}
 	}
 }
 .my_profile_blogs_section {
 	width: 100%;
 	min-height: 50vh;
-	margin-top: 20px;
 	padding-left: 20px;
 	padding-top: 20px;
 	background: #fff;
-	border: solid 1px #000;
 	@media (max-width: 600px) {
 		display: grid;
 		place-items: center;
@@ -282,18 +292,46 @@
 	background-color: rgb(255, 255, 255);
 	height: fit-content;
 	border-radius: 5px;
-	border: solid 1px #000;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .tabs_wrap {
 	width: 100%;
+	& .mobile_view {
+		list-style: none;
+		white-space: nowrap;
+		width: 100%;
+		height: 50px;
+		margin: 0 auto;
+		text-align: center;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		display: none;
+		position: relative;
+		h1 {
+			font-size: 1.2rem;
+			font-weight: 800;
+		}
+		span {
+			font-weight: 600;
+			position: absolute;
+			right: 10px;
+		}
+		@media (max-width: 700px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 
 .tabs_wrap ul {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	@media (max-width: 700px) {
+		display: none;
+		border-top: solid 1px rgb(151, 151, 151);
 		flex-direction: column;
 		align-items: center;
 	}
@@ -320,10 +358,12 @@
 .activeSlide {
 	border-bottom: solid 3px #000;
 	color: #cd27ff;
+	@media (max-width: 700px) {
+		border-bottom: solid 3px rgba(0, 0, 0, 0);
+	}
 }
 .post_section {
 	width: 100%;
-	margin-top: 20px;
 	padding-top: 20px;
 	display: flex;
 	align-items: center;
@@ -332,7 +372,7 @@
 	background: #fff;
 	.post_box {
 		width: 70%;
-	
+
 		min-height: 300px;
 		padding: 20px;
 		border-radius: 8px;
