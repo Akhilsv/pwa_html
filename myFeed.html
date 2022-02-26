@@ -223,6 +223,7 @@
 										<span>TechSnap DevOps</span>
 									</div>
 								</div>
+								<div class="more" onclick="showMore()">...</div>
 							</div>
 							<div class="para">
 								<p>
@@ -248,48 +249,53 @@
 								<div class="post_icons">
 									<div class="icon">
 										<img
-										src="https://img.icons8.com/ios/50/000000/like--v1.png"
-									/>
-									<span>Like</span>
+											src="https://img.icons8.com/ios/50/000000/like--v1.png"
+										/>
+										<span>Like</span>
 									</div>
 									<div class="icon" onclick="showComment()">
 										<img
-										src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-comment-chat-flatart-icons-outline-flatarticons-2.png"
-									/>
-									<span>Comment</span>
+											src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-comment-chat-flatart-icons-outline-flatarticons-2.png"
+										/>
+										<span>Comment</span>
 									</div>
-									
 								</div>
 							</div>
 							<div class="comment_section">
 								<div class="comment_input">
-									<img src="/assets/profile.jpg" alt="profile" >
-									<input type="text" name="comment" id="comment">
+									<img src="/assets/profile.jpg" alt="profile" />
+									<input type="text" name="comment" id="comment" />
 								</div>
 								<div class="comments_box">
 									<div class="comment">
-										<img src="/assets/profile.jpg" alt="profile" >
+										<img src="/assets/profile.jpg" alt="profile" />
 										<div class="comment_info">
-												<div class="comment_name">
-													<p>Alan Biju</p>
-													<span>Developer </span>
-												</div>
-												<div class="para">
-													<p>Thank you Nuseir Yassin for taking us this through this amazing Odyssey 💕👌😊, surreal experience and Dubai has done it again a giant time capsule.........Yet again millenials will throng the Booking counters eager to catch a</p>
-												</div>
+											<div class="comment_name">
+												<p>Alan Biju</p>
+												<span>Developer </span>
+											</div>
+											<div class="para">
+												<p>
+													Thank you Nuseir Yassin for taking us this through
+													this amazing Odyssey 💕👌😊, surreal experience and
+													Dubai has done it again a giant time
+													capsule.........Yet again millenials will throng the
+													Booking counters eager to catch a
+												</p>
+											</div>
 										</div>
 									</div>
-									
+
 									<div class="comment">
-										<img src="/assets/profile.jpg" alt="profile" >
+										<img src="/assets/profile.jpg" alt="profile" />
 										<div class="comment_info">
-												<div class="comment_name">
-													<p>Alan Biju</p>
-													<span>Developer </span>
-												</div>
-												<div class="para">
-													<p>Thank you </p>
-												</div>
+											<div class="comment_name">
+												<p>Alan Biju</p>
+												<span>Developer </span>
+											</div>
+											<div class="para">
+												<p>Thank you</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -299,18 +305,64 @@
 				</div>
 			</section>
 		</div>
+		<div class="more_section" id="mainconaitner">
+			<div class="more_container">
+				<div class="more_item">
+					<p id="red">Report</p>
+				</div>
+				<div class="more_item">
+					<p id="red">unfollow</p>
+				</div>
+				<div class="more_item">
+					<p>go to post</p>
+				</div>
+				<div class="more_item">
+					<p>tagged account</p>
+				</div>
+				<div class="more_item">
+					<p>share to..</p>
+				</div>
+				<div class="more_item">
+					<p>copy to</p>
+				</div>
+				<div class="more_item">
+					<p>embed</p>
+				</div>
+				<div class="more_item">
+					<p>cancel</p>
+				</div>
+			</div>
+		</div>
 		<!-- <script src="./app.js"></script> -->
 		<script>
-			const showComment=()=>{
-				console.log("urur");
-				CommentSection=document.querySelector(".comment_section")
-				if(CommentSection.style.display=="block"){
-					CommentSection.style.display="none"
+			///--------------------------------
+			const showComment = () => {
+				const CommentSection = document.querySelector('.comment_section');
+				if (CommentSection.style.display == 'block') {
+					CommentSection.style.display = 'none';
+				} else {
+					CommentSection.style.display = 'block';
 				}
-				else{
-					CommentSection.style.display="block"
+			};
+			//--------------------------------------------
+			const showMore = () => {
+				console.log('hihih');
+				const moreSection = document.querySelector('.more_section');
+				if (moreSection.style.display == 'grid') {
+					moreSection.style.display = 'none';
+				} else {
+					moreSection.style.display = 'grid';
 				}
-			}
+			};
+			//-------------------------------------
+			const moreSection = document.querySelector('.more_section');
+			moreSection.addEventListener('click', (e) => {
+				if (e.target.id === 'mainconaitner') {
+					moreSection.style.display = 'none';
+				}
+			});
+
+			//------------------------
 		</script>
 	</body>
 </html>
