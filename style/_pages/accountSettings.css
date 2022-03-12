@@ -42,6 +42,7 @@ p {
 @media (max-width: 600px) {
   .accountContainer {
     width: 100%;
+    padding: 0;
   }
 }
 

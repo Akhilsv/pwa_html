@@ -10,7 +10,15 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
 		<title>Document</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 		<header>
@@ -166,53 +174,109 @@
 			<!---------------Topics section---------------------->
 
 			<section class="feed_section">
+				<div class="ads_holder">
+					<div class="ads">
+						<img
+							src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAACeUyGWuWBhQQLyxe1gEMEaZgw.png"
+							alt="ads"
+						/>
+					</div>
+					<div class="ads">
+						<img
+							src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAACeUyGWuWBhQQLyxe1gEMEaZgw.png"
+							alt="ads"
+						/>
+					</div>
+				</div>
 				<div class="feed_container">
-					<div class="title">
+					<!-- <div class="title">
 						<h1>Feed section</h1>
 						<p>
 							A community of passionate Artificial Intelligence and Machine
 							Learning enthusiasts.
 						</p>
-					</div>
-					<div class="feed_input_conatiner">
-						<div class="profile">
+					</div> -->
+					<div class="post_feed">
+						<div class="header">
 							<img src="/assets/profile.png" alt="profile" />
+							<div class="post_bar" onclick="showPostFeed()">
+								<h1>Start A Post</h1>
+							</div>
 						</div>
-						<div class="feed_input_box">
-							<div class="feed_title">
-								<span>posting to </span>
-								<div class="title_name">
-									<p>Fornted End develpment</p>
-								</div>
-								<div class="add_tags">
-									<div class="tag-disp" id="skillsTags"></div>
-									<div data-title="Skill's" class="form-item">
-										<input
-											class="form-textinput"
-											id="skills"
-											style="width: 100%"
-											placeholder="Tags"
-										/>
-									</div>
-								</div>
+						<div class="options_holder">
+							<div class="icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									data-supported-dps="24x24"
+									fill="currentColor"
+									class="mercado-match"
+									width="24"
+									height="24"
+									focusable="false"
+								>
+									<path
+										d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"
+									></path>
+								</svg>
+
+								<span>Photo</span>
 							</div>
-							<div class="feed_textarea">
-								<textarea name="feed"></textarea>
+							<div class="icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									data-supported-dps="24x24"
+									fill="currentColor"
+									class="mercado-match"
+									width="24"
+									height="24"
+									focusable="false"
+								>
+									<path
+										d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"
+									></path>
+								</svg>
+								<span>Video</span>
 							</div>
-							<div class="post_feed">
-								<div class="icons">
-									<img
-										src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-file-advertising-kiranshastry-lineal-kiranshastry-1.png"
-									/>
-									<img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACy0lEQVRoge3ZTYhWVRzH8c88jvYCjZr0soiwUCeFUnxBaxVCWIuhGAdECVqFtFRsEy2qjagMCIItFAVXWhYViKBtIghKsHTdNCqiuSvJHKFGF+c+PU/TOPfec+4zd4aeLxy45z7n/u/vd+55zitdunT5X9DTdr0AOzCAp9Bbi6J8/sJVfIX9+K39xyUYxd1ZlkYz7XqEmj+P5zGO4/geYynV1kEexAZsQQMXsAZe13K4rS51EbyppXsA9maZkRpFxTIiaN/TwMLs5mh9eqJpan600Xbzbh1KEvlHc5kudg62Ygj9WX4EX+Io7lQoMIpDgrOzU5RZjB/dvxv8Bas6K3NSzmbvP9TIK4kn8a2phT6Db/BcurY4ihg5KIz0efThmH/PFqaNPCPL8EaJeOvwcrycePKMvKJ8DW+K1JJEnpEiTWoiT8cISSXPyJ8RMW/FCEklz8hPETEvxghJJc/I17hRIt4YPouXE0+ekdt4r0S8fbgWLyeeIuPIEQwXKPcJPkyTU5q5zYuic61dOIfdwijezg18hI+Vn3guxAtYjqV4HI9hkVa3/wdu4nfha1/Clazc+rJG4AQ+xVphKtIQ5ljfCevoIvTgRQxiI1Yq1ipyKbvBMI4fslSG+XgHb+PZks8WotM7JQ/hXewUzHSMThp5VZhwTvxPdYRK2ucEevEBTpkmE82XVsnDOInXKo6bS5VG+nAaL1UYszBVNa25woBYiwmqM3JATeuQJlUYGcT2CuIkkWrkCRyuQkgqqUZ2a+1U1kqKkdV4qyohqaQYeT/x+UqJFdIvHEfMGBpaa4gyg+N2M+hrYLyBX7PMCsXM9Jp5B0LXCaNxczN6WNhln4oh5c/6Op02NJeTX2i1+Z+FLZ2/JzExT1jZPZJjdjr5HJubmT5h2l13zZZNpzLt/9nX3SQcLC7GA/GV1FHGcFk4Zz9Ts5YuXWYN9wC0W+pZQa5oOAAAAABJRU5ErkJggg=="
-									/>
-								</div>
-								<button>Post</button>
+							<div class="icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									data-supported-dps="24x24"
+									fill="currentColor"
+									class="mercado-match"
+									width="24"
+									height="24"
+									focusable="false"
+								>
+									<path
+										d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"
+									></path>
+								</svg>
+								<span>Event</span>
+							</div>
+							<div class="icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24"
+									data-supported-dps="24x24"
+									fill="currentColor"
+									class="mercado-match"
+									width="24"
+									height="24"
+									focusable="false"
+								>
+									<path
+										d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"
+									></path>
+								</svg>
+								<span>Write an articel</span>
 							</div>
 						</div>
 					</div>
 					<!-- //-------------------------------------------------- -->
+								<!-- //-------------------------------------------------- -->
 					<div class="post_section">
 						<div class="post_box">
 							<div class="avater_section">
@@ -248,9 +312,9 @@
 							<div class="post_icon_conatiner">
 								<div class="post_icons">
 									<div class="icon">
-										<img
-											src="https://img.icons8.com/ios/50/000000/like--v1.png"
-										/>
+										<span id="heart">
+											<i class="far fa-heart js-heart heart"></i>
+										</span>
 										<span>Like</span>
 									</div>
 									<div class="icon" onclick="showComment()">
@@ -268,33 +332,114 @@
 								</div>
 								<div class="comments_box">
 									<div class="comment">
-										<img src="/assets/profile.jpg" alt="profile" />
-										<div class="comment_info">
-											<div class="comment_name">
-												<p>Alan Biju</p>
-												<span>Developer </span>
-											</div>
-											<div class="para">
-												<p>
-													Thank you Nuseir Yassin for taking us this through
-													this amazing Odyssey 💕👌😊, surreal experience and
-													Dubai has done it again a giant time
-													capsule.........Yet again millenials will throng the
-													Booking counters eager to catch a
-												</p>
+										<div class="main_comment">
+											<img src="/assets/profile.jpg" alt="profile" />
+											<div class="main_info">
+												<div class="comment_info">
+													<div class="comment_name">
+														<p>Alan Biju</p>
+														<span>Developer </span>
+													</div>
+													<div class="para">
+														<p>
+															Thank you Nuseir Yassin for taking us this through
+															this amazing Odyssey 💕👌😊, surreal experience
+															and Dubai has done it again a giant time
+															capsule.........Yet again millenials will throng
+															the Booking counters eager to catch a
+														</p>
+													</div>
+												</div>
+												<div class="likes">
+													<span>Like . 51 || 1 Reply</span>
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="comment">
-										<img src="/assets/profile.jpg" alt="profile" />
-										<div class="comment_info">
-											<div class="comment_name">
-												<p>Alan Biju</p>
-												<span>Developer </span>
+										<div class="sub_comment">
+											<img src="/assets/profile.jpg" alt="profile" />
+											<div class="main_info">
+												<div class="comment_info">
+													<div class="comment_name">
+														<p>Alan Biju</p>
+														<span>Developer </span>
+													</div>
+													<div class="para">
+														<p>
+															Thank you Nuseir Yassin for taking us this through
+															this amazing Odyssey 💕👌😊, surreal experience
+															and Dubai has done it again a giant time
+															capsule.........Yet again millenials will throng
+															the Booking counters eager to catch a
+														</p>
+													</div>
+												</div>
+												<div class="likes">
+													<span>Like . 51 || 1 Reply</span>
+												</div>
 											</div>
-											<div class="para">
-												<p>Thank you</p>
+										</div>
+										<div class="sub_comment">
+											<img src="/assets/profile.jpg" alt="profile" />
+											<div class="main_info">
+												<div class="comment_info">
+													<div class="comment_name">
+														<p>Alan Biju</p>
+														<span>Developer </span>
+													</div>
+													<div class="para">
+														<p>Thank you</p>
+													</div>
+												</div>
+												<div class="likes">
+													<span>Like . 51 || 1 Reply</span>
+												</div>
+											</div>
+										</div>
+										<div class="sub_comment hidden_comment">
+											<img src="/assets/profile.jpg" alt="profile" />
+											<div class="main_info">
+												<div class="comment_info">
+													<div class="comment_name">
+														<p>Alan Biju</p>
+														<span>Developer </span>
+													</div>
+													<div class="para">
+														<p>Ur right bro</p>
+													</div>
+												</div>
+												<div class="likes">
+													<span>Like . 51 || 1 Reply</span>
+												</div>
+											</div>
+										</div>
+
+										<button onclick="ShowMoreComments()" class="showmorebutton">
+											Load More
+										</button>
+									</div>
+									<div class="comment">
+										<div class="main_comment">
+											<img src="/assets/profile.jpg" alt="profile" />
+											<div class="main_info">
+												<div class="comment_info">
+													<div class="comment_name">
+														<p>Alan Biju</p>
+														<span>Developer </span>
+													</div>
+													<div class="para">
+														<p>
+															Thank you Nuseir Yassin for taking us this through
+															this amazing Odyssey 💕👌😊, surreal experience
+															and Dubai has done it again a giant time
+															capsule.........Yet again millenials will throng
+															the Booking counters eager to catch a
+														</p>
+													</div>
+												</div>
+												<div class="likes">
+													<span>Like . 51 || 1 Reply</span>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -319,7 +464,7 @@
 				<div class="more_item">
 					<p>tagged account</p>
 				</div>
-				<div class="more_item">
+				<div class="more_item" onclick="shareToBox()">
 					<p>share to..</p>
 				</div>
 				<div class="more_item">
@@ -333,8 +478,190 @@
 				</div>
 			</div>
 		</div>
+		<div class="feed_more_section" id="feedmainconaitner">
+			<div class="more_container">
+				<div class="title">
+					<h1>Create Post</h1>
+					<h1 id="close_feed_container">X</h1>
+				</div>
+				<div class="avater_section">
+					<div class="profile">
+						<img src="/assets/profile.png" alt="profile" />
+						<div class="name">
+							<p>Alan Biju</p>
+						</div>
+					</div>
+				</div>
+				<div class="write">
+					<textarea rows="5" placeholder="Write Something here..." autofocus>
+Write Something here...
+					</textarea
+					>
+				</div>
+				<div class="footer">
+					<div class="icons">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"
+								></path>
+							</svg>
+						</div>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"
+								></path>
+							</svg>
+						</div>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M23 20v1H1v-1zM8 9H2v10h6zm7-6H9v16h6zm7 11h-6v5h6z"
+								></path>
+							</svg>
+						</div>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+								></path>
+							</svg>
+						</div>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"
+								></path>
+							</svg>
+						</div>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								data-supported-dps="24x24"
+								fill="currentColor"
+								class="mercado-match"
+								width="24"
+								height="24"
+								focusable="false"
+							>
+								<path
+									d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"
+								></path>
+							</svg>
+						</div>
+					</div>
+					<button>Post</button>
+				</div>
+			</div>
+		</div>
+		<div class="share_to_section" id="mainconaitner">
+			<div class="share_to_conatiner">
+				<div class="title">
+					<p>Share to ..</p>
+				</div>
+				<div class="body">
+					<div class="share_item">
+						<p id="red">whatsapp</p>
+					</div>
+					<div class="share_item">
+						<p id="red">facebookt</p>
+					</div>
+					<div class="share_item">
+						<p id="red">twitter</p>
+					</div>
+					<div class="share_item">
+						<p id="red">zoom</p>
+					</div>
+					<div class="share_item">
+						<p id="red">copy link</p>
+					</div>
+					<div class="share_item" onclick="backToMoreSection()">
+						<p id="red">cancel</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- <script src="./app.js"></script> -->
 		<script>
+			///--------------------------------
+
+			///------------------------------
+			const shareToBox = () => {
+				const moreSection = document.querySelector('.more_section');
+				const shareSection = document.querySelector('.share_to_section');
+				moreSection.style.display = 'none';
+				shareSection.style.display = 'grid';
+			};
+			const backToMoreSection = () => {
+				const moreSection = document.querySelector('.more_section');
+				const shareSection = document.querySelector('.share_to_section');
+				moreSection.style.display = 'grid';
+				shareSection.style.display = 'none';
+			};
+			////------------------------------
+			const ShowMoreComments = () => {
+				console.log('here');
+				const ShowMoreCommentsSection =
+					document.querySelector('.hidden_comment');
+				const ShowMoreCommentsButton =
+					document.querySelector('.showmorebutton');
+
+				if (ShowMoreCommentsSection.style.display == 'flex') {
+					ShowMoreCommentsSection.style.display = 'none';
+					ShowMoreCommentsButton.textContent = 'Load More';
+				} else {
+					ShowMoreCommentsSection.style.display = 'flex';
+					ShowMoreCommentsButton.textContent = 'Show Less';
+				}
+			};
 			///--------------------------------
 			const showComment = () => {
 				const CommentSection = document.querySelector('.comment_section');
@@ -345,8 +672,29 @@
 				}
 			};
 			//--------------------------------------------
+
+			const feedMoreSection = document.querySelector('.feed_more_section');
+			const closeFeedMoreSection = document.querySelector(
+				'#close_feed_container',
+			);
+			const showPostFeed = () => {
+				console.log('here');
+
+				if (feedMoreSection.style.display == 'grid') {
+					feedMoreSection.style.display = 'none';
+				} else {
+					feedMoreSection.style.display = 'grid';
+				}
+			};
+			feedMoreSection.addEventListener('click', (e) => {
+				if (e.target.id === 'feedmainconaitner') {
+					feedMoreSection.style.display = 'none';
+				}
+			});
+			closeFeedMoreSection.addEventListener('click', (e) => {
+				feedMoreSection.style.display = 'none';
+			});
 			const showMore = () => {
-				console.log('hihih');
 				const moreSection = document.querySelector('.more_section');
 				if (moreSection.style.display == 'grid') {
 					moreSection.style.display = 'none';
@@ -361,7 +709,27 @@
 					moreSection.style.display = 'none';
 				}
 			});
-
+			const shareSection = document.querySelector('.share_to_section');
+			shareSection.addEventListener('click', (e) => {
+				if (e.target.id === 'mainconaitner') {
+					shareSection.style.display = 'none';
+				}
+			});
+			//-------------------
+			$(document).ready(function () {
+				$('#heart').click(function () {
+					if ($('#heart').hasClass('liked')) {
+						$('#heart').html(
+							'<i class="far fa-heart js-heart heart" aria-hidden="true"></i>',
+						);
+						$('#heart').removeClass('liked');
+					} else {
+						$('#heart').html('<i class="fa fa-heart" aria-hidden="true"></i>');
+						$('#heart').addClass('liked');
+					}
+				});
+			});
+			//------------------------
 			//------------------------
 		</script>
 	</body>
