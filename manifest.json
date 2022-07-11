@@ -5,6 +5,7 @@
 	"background_color": "#cecece",
 	"theme_color": "#e72ed5",
 	"display": "standalone",
+	"Scope":"./",
 	"icons": [
 		{
 			"src": "images/logo.svg",
