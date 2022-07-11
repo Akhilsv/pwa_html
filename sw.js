@@ -3,10 +3,21 @@ const dynamicCatchName = 'pwa_dynamic_catche_top_news';
 const assets = [
 	'/',
 	'/index.html',
-	'/style',
+	'/style/_headers/headers.css',
+	'/style/_pages/accountSettings.css',
+	'/style/_pages/assesments.css',
+	'/style/_pages/career.css',
+	'/style/_pages/competitions.css',
+	'/style/_pages/courses.css',
+	'/style/_pages/edit_profile.css',
+	'/style/_pages/leaderBoard.css',
+	'/style/_pages/my_profile.css',
+	'/style/_pages/my_progress.css',
+	'/style/_pages/myFeed.css',
+	'/style/_pages/notification.css',
+	'/style/_pages/topics.css',
 	'/images/logo.png',
 	'/images/logo.svg',
-	'/assets',
 ];
 self.addEventListener('install', function (e) {
 	console.log('[ServiceWorker] Install');
