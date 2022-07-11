@@ -1,0 +1,26 @@
+{
+	"name": "TechSnap",
+	"short_name": "TechSnap",
+	"start_url": ".",
+	"background_color": "#cecece",
+	"theme_color": "#e72ed5",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "images/logo.svg",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "images/logo.png",
+			"type": "images/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "images/logo.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	]
+}
