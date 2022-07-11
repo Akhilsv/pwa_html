@@ -1,11 +1,12 @@
 {
 	"name": "TechSnap",
 	"short_name": "TechSnap",
-	"start_url": "index.html",
+	"start_url": "./?utm_source=pwa_install",
+	"scope": ".",
 	"background_color": "#cecece",
 	"theme_color": "#e72ed5",
 	"display": "standalone",
-	"Scope":"./",
+	
 	"icons": [
 		{
 			"src": "images/logo.svg",
