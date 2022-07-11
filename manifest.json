@@ -1,7 +1,7 @@
 {
 	"name": "TechSnap",
 	"short_name": "TechSnap",
-	"start_url": "/",
+	"start_url": "index.html",
 	"background_color": "#cecece",
 	"theme_color": "#e72ed5",
 	"display": "standalone",
