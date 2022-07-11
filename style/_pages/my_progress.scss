@@ -2,6 +2,7 @@
 button {
 	cursor: pointer;
 }
+
 .my_progess_section {
 	width: 100%;
 	max-width: 1400px;
@@ -11,7 +12,6 @@ button {
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-direction: column;
-	overflow: scroll;
 	margin: 0 auto;
 	@media (max-width: 700px) {
 		max-height: 100%;
@@ -668,9 +668,8 @@ button {
 		display: none;
 		h1 {
 			font-size: 1rem;
-		
 		}
-		
+
 		@media (max-width: 700px) {
 			display: flex;
 			justify-content: space-between;

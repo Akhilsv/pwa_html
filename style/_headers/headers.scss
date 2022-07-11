@@ -692,3 +692,11 @@ aside {
 		}
 	}
 }
+
+.max_width_holder {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}

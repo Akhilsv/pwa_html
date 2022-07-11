@@ -1,5 +1,6 @@
 .feed_section {
   width: 100%;
+  max-width: 1400px;
   max-height: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,11 +738,13 @@
   padding: 15px 5px;
   width: 100%;
 }
+
 @media (max-width: 600px) {
   .comment_section .comments_box {
     padding: 15px 0;
   }
 }
+
 .comment_section .comments_box .comment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,12 +780,14 @@
           justify-content: space-between;
   margin-bottom: 10px;
 }
+
 @media (max-width: 600px) {
   .comment_section .comments_box .comment .sub_comment {
     width: 100%;
     margin-left: 30px;
   }
 }
+
 .comment_section .comments_box .comment .hidden_comment {
   display: none;
 }

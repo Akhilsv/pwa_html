@@ -1,5 +1,6 @@
 .editProfile {
   width: 90%;
+  max-width: 1400px;
   max-height: calc(100vh - 60px);
   display: -webkit-box;
   display: -ms-flexbox;

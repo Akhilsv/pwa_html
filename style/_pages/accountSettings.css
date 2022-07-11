@@ -26,6 +26,7 @@ p {
 .accountContainer {
   width: 90%;
   height: 90%;
+  max-width: 1400px;
   max-height: calc(100vh - 60px);
   padding: 0 40px;
   display: -ms-grid;

@@ -1008,4 +1008,13 @@ aside .myMenu a p:hover {
   border-radius: 5px;
   margin-bottom: 5px;
 }
+
+.max_width_holder {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 /*# sourceMappingURL=headers.css.map */
