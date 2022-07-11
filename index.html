@@ -315,9 +315,9 @@
 			</aside>
 
 			<!---------------My progress section---------------------->
-
-			<section class="my_progess_section">
-				<!-- <div class="my_progess_top_buttons">
+			<div class="max_width_holder">
+				<section class="my_progess_section">
+					<!-- <div class="my_progess_top_buttons">
 					<button
 						class="slidebtnLinks"
 						id="defaultslidebtnOpen"
@@ -351,123 +351,126 @@
 					</button>
 				</div> -->
 
-				<div class="tabs_wrap">
-					<li class="mobile_view" onclick="mobileDropdown('')"><h1>My Progress</h1> <span>˄</span></li>
-					<ul>
-						<li
-							class="slidebtnLinks"
-							id="defaultslidebtnOpen"
-							onclick="slidebtn(event,'my_course_btn','in_progress','progress_1');  mobileDropdown('My progress');"
-						>
-							My Progress
+					<div class="tabs_wrap">
+						<li class="mobile_view" onclick="mobileDropdown('')">
+							<h1>My Progress</h1>
+							<span>˄</span>
 						</li>
-						<li
-							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3');  mobileDropdown('My Projects');"
-						>
-							My Projects
-						</li>
-						<li
-							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2'); mobileDropdown('My Careerpath');"
-						>
-							My Careerpath
-						</li>
-						<li
-							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4'); mobileDropdown('My Internship');"
-						>
-							My Internship
-						</li>
-						<li
-							class="slidebtnLinks"
-							onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4'); mobileDropdown('My Certification');"
-						>
-							My Certification
-						</li>
-					</ul>
-				</div>
-
-				<div
-					class="my_progress_button_detail_section slidebtnContent"
-					id="my_course_btn"
-				>
-					<div class="my_progess_header">
-						<h1
-							class="slideTabLinks progress_1"
-							id="defaultslideTabOpen"
-							onclick="slideTab('progress_1','in_progress')"
-						>
-							In progess
-						</h1>
-						<h1
-							class="slideTabLinks completed_1"
-							onclick="slideTab('completed_1','completed')"
-						>
-							Completed
-						</h1>
+						<ul>
+							<li
+								class="slidebtnLinks"
+								id="defaultslidebtnOpen"
+								onclick="slidebtn(event,'my_course_btn','in_progress','progress_1');  mobileDropdown('My progress');"
+							>
+								My Progress
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_projects_btn','project_progress','progress_3');  mobileDropdown('My Projects');"
+							>
+								My Projects
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_careerpath_btn','career_progress','progress_2'); mobileDropdown('My Careerpath');"
+							>
+								My Careerpath
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_internship_btn','internship_progress','progress_4'); mobileDropdown('My Internship');"
+							>
+								My Internship
+							</li>
+							<li
+								class="slidebtnLinks"
+								onclick="slidebtn(event,'my_certificate_btn','certificate_progress','progress_4'); mobileDropdown('My Certification');"
+							>
+								My Certification
+							</li>
+						</ul>
 					</div>
+
 					<div
-						class="my_progess_first_cards_holder slideTabContent"
-						id="in_progress"
+						class="my_progress_button_detail_section slidebtnContent"
+						id="my_course_btn"
 					>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
+						<div class="my_progess_header">
+							<h1
+								class="slideTabLinks progress_1"
+								id="defaultslideTabOpen"
+								onclick="slideTab('progress_1','in_progress')"
+							>
+								In progess
+							</h1>
+							<h1
+								class="slideTabLinks completed_1"
+								onclick="slideTab('completed_1','completed')"
+							>
+								Completed
+							</h1>
+						</div>
+						<div
+							class="my_progess_first_cards_holder slideTabContent"
+							id="in_progress"
+						>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
 							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
 							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
 							</div>
 						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-					</div>
 
-					<!-- -----in progress else-block-part---- -->
-					<!-- <div
+						<!-- -----in progress else-block-part---- -->
+						<!-- <div
 						class="my_progess_first_cards_holder content"
 						
 					>
 						<h6>No Completed Projects</h6>
 					</div> -->
 
-					<!-- -----completed else-block-part---- -->
-					<!-- <div
+						<!-- -----completed else-block-part---- -->
+						<!-- <div
 						class="my_progess_first_cards_holder"
 					>
 						<div class="my_progess_first_card">
@@ -516,94 +519,94 @@
 							</div>
 						</div>
 					</div> -->
-					<div
-						class="my_progess_first_cards_holder slideTabContent nocontent"
-						id="completed"
-					>
-						<h6>No Completed Projects</h6>
-					</div>
-				</div>
-
-				<div
-					class="my_progress_button_detail_section slidebtnContent"
-					id="my_projects_btn"
-				>
-					<div class="my_progess_header">
-						<h1
-							class="slideTabLinks progress_3"
-							id="defaultslideTabOpen"
-							onclick="slideTab('progress_3','project_progress')"
+						<div
+							class="my_progess_first_cards_holder slideTabContent nocontent"
+							id="completed"
 						>
-							In progess
-						</h1>
-						<h1
-							class="slideTabLinks completed_3"
-							onclick="slideTab('completed_3','completed_3')"
-						>
-							Completed
-						</h1>
-					</div>
-					<div
-						class="my_progess_first_cards_holder slideTabContent"
-						id="project_progress"
-					>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
+							<h6>No Completed Projects</h6>
 						</div>
 					</div>
 
-					<!-- -----in progress else-block-part---- -->
-					<!-- <div
+					<div
+						class="my_progress_button_detail_section slidebtnContent"
+						id="my_projects_btn"
+					>
+						<div class="my_progess_header">
+							<h1
+								class="slideTabLinks progress_3"
+								id="defaultslideTabOpen"
+								onclick="slideTab('progress_3','project_progress')"
+							>
+								In progess
+							</h1>
+							<h1
+								class="slideTabLinks completed_3"
+								onclick="slideTab('completed_3','completed_3')"
+							>
+								Completed
+							</h1>
+						</div>
+						<div
+							class="my_progess_first_cards_holder slideTabContent"
+							id="project_progress"
+						>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- -----in progress else-block-part---- -->
+						<!-- <div
 						class="my_progess_first_cards_holder content"
 						
 					>
 						<h6>No Completed Projects</h6>
 					</div> -->
 
-					<!-- -----completed else-block-part---- -->
-					<!-- <div
+						<!-- -----completed else-block-part---- -->
+						<!-- <div
 						class="my_progess_first_cards_holder"
 					>
 						<div class="my_progess_first_card">
@@ -652,703 +655,707 @@
 							</div>
 						</div>
 					</div> -->
-					<div
-						class="my_progess_first_cards_holder slideTabContent nocontent"
-						id="completed_3"
-					>
-						<h6>No Completed Projects</h6>
-					</div>
-				</div>
-
-				<div
-					class="my_progress_button_detail_section slidebtnContent"
-					id="my_careerpath_btn"
-				>
-					<div class="my_progess_header">
-						<h1
-							class="slideTabLinks progress_2"
-							id="defaultslideTabOpen"
-							onclick="slideTab('progress_2','career_progress')"
+						<div
+							class="my_progess_first_cards_holder slideTabContent nocontent"
+							id="completed_3"
 						>
-							In progess
-						</h1>
-						<h1
-							class="slideTabLinks completed_2"
-							onclick="slideTab('completed_2','career_completed')"
-						>
-							Completed
-						</h1>
+							<h6>No Completed Projects</h6>
+						</div>
 					</div>
 
 					<div
-						class="my_progess_first_cards_holder slideTabContent"
-						id="career_progress"
+						class="my_progress_button_detail_section slidebtnContent"
+						id="my_careerpath_btn"
 					>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
+						<div class="my_progess_header">
+							<h1
+								class="slideTabLinks progress_2"
+								id="defaultslideTabOpen"
+								onclick="slideTab('progress_2','career_progress')"
+							>
+								In progess
+							</h1>
+							<h1
+								class="slideTabLinks completed_2"
+								onclick="slideTab('completed_2','career_completed')"
+							>
+								Completed
+							</h1>
 						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="my_progess_first_cards_holder slideTabContent nocontent"
-						id="career_completed"
-					>
-						<h6>No Completed Projects</h6>
-					</div>
-				</div>
 
-				<div
-					class="my_progress_button_detail_section slidebtnContent"
-					id="my_internship_btn"
-				>
-					<div class="my_progess_header">
-						<h1
-							class="slideTabLinks progress_4"
-							id="defaultslideTabOpen"
-							onclick="slideTab('progress_4','internship_progress')"
+						<div
+							class="my_progess_first_cards_holder slideTabContent"
+							id="career_progress"
 						>
-							In progess
-						</h1>
-						<h1
-							class="slideTabLinks completed_4"
-							onclick="slideTab('completed_4','internship_completed')"
-						>
-							Completed
-						</h1>
-					</div>
-
-					<div
-						class="my_progess_first_cards_holder slideTabContent"
-						id="internship_progress"
-					>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-						<div class="my_progess_first_card">
-							<div class="my_progess_first_card_header">
-								<img src="assets/python_logo.png" alt="course-logo" />
-								<h1>Introduction to Python</h1>
-							</div>
-							<div class="my_progess_first_card_body">
-								<p>
-									Master the basics of data analysis in Python. Expand your
-									skillset by learning scientific computing with numpy.
-								</p>
-							</div>
-							<div class="my_progess_first_card_footer">
-								<button>go to course</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="my_progess_first_cards_holder slideTabContent nocontent"
-						id="internship_completed"
-					>
-						<h6>No Completed Projects</h6>
-					</div>
-				</div>
-				<div
-					class="my_progress_button_detail_section slidebtnContent"
-					id="my_certificate_btn"
-				>
-					<div
-						class="my_progess_first_cards_holder slideTabContent"
-						id="certificate_progress"
-					>
-						<div class="my_progess_trending_card certificate_card">
-							<div class="trending_card_banner">
-								<img src="assets/banner.png" alt="banner" />
-							</div>
-							<div class="my_progess_trending_card_body">
-								<h1>Introduction to SQL</h1>
-								<div class="my_progess_trending_card_options_holder">
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/time.svg" alt="time" />
-										<p>15 hours</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/lessons.svg" alt="time" />
-										<p>9 lessons</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/coin.svg" alt="time" />
-										<p>779 coins</p>
-									</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
 								</div>
 							</div>
-							<div class="trending_card_author">
-								<p class="pink">Project Manager :</p>
-								<p>Akhil Sv</p>
-							</div>
-
-							<div class="my_progress_trending_card_footer">
-								<button>View in details</button>
-							</div>
-						</div>
-						<div class="my_progess_trending_card certificate_card">
-							<div class="trending_card_banner">
-								<img src="assets/banner.png" alt="banner" />
-							</div>
-							<div class="my_progess_trending_card_body">
-								<h1>Introduction to SQL</h1>
-								<div class="my_progess_trending_card_options_holder">
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/time.svg" alt="time" />
-										<p>15 hours</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/lessons.svg" alt="time" />
-										<p>9 lessons</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/coin.svg" alt="time" />
-										<p>779 coins</p>
-									</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
 								</div>
 							</div>
-							<div class="trending_card_author">
-								<p class="pink">Project Manager :</p>
-								<p>Akhil Sv</p>
-							</div>
-
-							<div class="my_progress_trending_card_footer">
-								<button>View in details</button>
-							</div>
-						</div>
-						<div class="my_progess_trending_card certificate_card">
-							<div class="trending_card_banner">
-								<img src="assets/banner.png" alt="banner" />
-							</div>
-							<div class="my_progess_trending_card_body">
-								<h1>Introduction to SQL</h1>
-								<div class="my_progess_trending_card_options_holder">
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/time.svg" alt="time" />
-										<p>15 hours</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/lessons.svg" alt="time" />
-										<p>9 lessons</p>
-									</div>
-									<div class="my_progess_trending_card_option">
-										<img src="./assets/coin.svg" alt="time" />
-										<p>779 coins</p>
-									</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
 								</div>
 							</div>
-							<div class="trending_card_author">
-								<p class="pink">Project Manager :</p>
-								<p>Akhil Sv</p>
-							</div>
+						</div>
+						<div
+							class="my_progess_first_cards_holder slideTabContent nocontent"
+							id="career_completed"
+						>
+							<h6>No Completed Projects</h6>
+						</div>
+					</div>
 
-							<div class="my_progress_trending_card_footer">
-								<button>View in details</button>
+					<div
+						class="my_progress_button_detail_section slidebtnContent"
+						id="my_internship_btn"
+					>
+						<div class="my_progess_header">
+							<h1
+								class="slideTabLinks progress_4"
+								id="defaultslideTabOpen"
+								onclick="slideTab('progress_4','internship_progress')"
+							>
+								In progess
+							</h1>
+							<h1
+								class="slideTabLinks completed_4"
+								onclick="slideTab('completed_4','internship_completed')"
+							>
+								Completed
+							</h1>
+						</div>
+
+						<div
+							class="my_progess_first_cards_holder slideTabContent"
+							id="internship_progress"
+						>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+							<div class="my_progess_first_card">
+								<div class="my_progess_first_card_header">
+									<img src="assets/python_logo.png" alt="course-logo" />
+									<h1>Introduction to Python</h1>
+								</div>
+								<div class="my_progess_first_card_body">
+									<p>
+										Master the basics of data analysis in Python. Expand your
+										skillset by learning scientific computing with numpy.
+									</p>
+								</div>
+								<div class="my_progess_first_card_footer">
+									<button>go to course</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="my_progess_first_cards_holder slideTabContent nocontent"
+							id="internship_completed"
+						>
+							<h6>No Completed Projects</h6>
+						</div>
+					</div>
+					<div
+						class="my_progress_button_detail_section slidebtnContent"
+						id="my_certificate_btn"
+					>
+						<div
+							class="my_progess_first_cards_holder slideTabContent"
+							id="certificate_progress"
+						>
+							<div class="my_progess_trending_card certificate_card">
+								<div class="trending_card_banner">
+									<img src="assets/banner.png" alt="banner" />
+								</div>
+								<div class="my_progess_trending_card_body">
+									<h1>Introduction to SQL</h1>
+									<div class="my_progess_trending_card_options_holder">
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/time.svg" alt="time" />
+											<p>15 hours</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/lessons.svg" alt="time" />
+											<p>9 lessons</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/coin.svg" alt="time" />
+											<p>779 coins</p>
+										</div>
+									</div>
+								</div>
+								<div class="trending_card_author">
+									<p class="pink">Project Manager :</p>
+									<p>Akhil Sv</p>
+								</div>
+
+								<div class="my_progress_trending_card_footer">
+									<button>View in details</button>
+								</div>
+							</div>
+							<div class="my_progess_trending_card certificate_card">
+								<div class="trending_card_banner">
+									<img src="assets/banner.png" alt="banner" />
+								</div>
+								<div class="my_progess_trending_card_body">
+									<h1>Introduction to SQL</h1>
+									<div class="my_progess_trending_card_options_holder">
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/time.svg" alt="time" />
+											<p>15 hours</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/lessons.svg" alt="time" />
+											<p>9 lessons</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/coin.svg" alt="time" />
+											<p>779 coins</p>
+										</div>
+									</div>
+								</div>
+								<div class="trending_card_author">
+									<p class="pink">Project Manager :</p>
+									<p>Akhil Sv</p>
+								</div>
+
+								<div class="my_progress_trending_card_footer">
+									<button>View in details</button>
+								</div>
+							</div>
+							<div class="my_progess_trending_card certificate_card">
+								<div class="trending_card_banner">
+									<img src="assets/banner.png" alt="banner" />
+								</div>
+								<div class="my_progess_trending_card_body">
+									<h1>Introduction to SQL</h1>
+									<div class="my_progess_trending_card_options_holder">
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/time.svg" alt="time" />
+											<p>15 hours</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/lessons.svg" alt="time" />
+											<p>9 lessons</p>
+										</div>
+										<div class="my_progess_trending_card_option">
+											<img src="./assets/coin.svg" alt="time" />
+											<p>779 coins</p>
+										</div>
+									</div>
+								</div>
+								<div class="trending_card_author">
+									<p class="pink">Project Manager :</p>
+									<p>Akhil Sv</p>
+								</div>
+
+								<div class="my_progress_trending_card_footer">
+									<button>View in details</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- -----in progress else-block-part---- -->
-				<!-- <div
+					<!-- -----in progress else-block-part---- -->
+					<!-- <div
 						class="my_progess_first_cards_holder content"
 						
 					>
 						<h6>No Completed Projects</h6>
 					</div> -->
 
-				<!-- -----completed else-block-part---- -->
-				<div class="my_progress_second_section_holder">
-					<div class="my_progress_your_buddy_holder">
-						<div class="my_progress_second_cards_header">
-							<h1>Your buddy</h1>
-							<p>Need help?</p>
+					<!-- -----completed else-block-part---- -->
+					<div class="my_progress_second_section_holder">
+						<div class="my_progress_your_buddy_holder">
+							<div class="my_progress_second_cards_header">
+								<h1>Your buddy</h1>
+								<p>Need help?</p>
+							</div>
+							<div class="my_progress_second_card_holder">
+								<div class="my_progess_second_card">
+									<h2>
+										<span
+											><img src="./assets/enrolled.svg" alt="enroll" /> </span
+										>Enrolled
+									</h2>
+									<h1>Courses : 4</h1>
+									<h1>CareerPaths : 2</h1>
+									<h1>Projects : 5</h1>
+								</div>
+								<div class="my_progess_second_card">
+									<h2>
+										<span
+											><img src="./assets/enrolled.svg" alt="enroll" /> </span
+										>Enrolled
+									</h2>
+									<h1>Courses : 4</h1>
+									<h1>CareerPaths : 2</h1>
+									<h1>Projects : 5</h1>
+								</div>
+								<div class="my_progess_second_card">
+									<h2>
+										<span
+											><img src="./assets/enrolled.svg" alt="enroll" /> </span
+										>Enrolled
+									</h2>
+									<h1>Courses : 4</h1>
+									<h1>CareerPaths : 2</h1>
+									<h1>Projects : 5</h1>
+								</div>
+							</div>
 						</div>
-						<div class="my_progress_second_card_holder">
-							<div class="my_progess_second_card">
-								<h2>
-									<span><img src="./assets/enrolled.svg" alt="enroll" /> </span
-									>Enrolled
-								</h2>
-								<h1>Courses : 4</h1>
-								<h1>CareerPaths : 2</h1>
-								<h1>Projects : 5</h1>
+						<div class="my_progress_campus_holder">
+							<div class="my_progress_second_cards_header second">
+								<h1>Top 3 of your campus</h1>
 							</div>
-							<div class="my_progess_second_card">
-								<h2>
-									<span><img src="./assets/enrolled.svg" alt="enroll" /> </span
-									>Enrolled
-								</h2>
-								<h1>Courses : 4</h1>
-								<h1>CareerPaths : 2</h1>
-								<h1>Projects : 5</h1>
-							</div>
-							<div class="my_progess_second_card">
-								<h2>
-									<span><img src="./assets/enrolled.svg" alt="enroll" /> </span
-									>Enrolled
-								</h2>
-								<h1>Courses : 4</h1>
-								<h1>CareerPaths : 2</h1>
-								<h1>Projects : 5</h1>
-							</div>
-						</div>
-					</div>
-					<div class="my_progress_campus_holder">
-						<div class="my_progress_second_cards_header second">
-							<h1>Top 3 of your campus</h1>
-						</div>
-						<div class="my_progress_campus_card">
-							<div class="campus_card_header">
-								<h6 class="three">Rank</h6>
-								<h6 class="six">Name</h6>
-								<h6 class="three">Score</h6>
-							</div>
-							<div class="campus_card_row">
-								<h5 class="three">1</h5>
+							<div class="my_progress_campus_card">
+								<div class="campus_card_header">
+									<h6 class="three">Rank</h6>
+									<h6 class="six">Name</h6>
+									<h6 class="three">Score</h6>
+								</div>
+								<div class="campus_card_row">
+									<h5 class="three">1</h5>
 
-								<div class="row_avatar">
-									<img src="/assets/profile.jpg" alt="avatar" />
-									<h5 class="six">Akhil</h5>
+									<div class="row_avatar">
+										<img src="/assets/profile.jpg" alt="avatar" />
+										<h5 class="six">Akhil</h5>
+									</div>
+									<h5 class="three">1200</h5>
 								</div>
-								<h5 class="three">1200</h5>
-							</div>
-							<div class="campus_card_row">
-								<h5 class="three">1</h5>
-								<div class="row_avatar">
-									<img src="/assets/profile.jpg" alt="avatar" />
-									<h5>Akhil</h5>
+								<div class="campus_card_row">
+									<h5 class="three">1</h5>
+									<div class="row_avatar">
+										<img src="/assets/profile.jpg" alt="avatar" />
+										<h5>Akhil</h5>
+									</div>
+									<h5 class="three">1200</h5>
 								</div>
-								<h5 class="three">1200</h5>
-							</div>
-							<div class="campus_card_row">
-								<h5 class="three">1</h5>
-								<div class="row_avatar">
-									<img src="/assets/profile.jpg" alt="avatar" />
-									<h5>Akhil</h5>
+								<div class="campus_card_row">
+									<h5 class="three">1</h5>
+									<div class="row_avatar">
+										<img src="/assets/profile.jpg" alt="avatar" />
+										<h5>Akhil</h5>
+									</div>
+									<h5 class="three">1200</h5>
 								</div>
-								<h5 class="three">1200</h5>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="my_progress_third_card">
-					<div class="header">
-						<h1>
-							Please take your skill test so that we can improve your
-							recommendations and can suggest you better content or projects
-						</h1>
-						<p class="close_banner">X</p>
 					</div>
 
-					<button>Take Test</button>
-				</div>
+					<div class="my_progress_third_card">
+						<div class="header">
+							<h1>
+								Please take your skill test so that we can improve your
+								recommendations and can suggest you better content or projects
+							</h1>
+							<p class="close_banner">X</p>
+						</div>
 
-				<div class="my_progress_trending_header">
-					<div class="heading_icon_holder">
-						<h1>Trending Courses</h1>
+						<button>Take Test</button>
 					</div>
-					<p>See all</p>
-				</div>
-				<div class="my_progess_trending_holder">
-					<div class="my_progess_trending_card">
-						<div class="my_progess_trending_card_header">
-							<img src="assets/python_logo.png" alt="course-logo" />
-							<div class="resolution">
-								<p>1250xp</p>
-							</div>
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_card">
-						<div class="my_progess_trending_card_header">
-							<img src="assets/python_logo.png" alt="course-logo" />
-							<div class="resolution">
-								<p>1250xp</p>
-							</div>
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_card">
-						<div class="my_progess_trending_card_header">
-							<img src="assets/python_logo.png" alt="course-logo" />
-							<div class="resolution">
-								<p>1250xp</p>
-							</div>
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
-						</div>
-					</div>
-				</div>
-				<div class="my_progress_trending_header">
-					<div class="heading_icon_holder">
-						<h1>Trending Projects</h1>
-					</div>
-					<p>See all</p>
-				</div>
-				<div class="my_progess_trending_holder">
-					<div class="my_progess_trending_card second_card">
-						<div class="trending_card_banner">
-							<img src="assets/banner.png" alt="banner" />
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="trending_card_author">
-							<p>Author :</p>
-							<p>Akhil Sv</p>
-						</div>
-						<div class="trending_card_hashtags">
-							<p>#machine</p>
-							<p>#machine</p>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>View in details</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_card second_card">
-						<div class="trending_card_banner">
-							<img src="assets/banner.png" alt="banner" />
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="trending_card_author">
-							<p>Author :</p>
-							<p>Akhil Sv</p>
-						</div>
-						<div class="trending_card_hashtags">
-							<p>#machine</p>
-							<p>#machine</p>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>View in details</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_card second_card">
-						<div class="trending_card_banner">
-							<img src="assets/banner.png" alt="banner" />
-						</div>
-						<div class="my_progess_trending_card_body">
-							<h1>Introduction to SQL</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p>15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p>9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p>779 coins</p>
-								</div>
-							</div>
-						</div>
-						<div class="trending_card_author">
-							<p>Author :</p>
-							<p>Akhil Sv</p>
-						</div>
-						<div class="trending_card_hashtags">
-							<p>#machine</p>
-							<p>#machine</p>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>View in details</button>
-						</div>
-					</div>
-				</div>
 
-				<div class="my_progress_trending_header">
-					<div class="heading_icon_holder">
-						<h1>Trending Career Paths</h1>
+					<div class="my_progress_trending_header">
+						<div class="heading_icon_holder">
+							<h1>Trending Courses</h1>
+						</div>
+						<p>See all</p>
 					</div>
-					<p>See all</p>
-				</div>
-				<div class="my_progess_trending_holder">
-					<div class="my_progess_trending_third_card">
-						<div class="trending_third_card_header">
-							<h1>Data Scientist</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p class="white">Blog included</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p class="white">9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p class="white">779 coins</p>
+					<div class="my_progess_trending_holder">
+						<div class="my_progess_trending_card">
+							<div class="my_progess_trending_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<div class="resolution">
+									<p>1250xp</p>
 								</div>
 							</div>
-						</div>
-						<div class="my_progess_trending_third_card_body">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Officia maxime esse blanditiis vitae animi eaque adipisci,
-								beatae laboriosam vel hic illum eum omnis consequuntur quas.
-							</p>
-						</div>
-						<div class="my_progress_tick_holder">
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_third_card">
-						<div class="trending_third_card_header">
-							<h1>Data Scientist</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p class="white">15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p class="white">9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p class="white">779 coins</p>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="my_progess_trending_third_card_body">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Officia maxime esse blanditiis vitae animi eaque adipisci,
-								beatae laboriosam vel hic illum eum omnis consequuntur quas.
-							</p>
-						</div>
-						<div class="my_progress_tick_holder">
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
 							</div>
 						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
-						</div>
-					</div>
-					<div class="my_progess_trending_third_card">
-						<div class="trending_third_card_header">
-							<h1>Data Scientist</h1>
-							<div class="my_progess_trending_card_options_holder">
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/time.svg" alt="time" />
-									<p class="white">15 hours</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/lessons.svg" alt="time" />
-									<p class="white">9 lessons</p>
-								</div>
-								<div class="my_progess_trending_card_option">
-									<img src="./assets/coin.svg" alt="time" />
-									<p class="white">779 coins</p>
+						<div class="my_progess_trending_card">
+							<div class="my_progess_trending_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<div class="resolution">
+									<p>1250xp</p>
 								</div>
 							</div>
-						</div>
-						<div class="my_progess_trending_third_card_body">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Officia maxime esse blanditiis vitae animi eaque adipisci,
-								beatae laboriosam vel hic illum eum omnis consequuntur quas.
-							</p>
-						</div>
-						<div class="my_progress_tick_holder">
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
 							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
-							</div>
-							<div class="tick">
-								<span>✔</span>
-								<p>Free Career HandBook</p>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
 							</div>
 						</div>
-						<div class="my_progress_trending_card_footer">
-							<button>Start Course</button>
+						<div class="my_progess_trending_card">
+							<div class="my_progess_trending_card_header">
+								<img src="assets/python_logo.png" alt="course-logo" />
+								<div class="resolution">
+									<p>1250xp</p>
+								</div>
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+					<div class="my_progress_trending_header">
+						<div class="heading_icon_holder">
+							<h1>Trending Projects</h1>
+						</div>
+						<p>See all</p>
+					</div>
+					<div class="my_progess_trending_holder">
+						<div class="my_progess_trending_card second_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p>Author :</p>
+								<p>Akhil Sv</p>
+							</div>
+							<div class="trending_card_hashtags">
+								<p>#machine</p>
+								<p>#machine</p>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_card second_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p>Author :</p>
+								<p>Akhil Sv</p>
+							</div>
+							<div class="trending_card_hashtags">
+								<p>#machine</p>
+								<p>#machine</p>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_card second_card">
+							<div class="trending_card_banner">
+								<img src="assets/banner.png" alt="banner" />
+							</div>
+							<div class="my_progess_trending_card_body">
+								<h1>Introduction to SQL</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p>15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p>9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p>779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="trending_card_author">
+								<p>Author :</p>
+								<p>Akhil Sv</p>
+							</div>
+							<div class="trending_card_hashtags">
+								<p>#machine</p>
+								<p>#machine</p>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>View in details</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="my_progress_trending_header">
+						<div class="heading_icon_holder">
+							<h1>Trending Career Paths</h1>
+						</div>
+						<p>See all</p>
+					</div>
+					<div class="my_progess_trending_holder">
+						<div class="my_progess_trending_third_card">
+							<div class="trending_third_card_header">
+								<h1>Data Scientist</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p class="white">Blog included</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p class="white">9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p class="white">779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="my_progess_trending_third_card_body">
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Officia maxime esse blanditiis vitae animi eaque adipisci,
+									beatae laboriosam vel hic illum eum omnis consequuntur quas.
+								</p>
+							</div>
+							<div class="my_progress_tick_holder">
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_third_card">
+							<div class="trending_third_card_header">
+								<h1>Data Scientist</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p class="white">15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p class="white">9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p class="white">779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="my_progess_trending_third_card_body">
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Officia maxime esse blanditiis vitae animi eaque adipisci,
+									beatae laboriosam vel hic illum eum omnis consequuntur quas.
+								</p>
+							</div>
+							<div class="my_progress_tick_holder">
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
+							</div>
+						</div>
+						<div class="my_progess_trending_third_card">
+							<div class="trending_third_card_header">
+								<h1>Data Scientist</h1>
+								<div class="my_progess_trending_card_options_holder">
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/time.svg" alt="time" />
+										<p class="white">15 hours</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/lessons.svg" alt="time" />
+										<p class="white">9 lessons</p>
+									</div>
+									<div class="my_progess_trending_card_option">
+										<img src="./assets/coin.svg" alt="time" />
+										<p class="white">779 coins</p>
+									</div>
+								</div>
+							</div>
+							<div class="my_progess_trending_third_card_body">
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Officia maxime esse blanditiis vitae animi eaque adipisci,
+									beatae laboriosam vel hic illum eum omnis consequuntur quas.
+								</p>
+							</div>
+							<div class="my_progress_tick_holder">
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+								<div class="tick">
+									<span>✔</span>
+									<p>Free Career HandBook</p>
+								</div>
+							</div>
+							<div class="my_progress_trending_card_footer">
+								<button>Start Course</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 		<script src="./app.js"></script>
 		<script>
@@ -1424,18 +1431,16 @@
 				}
 				if (x.matches) {
 					if (tabs_wrap.style.display === 'flex') {
-						console.log("here");
+						console.log('here');
 						tabs_wrap.style.display = 'none';
-						hes.innerHTML = "˅";
+						hes.innerHTML = '˅';
 					} else {
-						console.log("here else");
+						console.log('here else');
 						tabs_wrap.style.display = 'flex';
-						hes.innerHTML = "^";
-
+						hes.innerHTML = '^';
 					}
 				}
 			};
 		</script>
 	</body>
 </html>
-

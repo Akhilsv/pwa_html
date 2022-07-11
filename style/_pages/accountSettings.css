@@ -8,16 +8,18 @@ p {
   font-weight: 600;
   background-color: #e72ed5;
   border: none;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   margin: 15px 0;
 }
+
 .btn-primary:hover {
   background-color: #eb69de;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: rgb(0, 0, 0);
+  color: black;
   background-color: #cecece;
 }
 
@@ -26,14 +28,17 @@ p {
   height: 90%;
   max-height: calc(100vh - 60px);
   padding: 0 40px;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   overflow: scroll;
   padding: 15px;
 }
+
 .accountContainer::-webkit-scrollbar {
   display: none;
 }
+
 @media (max-width: 600px) {
   .accountContainer {
     width: 100%;
@@ -44,7 +49,8 @@ p {
 .shadow {
   height: 100%;
   width: 100%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0) !important;
 }
 
 .border-right {
@@ -61,7 +67,9 @@ p {
 }
 
 .tab-content {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-top: 20px;
 }
 
@@ -69,6 +77,7 @@ p {
   margin-bottom: 1.5rem;
   margin: 10px 0 !important;
 }
+
 .form-group input {
   height: 38px !important;
 }
@@ -79,6 +88,7 @@ p {
   border-radius: 0;
   color: #333;
 }
+
 .nav-pills a.nav-link i {
   width: 20px;
 }
@@ -86,6 +96,7 @@ p {
 .img-circle {
   display: none;
 }
+
 .img-circle img {
   height: 100px;
   width: 100px;
@@ -104,11 +115,17 @@ p {
   margin: 15px 0;
   border-radius: 10px;
   padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 @media (max-width: 600px) {
   .current_plan {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
 }
@@ -116,25 +133,41 @@ p {
 .free_trail_holder {
   width: 70%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 @media (max-width: 600px) {
   .free_trail_holder {
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 .free_trail_holder h1 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(255, 0, 255);
+  color: magenta;
   padding-bottom: 10px;
   border-bottom: 1px solid #000;
 }
+
 .free_trail_holder p {
   font-weight: 500;
 }
@@ -142,23 +175,37 @@ p {
 .doller_holder {
   width: 30%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media (max-width: 600px) {
   .doller_holder {
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
   }
 }
+
 .doller_holder h1 {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .doller_holder span {
   font-size: 1.6rem;
 }
@@ -178,20 +225,31 @@ p {
 .my_progress_third_card {
   width: 100%;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 20px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #cf2fba;
   position: relative;
 }
+
 .my_progress_third_card h1 {
   font-size: 1rem;
   color: #fff;
   width: 90%;
   font-weight: 500;
 }
+
 .my_progress_third_card button {
   width: 150px;
   height: 40px;
@@ -201,6 +259,7 @@ p {
   margin-top: 20px;
   border-radius: 10px;
 }
+
 .my_progress_third_card p {
   position: absolute;
   top: 30px;
@@ -212,24 +271,41 @@ p {
 .primary_email_holder {
   width: 100%;
   margin: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .primary_email_holder h5 {
   font-weight: 600;
   font-size: 1.1rem;
 }
+
 .primary_email_holder p {
   font-weight: 500;
   margin: 5px 0;
 }
+
 .primary_email_holder .email_holder {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .no-emails {
@@ -241,21 +317,39 @@ p {
   width: 90%;
   min-height: 55px;
   margin: 15px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .notification-item .content {
   width: 90%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .notification-item .content h1 {
   font-size: 1rem;
   font-weight: 600;
 }
+
 .notification-item .content p {
   font-size: 0.95rem;
   color: rgba(59, 59, 59, 0.822);
@@ -267,17 +361,22 @@ p {
   width: 60px;
   height: 27px;
 }
+
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
+
 .switch input:checked + .slider {
   background-color: #be23ff;
 }
+
 .switch input:focus + .slider {
-  box-shadow: 0 0 1px #be23ff;
+  -webkit-box-shadow: 0 0 1px #be23ff;
+          box-shadow: 0 0 1px #be23ff;
 }
+
 .switch input:checked + .slider:before {
   left: 75%;
 }
@@ -290,18 +389,21 @@ p {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 22px;
   width: 22px;
   top: 50%;
   left: 25%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: white;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -320,11 +422,18 @@ p {
 .history_header {
   height: 40px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: solid 1.5px rgb(173, 173, 173);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1.5px #adadad;
 }
+
 .history_header h1 {
   font-size: 1rem;
   margin: 0 22px 0 0;
@@ -344,6 +453,8 @@ p {
   display: none;
   padding: 50px 0;
 }
+
 .slideHistoryTabContent h1 {
   font-size: 1.5rem;
-}/*# sourceMappingURL=accountSettings.css.map */
+}
+/*# sourceMappingURL=accountSettings.css.map */
